@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A37252225121FA006BDB9A /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3724E225121FA006BDB9A /* UIViewController+Tools.m */; };
+		33A37253225121FA006BDB9A /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A37251225121FA006BDB9A /* UIColor+Tools.m */; };
+		33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3725C22512D28006BDB9A /* PresentViewController.m */; };
+		33A946972252617700CE796D /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A946962252617700CE796D /* BaseButton.m */; };
 		38A0F0D622505BAA003D881D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0F0D522505BAA003D881D /* AppDelegate.m */; };
 		38A0F0D922505BAA003D881D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0F0D822505BAA003D881D /* ViewController.m */; };
 		38A0F0DC22505BAA003D881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A0F0DA22505BAA003D881D /* Main.storyboard */; };
 		38A0F0DE22505BAB003D881D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A0F0DD22505BAB003D881D /* Assets.xcassets */; };
 		38A0F0E122505BAB003D881D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A0F0DF22505BAB003D881D /* LaunchScreen.storyboard */; };
 		38A0F0E422505BAB003D881D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0F0E322505BAB003D881D /* main.m */; };
+		794955F1F7D829ECE527F4AF /* Pods_AutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5FCF625090EEB99C04CB91 /* Pods_AutoLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33A3724E225121FA006BDB9A /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		33A3724F225121FA006BDB9A /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		33A37250225121FA006BDB9A /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		33A37251225121FA006BDB9A /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		33A37254225124A2006BDB9A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		33A3725B22512D28006BDB9A /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		33A3725C22512D28006BDB9A /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		33A946952252617700CE796D /* BaseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		33A946962252617700CE796D /* BaseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		38A0F0D122505BAA003D881D /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A0F0D422505BAA003D881D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38A0F0D522505BAA003D881D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +40,9 @@
 		38A0F0E022505BAB003D881D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38A0F0E222505BAB003D881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A0F0E322505BAB003D881D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C66FEF1E83738F8B22B9519 /* Pods-AutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.release.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		509CE193C822456E7BC4E757 /* Pods-AutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayout/Pods-AutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		7B5FCF625090EEB99C04CB91 /* Pods_AutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +50,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794955F1F7D829ECE527F4AF /* Pods_AutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20EBE98E50F8B135638071C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509CE193C822456E7BC4E757 /* Pods-AutoLayout.debug.xcconfig */,
+				4C66FEF1E83738F8B22B9519 /* Pods-AutoLayout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		211872190AF20FE0A8B09676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B5FCF625090EEB99C04CB91 /* Pods_AutoLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33A3724D225121FA006BDB9A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				33A37250225121FA006BDB9A /* UIViewController+Tools.h */,
+				33A3724E225121FA006BDB9A /* UIViewController+Tools.m */,
+				33A3724F225121FA006BDB9A /* UIColor+Tools.h */,
+				33A37251225121FA006BDB9A /* UIColor+Tools.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		33A946942252615E00CE796D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33A946952252617700CE796D /* BaseButton.h */,
+				33A946962252617700CE796D /* BaseButton.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		38A0F0C822505BA9003D881D = {
 			isa = PBXGroup;
 			children = (
 				38A0F0D322505BAA003D881D /* AutoLayout */,
 				38A0F0D222505BAA003D881D /* Products */,
+				20EBE98E50F8B135638071C4 /* Pods */,
+				211872190AF20FE0A8B09676 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +115,8 @@
 		38A0F0D322505BAA003D881D /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				33A946942252615E00CE796D /* Base */,
+				33A3724D225121FA006BDB9A /* Categories */,
 				38A0F0D422505BAA003D881D /* AppDelegate.h */,
 				38A0F0D522505BAA003D881D /* AppDelegate.m */,
 				38A0F0D722505BAA003D881D /* ViewController.h */,
@@ -67,6 +126,9 @@
 				38A0F0DF22505BAB003D881D /* LaunchScreen.storyboard */,
 				38A0F0E222505BAB003D881D /* Info.plist */,
 				38A0F0E322505BAB003D881D /* main.m */,
+				33A37254225124A2006BDB9A /* Header.h */,
+				33A3725B22512D28006BDB9A /* PresentViewController.h */,
+				33A3725C22512D28006BDB9A /* PresentViewController.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -78,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A0F0E722505BAB003D881D /* Build configuration list for PBXNativeTarget "AutoLayout" */;
 			buildPhases = (
+				49E4DBB2A96A5F375C2AE70B /* [CP] Check Pods Manifest.lock */,
 				38A0F0CD22505BA9003D881D /* Sources */,
 				38A0F0CE22505BA9003D881D /* Frameworks */,
 				38A0F0CF22505BA9003D881D /* Resources */,
+				9C4EFEB07C4633E00530F67F /* [CP] Embed Pods Frameworks */,
+				F95D4FE82DCA0854EBC27A71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,14 +201,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49E4DBB2A96A5F375C2AE70B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4EFEB07C4633E00530F67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95D4FE82DCA0854EBC27A71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoLayout/Pods-AutoLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38A0F0CD22505BA9003D881D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A37252225121FA006BDB9A /* UIViewController+Tools.m in Sources */,
 				38A0F0D922505BAA003D881D /* ViewController.m in Sources */,
+				33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */,
 				38A0F0E422505BAB003D881D /* main.m in Sources */,
 				38A0F0D622505BAA003D881D /* AppDelegate.m in Sources */,
+				33A37253225121FA006BDB9A /* UIColor+Tools.m in Sources */,
+				33A946972252617700CE796D /* BaseButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +336,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -283,10 +412,12 @@
 		};
 		38A0F0E822505BAB003D881D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509CE193C822456E7BC4E757 /* Pods-AutoLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AutoLayout/Header.h";
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +431,12 @@
 		};
 		38A0F0E922505BAB003D881D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C66FEF1E83738F8B22B9519 /* Pods-AutoLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AutoLayout/Header.h";
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
