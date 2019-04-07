@@ -3,20 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333A055F225A3255001E8EA3 /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A055E225A3255001E8EA3 /* PartViewController.m */; };
+		333A0565225A3B1E001E8EA3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0563225A3B1E001E8EA3 /* BaseLabel.m */; };
 		33A9472E2252728A00CE796D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A9472D2252728A00CE796D /* AppDelegate.m */; };
 		33A947312252728A00CE796D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A947302252728A00CE796D /* ViewController.m */; };
 		33A947342252728A00CE796D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A947322252728A00CE796D /* Main.storyboard */; };
 		33A947362252728B00CE796D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A947352252728B00CE796D /* Assets.xcassets */; };
-		33A947392252728B00CE796D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A947372252728B00CE796D /* LaunchScreen.storyboard */; };
 		33A9473C2252728B00CE796D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A9473B2252728B00CE796D /* main.m */; };
+		38346BD62252F768005DB04A /* Caculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38346BD52252F768005DB04A /* Caculator.xib */; };
+		38346BF02252FC44005DB04A /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BEA2252FC44005DB04A /* BaseButton.m */; };
+		38346BF12252FC44005DB04A /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BEC2252FC44005DB04A /* UIViewController+Tools.m */; };
+		38346BF22252FC44005DB04A /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BEF2252FC44005DB04A /* UIColor+Tools.m */; };
+		38346C0122530868005DB04A /* CaculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346C0022530868005DB04A /* CaculatorController.m */; };
+		389B9962225364C2005EDF4D /* LocalizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B9961225364C2005EDF4D /* LocalizedViewController.m */; };
+		38FFA37522535377008E40C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38FFA37722535377008E40C5 /* Localizable.strings */; };
 		71660E6CA1C7FCC4E3945AB1 /* libPods-RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E2F1AD01B9870811825333 /* libPods-RAC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333A055D225A3255001E8EA3 /* PartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartViewController.h; sourceTree = "<group>"; };
+		333A055E225A3255001E8EA3 /* PartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartViewController.m; sourceTree = "<group>"; };
+		333A0563225A3B1E001E8EA3 /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		333A0564225A3B1E001E8EA3 /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
 		33A947292252728A00CE796D /* RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A9472C2252728A00CE796D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33A9472D2252728A00CE796D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,9 +36,23 @@
 		33A947302252728A00CE796D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33A947332252728A00CE796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33A947352252728B00CE796D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		33A947382252728B00CE796D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A9473A2252728B00CE796D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A9473B2252728B00CE796D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38346BD52252F768005DB04A /* Caculator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Caculator.xib; sourceTree = "<group>"; };
+		38346BDC2252F831005DB04A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		38346BE92252FC44005DB04A /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		38346BEA2252FC44005DB04A /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		38346BEC2252FC44005DB04A /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		38346BED2252FC44005DB04A /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		38346BEE2252FC44005DB04A /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		38346BEF2252FC44005DB04A /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		38346BFF22530868005DB04A /* CaculatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorController.h; sourceTree = "<group>"; };
+		38346C0022530868005DB04A /* CaculatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorController.m; sourceTree = "<group>"; };
+		389B9960225364C2005EDF4D /* LocalizedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizedViewController.h; sourceTree = "<group>"; };
+		389B9961225364C2005EDF4D /* LocalizedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizedViewController.m; sourceTree = "<group>"; };
+		38FFA3722253533F008E40C5 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
+		38FFA37622535377008E40C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38FFA37822535378008E40C5 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7BA7F33A2376DD32BDBE3BDC /* Pods-RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC.release.xcconfig"; path = "Target Support Files/Pods-RAC/Pods-RAC.release.xcconfig"; sourceTree = "<group>"; };
 		98E2F1AD01B9870811825333 /* libPods-RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF24900E31ED8D5B6EF35D /* Pods-RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC.debug.xcconfig"; path = "Target Support Files/Pods-RAC/Pods-RAC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,17 +91,59 @@
 		33A9472B2252728A00CE796D /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				38346BFE22530846005DB04A /* Model */,
+				38346BE82252FC44005DB04A /* Base */,
+				38346BEB2252FC44005DB04A /* Categories */,
 				33A9472C2252728A00CE796D /* AppDelegate.h */,
 				33A9472D2252728A00CE796D /* AppDelegate.m */,
 				33A9472F2252728A00CE796D /* ViewController.h */,
 				33A947302252728A00CE796D /* ViewController.m */,
 				33A947322252728A00CE796D /* Main.storyboard */,
 				33A947352252728B00CE796D /* Assets.xcassets */,
-				33A947372252728B00CE796D /* LaunchScreen.storyboard */,
 				33A9473A2252728B00CE796D /* Info.plist */,
 				33A9473B2252728B00CE796D /* main.m */,
+				38346BDC2252F831005DB04A /* Header.h */,
+				38FFA37722535377008E40C5 /* Localizable.strings */,
 			);
 			path = RAC;
+			sourceTree = "<group>";
+		};
+		38346BE82252FC44005DB04A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				333A0564225A3B1E001E8EA3 /* BaseLabel.h */,
+				333A0563225A3B1E001E8EA3 /* BaseLabel.m */,
+				38346BE92252FC44005DB04A /* BaseButton.h */,
+				38346BEA2252FC44005DB04A /* BaseButton.m */,
+			);
+			name = Base;
+			path = ../../Base;
+			sourceTree = "<group>";
+		};
+		38346BEB2252FC44005DB04A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				38346BEC2252FC44005DB04A /* UIViewController+Tools.m */,
+				38346BED2252FC44005DB04A /* UIColor+Tools.h */,
+				38346BEE2252FC44005DB04A /* UIViewController+Tools.h */,
+				38346BEF2252FC44005DB04A /* UIColor+Tools.m */,
+			);
+			name = Categories;
+			path = ../../Categories;
+			sourceTree = "<group>";
+		};
+		38346BFE22530846005DB04A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38346BD52252F768005DB04A /* Caculator.xib */,
+				38346BFF22530868005DB04A /* CaculatorController.h */,
+				38346C0022530868005DB04A /* CaculatorController.m */,
+				389B9960225364C2005EDF4D /* LocalizedViewController.h */,
+				389B9961225364C2005EDF4D /* LocalizedViewController.m */,
+				333A055D225A3255001E8EA3 /* PartViewController.h */,
+				333A055E225A3255001E8EA3 /* PartViewController.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C84F57D072EE4A302A9FEC70 /* Frameworks */ = {
@@ -139,6 +207,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-HK",
 			);
 			mainGroup = 33A947202252728A00CE796D;
 			productRefGroup = 33A9472A2252728A00CE796D /* Products */;
@@ -155,9 +224,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A947392252728B00CE796D /* LaunchScreen.storyboard in Resources */,
 				33A947362252728B00CE796D /* Assets.xcassets in Resources */,
+				38FFA37522535377008E40C5 /* Localizable.strings in Resources */,
 				33A947342252728A00CE796D /* Main.storyboard in Resources */,
+				38346BD62252F768005DB04A /* Caculator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +282,14 @@
 			files = (
 				33A947312252728A00CE796D /* ViewController.m in Sources */,
 				33A9473C2252728B00CE796D /* main.m in Sources */,
+				389B9962225364C2005EDF4D /* LocalizedViewController.m in Sources */,
+				38346BF12252FC44005DB04A /* UIViewController+Tools.m in Sources */,
+				333A055F225A3255001E8EA3 /* PartViewController.m in Sources */,
+				38346BF02252FC44005DB04A /* BaseButton.m in Sources */,
 				33A9472E2252728A00CE796D /* AppDelegate.m in Sources */,
+				333A0565225A3B1E001E8EA3 /* BaseLabel.m in Sources */,
+				38346C0122530868005DB04A /* CaculatorController.m in Sources */,
+				38346BF22252FC44005DB04A /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,16 +300,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				33A947332252728A00CE796D /* Base */,
+				38FFA3722253533F008E40C5 /* zh-HK */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		33A947372252728B00CE796D /* LaunchScreen.storyboard */ = {
+		38FFA37722535377008E40C5 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				33A947382252728B00CE796D /* Base */,
+				38FFA37622535377008E40C5 /* en */,
+				38FFA37822535378008E40C5 /* zh-HK */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -242,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -301,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -357,14 +438,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC/Header.h";
 				INFOPLIST_FILE = RAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.RAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -375,14 +458,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RAC/Header.h";
 				INFOPLIST_FILE = RAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.RAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
