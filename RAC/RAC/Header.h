@@ -22,5 +22,6 @@
 #import "UIColor+Tools.h"
 // -- base --
 #import "BaseButton.h"
+#import "BaseLabel.h"
 
 #endif /* Header_h */

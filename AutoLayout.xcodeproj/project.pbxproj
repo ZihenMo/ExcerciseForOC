@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333A0562225A3A95001E8EA3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0561225A3A95001E8EA3 /* BaseLabel.m */; };
+		333A058A225A5C4A001E8EA3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0589225A5C4A001E8EA3 /* BaseViewController.m */; };
 		33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3725C22512D28006BDB9A /* PresentViewController.m */; };
 		38346BFB2252FC63005DB04A /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BF52252FC62005DB04A /* BaseButton.m */; };
 		38346BFC2252FC63005DB04A /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BF72252FC63005DB04A /* UIViewController+Tools.m */; };
@@ -21,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333A0560225A3A95001E8EA3 /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		333A0561225A3A95001E8EA3 /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		333A0588225A5C4A001E8EA3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		333A0589225A5C4A001E8EA3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		33A37254225124A2006BDB9A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		33A3725B22512D28006BDB9A /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
 		33A3725C22512D28006BDB9A /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
@@ -79,6 +85,10 @@
 			children = (
 				38346BF42252FC62005DB04A /* BaseButton.h */,
 				38346BF52252FC62005DB04A /* BaseButton.m */,
+				333A0560225A3A95001E8EA3 /* BaseLabel.h */,
+				333A0561225A3A95001E8EA3 /* BaseLabel.m */,
+				333A0588225A5C4A001E8EA3 /* BaseViewController.h */,
+				333A0589225A5C4A001E8EA3 /* BaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = SOURCE_ROOT;
@@ -266,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A0F0D922505BAA003D881D /* ViewController.m in Sources */,
+				333A058A225A5C4A001E8EA3 /* BaseViewController.m in Sources */,
+				333A0562225A3A95001E8EA3 /* BaseLabel.m in Sources */,
 				38346BFD2252FC63005DB04A /* UIColor+Tools.m in Sources */,
 				33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */,
 				38346BFC2252FC63005DB04A /* UIViewController+Tools.m in Sources */,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333A055F225A3255001E8EA3 /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A055E225A3255001E8EA3 /* PartViewController.m */; };
+		333A0565225A3B1E001E8EA3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0563225A3B1E001E8EA3 /* BaseLabel.m */; };
 		33A9472E2252728A00CE796D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A9472D2252728A00CE796D /* AppDelegate.m */; };
 		33A947312252728A00CE796D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A947302252728A00CE796D /* ViewController.m */; };
 		33A947342252728A00CE796D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A947322252728A00CE796D /* Main.storyboard */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333A055D225A3255001E8EA3 /* PartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartViewController.h; sourceTree = "<group>"; };
+		333A055E225A3255001E8EA3 /* PartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartViewController.m; sourceTree = "<group>"; };
+		333A0563225A3B1E001E8EA3 /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		333A0564225A3B1E001E8EA3 /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
 		33A947292252728A00CE796D /* RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A9472C2252728A00CE796D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33A9472D2252728A00CE796D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 		38346BE82252FC44005DB04A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				333A0564225A3B1E001E8EA3 /* BaseLabel.h */,
+				333A0563225A3B1E001E8EA3 /* BaseLabel.m */,
 				38346BE92252FC44005DB04A /* BaseButton.h */,
 				38346BEA2252FC44005DB04A /* BaseButton.m */,
 			);
@@ -132,6 +140,8 @@
 				38346C0022530868005DB04A /* CaculatorController.m */,
 				389B9960225364C2005EDF4D /* LocalizedViewController.h */,
 				389B9961225364C2005EDF4D /* LocalizedViewController.m */,
+				333A055D225A3255001E8EA3 /* PartViewController.h */,
+				333A055E225A3255001E8EA3 /* PartViewController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,8 +284,10 @@
 				33A9473C2252728B00CE796D /* main.m in Sources */,
 				389B9962225364C2005EDF4D /* LocalizedViewController.m in Sources */,
 				38346BF12252FC44005DB04A /* UIViewController+Tools.m in Sources */,
+				333A055F225A3255001E8EA3 /* PartViewController.m in Sources */,
 				38346BF02252FC44005DB04A /* BaseButton.m in Sources */,
 				33A9472E2252728A00CE796D /* AppDelegate.m in Sources */,
+				333A0565225A3B1E001E8EA3 /* BaseLabel.m in Sources */,
 				38346C0122530868005DB04A /* CaculatorController.m in Sources */,
 				38346BF22252FC44005DB04A /* UIColor+Tools.m in Sources */,
 			);

@@ -43,8 +43,19 @@
 - (void)showAllLcaleList {
     NSArray *idList = [NSLocale availableLocaleIdentifiers];
     for (NSString *localeId in idList) {
-        NSLog(localeId);
+        NSLog(@"%@", localeId);
     }
 }
 
+
+/// 测试本地化
+- (NSString *)localize: (NSString *)key {
+    NSString *bundlePath = [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]];
+    NSLog(@"bundlePath: %@", bundlePath);
+    NSString *path = [[NSBundle mainBundle] pathForResource: bundlePath ofType:@"lproj"];
+    NSLog(@"path = %@", path);
+    
+    NSString *result =  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:nil];
+    return result;
+}
 @end
