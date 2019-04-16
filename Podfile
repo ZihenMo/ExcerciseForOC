@@ -42,3 +42,20 @@ platform :ios, '10.0'
   # Pods for AutoLayout
   
 end
+
+target 'UI' do
+  platform :ios, '10.0'
+  # Comment the next line if you don't want to use dynamic frameworks
+  project 'UI/UI.xcodeproj'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Masonry'
+  # logger
+  pod 'CocoaLumberjack'
+  pod 'ReactiveObjC', '~> 3.1.0'
+  
+  
+  # Pods for AutoLayout
+  
+end
