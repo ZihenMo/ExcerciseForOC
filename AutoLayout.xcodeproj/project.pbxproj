@@ -90,7 +90,8 @@
 				333A0588225A5C4A001E8EA3 /* BaseViewController.h */,
 				333A0589225A5C4A001E8EA3 /* BaseViewController.m */,
 			);
-			path = Base;
+			name = Base;
+			path = RecycleReference/RecycleReference/Base;
 			sourceTree = SOURCE_ROOT;
 		};
 		38346BF62252FC63005DB04A /* Categories */ = {
@@ -101,7 +102,8 @@
 				38346BF92252FC63005DB04A /* UIViewController+Tools.h */,
 				38346BFA2252FC63005DB04A /* UIColor+Tools.m */,
 			);
-			path = Categories;
+			name = Categories;
+			path = RecycleReference/RecycleReference/Categories;
 			sourceTree = SOURCE_ROOT;
 		};
 		38A0F0C822505BA9003D881D = {
