@@ -64,6 +64,10 @@ typedef NS_ENUM(NSInteger, SubjectType) {
             break;
         case SubjectTypeCompressionResistance:
             [self addCompressionResistanceLayoutView];
+            break;
+        case SubjectTypeContentHugging:
+            [self addHuggingView];
+            break;
         default:
             break;
     }
@@ -181,6 +185,34 @@ typedef NS_ENUM(NSInteger, SubjectType) {
     [compressBtn setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     [normalBtn setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
     [uncompressBtn setContentCompressionResistancePriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
+}
+
+#pragma mark - 内容吸附
+- (void)addHuggingView {
+    BaseButton *normalBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    BaseButton *lowBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    BaseButton *highBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    [normalBtn setTitle:@"一般优先级" forState:UIControlStateNormal];
+    [lowBtn setTitle:@"内容少，优先级低" forState:UIControlStateNormal];
+    [highBtn setTitle:@"内容少，优先级高" forState:UIControlStateNormal];
+    [self.presentView addSubview:normalBtn];
+    [self.presentView addSubview:lowBtn];
+    [self.presentView addSubview:highBtn];
+    [lowBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView).offset(CGPointMake(0, -100));
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [normalBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView);
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [highBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView).offset(CGPointMake(0, 100));
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [lowBtn setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
+    [normalBtn setContentHuggingPriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
+    [highBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
 }
 
 #pragma mark - 显示与移除布局视图
