@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -275,6 +275,8 @@
 		3301992E226647B400EA9903 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019921226647B300EA9903 /* BaseLabel.m */; };
 		3301992F226647B400EA9903 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019923226647B400EA9903 /* UIViewController+Tools.m */; };
 		33019930226647B400EA9903 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019926226647B400EA9903 /* UIColor+Tools.m */; };
+		38B9F722226815C800121900 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F720226815C800121900 /* ButtonViewController.m */; };
+		38B9F723226815C800121900 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B9F721226815C800121900 /* ButtonViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -558,6 +560,9 @@
 		33019924226647B400EA9903 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
 		33019925226647B400EA9903 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
 		33019926226647B400EA9903 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		38B9F71F226815C800121900 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		38B9F720226815C800121900 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		38B9F721226815C800121900 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -959,6 +964,9 @@
 				33019912226647B300EA9903 /* ImageViewController.m */,
 				33019913226647B300EA9903 /* ImageViewController.xib */,
 				33019914226647B300EA9903 /* ImageViewController.h */,
+				38B9F71F226815C800121900 /* ButtonViewController.h */,
+				38B9F720226815C800121900 /* ButtonViewController.m */,
+				38B9F721226815C800121900 /* ButtonViewController.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1212,6 +1220,7 @@
 				3301983D2266419700EA9903 /* stand_2.png in Resources */,
 				330198402266419700EA9903 /* xiaozhao1_19.png in Resources */,
 				330198772266419700EA9903 /* xiaozhao3_39.png in Resources */,
+				38B9F723226815C800121900 /* ButtonViewController.xib in Resources */,
 				330196E72266399D00EA9903 /* Main.storyboard in Resources */,
 				330198BC2266419700EA9903 /* dazhao_85.png in Resources */,
 				3301982B2266419700EA9903 /* install_b_16.png in Resources */,
@@ -1382,6 +1391,7 @@
 				330196EF2266399E00EA9903 /* main.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				3301992D226647B400EA9903 /* BaseButton.m in Sources */,
+				38B9F722226815C800121900 /* ButtonViewController.m in Sources */,
 				33019930226647B400EA9903 /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

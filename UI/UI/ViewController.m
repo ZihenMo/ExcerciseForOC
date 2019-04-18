@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ImageViewController.h"
+#import "ButtonViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -40,7 +41,8 @@
     return self.uiArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])] forIndexPath:indexPath];
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     cell.textLabel.text = self.uiArray[indexPath.row];
     return cell;
 }
@@ -50,6 +52,8 @@
         case 0:
             nextController = [[ImageViewController alloc] init];
             break;
+        case 1:
+            nextController = [[ButtonViewController alloc] init];
         default:
             break;
     }
@@ -68,8 +72,8 @@
     return _tableView;
 }
 - (NSArray *)uiArray {
-    if (_uiArray) {
-        _uiArray = @[@"UIImageView"];
+    if (!_uiArray) {
+        _uiArray = @[@"UIImageView", @"UIButton"];
     }
     return  _uiArray;
 }
