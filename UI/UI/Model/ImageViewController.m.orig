@@ -13,16 +13,16 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) AVPlayer *player;
 
-
 @end
 
 @implementation ImageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     /* 默认以图片初始化时，大小等同图片，
      * 即所谓的内在内容尺寸，label也是如此。
-    [self standAction];
+     */
     UIImage *image = [UIImage imageWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"stand_1" ofType:@"png"]];
     UIImageView *tmpImageView = [[UIImageView alloc] initWithImage:image];
     tmpImageView.center = CGPointMake(self.view.center.x, self.view.center.y + 100.f);
@@ -30,10 +30,16 @@
     NSLog(@"tmpImageView: %@", NSStringFromCGSize( tmpImageView.intrinsicContentSize));
     NSLog(@"tmpImageView.frame: %@", NSStringFromCGRect(tmpImageView.frame));
     [self.view addSubview:tmpImageView];
+=======
+    [self standAction];
+>>>>>>> 0d75d1d3744b78b9ceaf1b2d8402e5d8a51bd852
 }
 #pragma mark - Actions
 
 - (IBAction)playSkillAction:(UIButton *)sender {
+<<<<<<< HEAD
+
+=======
     switch (sender.tag) {
         case 101:   // small Skill
             [self playWithSkillName:@"xiaozhao1" andImageCount:10 isStanded:YES];
@@ -44,6 +50,7 @@
         default:
             break;
     }
+>>>>>>> 0d75d1d3744b78b9ceaf1b2d8402e5d8a51bd852
 }
 - (IBAction)shutdownAction:(UIButton *)sender {
     self.imageView.animationImages = nil;

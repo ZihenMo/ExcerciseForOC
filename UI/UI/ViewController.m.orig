@@ -15,9 +15,6 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *uiArray;
 
-
-
-
 @end
 
 @implementation ViewController
@@ -41,7 +38,10 @@
     return self.uiArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0d75d1d3744b78b9ceaf1b2d8402e5d8a51bd852
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     cell.textLabel.text = self.uiArray[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
@@ -75,7 +75,11 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
+<<<<<<< HEAD
+        _uiArray = @[@"UIImageView"];
+=======
         _uiArray = @[@"UIImageView", @"UIButton"];
+>>>>>>> 0d75d1d3744b78b9ceaf1b2d8402e5d8a51bd852
     }
     return  _uiArray;
 }
