@@ -12,9 +12,15 @@
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 
+/*
+ * 多语言
+ */
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Language"]
+
 #import "UIColor+Tools.h"
 #import "MBProgressHUD.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #endif /* Header_h */
+

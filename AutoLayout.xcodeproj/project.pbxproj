@@ -101,7 +101,8 @@
 				38346BF92252FC63005DB04A /* UIViewController+Tools.h */,
 				38346BFA2252FC63005DB04A /* UIColor+Tools.m */,
 			);
-			path = Categories;
+			name = Categories;
+			path = Localizable/Localizable/Categories;
 			sourceTree = SOURCE_ROOT;
 		};
 		38A0F0C822505BA9003D881D = {

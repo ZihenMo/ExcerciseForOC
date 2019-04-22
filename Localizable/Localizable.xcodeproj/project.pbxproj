@@ -29,6 +29,24 @@
 		388FC80A226D8C8400390A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388FC80B226D8C8400390A15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		388FC812226D8DC400390A15 /* Localizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Localizable.h; sourceTree = "<group>"; };
+		388FC84C226D92A700390A15 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		388FC84D226D92A700390A15 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		388FC84E226D92A700390A15 /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		388FC84F226D92A700390A15 /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		388FC850226D92A700390A15 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		388FC851226D92A700390A15 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		388FC853226D92A700390A15 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		388FC854226D92A700390A15 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		388FC855226D92A700390A15 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		388FC856226D92A700390A15 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		388FC858226D92DC00390A15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		388FC859226D92DD00390A15 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3895EFEC226D93030083E0D7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3895EFED226D93030083E0D7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3895EFEE226D93100083E0D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		3895EFEF226D93100083E0D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3895EFF0226D93190083E0D7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		3895EFF1226D93190083E0D7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		682D49E52BD3B99A9D68100B /* Pods-Localizable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Localizable.debug.xcconfig"; path = "Target Support Files/Pods-Localizable/Pods-Localizable.debug.xcconfig"; sourceTree = "<group>"; };
 		95D0F9701CC6929D7B9EB156 /* libPods-Localizable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Localizable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +84,8 @@
 		388FC7FB226D8C8300390A15 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
+				388FC852226D92A700390A15 /* Base */,
+				388FC857226D92A700390A15 /* Categories */,
 				388FC7FC226D8C8300390A15 /* AppDelegate.h */,
 				388FC7FD226D8C8300390A15 /* AppDelegate.m */,
 				388FC7FF226D8C8300390A15 /* ViewController.h */,
@@ -78,6 +98,31 @@
 				388FC812226D8DC400390A15 /* Localizable.h */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		388FC852226D92A700390A15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				388FC84C226D92A700390A15 /* BaseButton.h */,
+				388FC84D226D92A700390A15 /* BaseButton.m */,
+				388FC84E226D92A700390A15 /* BaseLabel.h */,
+				388FC84F226D92A700390A15 /* BaseLabel.m */,
+				388FC850226D92A700390A15 /* BaseViewController.h */,
+				388FC851226D92A700390A15 /* BaseViewController.m */,
+			);
+			name = Base;
+			path = ../../Base;
+			sourceTree = "<group>";
+		};
+		388FC857226D92A700390A15 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				388FC853226D92A700390A15 /* UIViewController+Tools.m */,
+				388FC854226D92A700390A15 /* UIColor+Tools.h */,
+				388FC855226D92A700390A15 /* UIViewController+Tools.h */,
+				388FC856226D92A700390A15 /* UIColor+Tools.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		38D1069FD8F517419D15A9B3 /* Frameworks */ = {
@@ -141,6 +186,10 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				fr,
+				ko,
+				ja,
 			);
 			mainGroup = 388FC7F0226D8C8300390A15;
 			productRefGroup = 388FC7FA226D8C8300390A15 /* Products */;
@@ -230,6 +279,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				388FC803226D8C8300390A15 /* Base */,
+				388FC858226D92DC00390A15 /* zh-Hans */,
+				3895EFEC226D93030083E0D7 /* fr */,
+				3895EFEE226D93100083E0D7 /* ko */,
+				3895EFF0226D93190083E0D7 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -238,6 +291,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				388FC808226D8C8400390A15 /* Base */,
+				388FC859226D92DD00390A15 /* zh-Hans */,
+				3895EFED226D93030083E0D7 /* fr */,
+				3895EFEF226D93100083E0D7 /* ko */,
+				3895EFF1226D93190083E0D7 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -308,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

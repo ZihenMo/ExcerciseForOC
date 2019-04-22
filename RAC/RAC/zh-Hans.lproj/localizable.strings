@@ -1,0 +1,9 @@
+/* 
+  localizable.strings
+  Localizable
+
+  Created by gshopper on 2019/4/22.
+  Copyright © 2019 mozihen. All rights reserved.
+*/
+"paragraph"="这是一段文字";
+"calculator" = "计算器";

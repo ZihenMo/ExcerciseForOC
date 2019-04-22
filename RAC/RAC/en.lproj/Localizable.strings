@@ -6,5 +6,6 @@
   Copyright © 2019 mozihen. All rights reserved.
 */
 
+"paragraph"="this is a paragraph";
+"calculator" = "Calculator";
 
-"switch_language" = "SwitchLanguage";

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,7 +17,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.label.text = Localized(@"paragraph");
+}
+
+#pragma mark - Actions
+- (IBAction)switchLanguageAction:(UIButton*)sender {
+    switch (sender.tag) {
+        case 0:
+            // 英
+            break;
+
+        case 1:
+            // 中
+            break;
+        case 2:
+            // 日
+            break;
+        case 3:
+            // 韩
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
