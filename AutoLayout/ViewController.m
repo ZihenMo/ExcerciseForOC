@@ -13,7 +13,8 @@
 typedef NS_ENUM(NSInteger, SubjectType) {
     SubjectTypeIntrinsic,
     SubjectTypeCompressionResistance,
-    SubjectTypeContentHugging
+    SubjectTypeContentHugging,
+    SubjectTypeAutoresizing
 };
 
 @interface ViewController ()
@@ -67,6 +68,9 @@ typedef NS_ENUM(NSInteger, SubjectType) {
             break;
         case SubjectTypeContentHugging:
             [self addHuggingView];
+            break;
+        case SubjectTypeAutoresizing:
+            [self autoresizing];
             break;
         default:
             break;
@@ -235,7 +239,18 @@ typedef NS_ENUM(NSInteger, SubjectType) {
     }];
     [self.presentView removeFromSuperview];
 }
-
+#pragma mark - Autoresizing
+- (void)autoresizing {
+    // 大小100， 位置固定右下角 宽度成比例   横竖切换验证
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 150, self.view.bounds.size.height - 150, 100, 100)];
+    v1.backgroundColor = UIColor.randomColor;
+    [self.presentView addSubview:v1];
+//    self.presentView.translatesAutoresizingMaskIntoConstraints = YES;
+    self.presentView.autoresizesSubviews = YES;
+    v1.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
+    self.presentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    self.presentView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
+}
 # pragma mark - getter & setter
 - (UIStackView *)stackView {
     if (!_stackView) {
@@ -251,7 +266,7 @@ typedef NS_ENUM(NSInteger, SubjectType) {
 - (NSArray *)subjects {
     if (!_subjects) {
         _subjects = @[@"固有内容大小",@"压缩阻力",
-                      @"内容支撑"];
+                      @"内容支撑", @"autoresizing"];
     }
     return _subjects;
 }

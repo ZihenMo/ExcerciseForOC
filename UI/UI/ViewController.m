@@ -75,7 +75,7 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
-        _uiArray = @[@"UIImageView", @"UIButton"];
+        _uiArray = @[@"UIImageView", @"UIButton", @"UITableView"];
     }
     return  _uiArray;
 }
