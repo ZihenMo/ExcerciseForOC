@@ -43,10 +43,10 @@ platform :ios, '10.0'
   
 end
 
-target 'UI' do
+target 'Localizable' do
   platform :ios, '10.0'
   # Comment the next line if you don't want to use dynamic frameworks
-  project 'UI/UI.xcodeproj'
+  project 'Localizable/Localizable.xcodeproj'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'IQKeyboardManager'
   pod 'SDWebImage', '~> 4.0'

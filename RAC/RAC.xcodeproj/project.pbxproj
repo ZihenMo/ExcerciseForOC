@@ -19,8 +19,8 @@
 		38346BF12252FC44005DB04A /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BEC2252FC44005DB04A /* UIViewController+Tools.m */; };
 		38346BF22252FC44005DB04A /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BEF2252FC44005DB04A /* UIColor+Tools.m */; };
 		38346C0122530868005DB04A /* CaculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346C0022530868005DB04A /* CaculatorController.m */; };
+		3895F003226DA5190083E0D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3895F005226DA5190083E0D7 /* Localizable.strings */; };
 		389B9962225364C2005EDF4D /* LocalizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389B9961225364C2005EDF4D /* LocalizedViewController.m */; };
-		38FFA37522535377008E40C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38FFA37722535377008E40C5 /* Localizable.strings */; };
 		71660E6CA1C7FCC4E3945AB1 /* libPods-RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E2F1AD01B9870811825333 /* libPods-RAC.a */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +48,13 @@
 		38346BEF2252FC44005DB04A /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		38346BFF22530868005DB04A /* CaculatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorController.h; sourceTree = "<group>"; };
 		38346C0022530868005DB04A /* CaculatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorController.m; sourceTree = "<group>"; };
+		3895F004226DA5190083E0D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3895F007226DA5250083E0D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3895F008226DA5280083E0D7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3895F009226DA5410083E0D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		389B9960225364C2005EDF4D /* LocalizedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizedViewController.h; sourceTree = "<group>"; };
 		389B9961225364C2005EDF4D /* LocalizedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizedViewController.m; sourceTree = "<group>"; };
 		38FFA3722253533F008E40C5 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
-		38FFA37622535377008E40C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		38FFA37822535378008E40C5 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7BA7F33A2376DD32BDBE3BDC /* Pods-RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC.release.xcconfig"; path = "Target Support Files/Pods-RAC/Pods-RAC.release.xcconfig"; sourceTree = "<group>"; };
 		98E2F1AD01B9870811825333 /* libPods-RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF24900E31ED8D5B6EF35D /* Pods-RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC.debug.xcconfig"; path = "Target Support Files/Pods-RAC/Pods-RAC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		33A9472B2252728A00CE796D /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				3895F005226DA5190083E0D7 /* Localizable.strings */,
 				38346BFE22530846005DB04A /* Model */,
 				38346BE82252FC44005DB04A /* Base */,
 				38346BEB2252FC44005DB04A /* Categories */,
@@ -103,7 +106,6 @@
 				33A9473A2252728B00CE796D /* Info.plist */,
 				33A9473B2252728B00CE796D /* main.m */,
 				38346BDC2252F831005DB04A /* Header.h */,
-				38FFA37722535377008E40C5 /* Localizable.strings */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -208,6 +210,11 @@
 				en,
 				Base,
 				"zh-HK",
+				global,
+				"zh-Hans",
+				fr,
+				ko,
+				ja,
 			);
 			mainGroup = 33A947202252728A00CE796D;
 			productRefGroup = 33A9472A2252728A00CE796D /* Products */;
@@ -225,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A947362252728B00CE796D /* Assets.xcassets in Resources */,
-				38FFA37522535377008E40C5 /* Localizable.strings in Resources */,
+				3895F003226DA5190083E0D7 /* Localizable.strings in Resources */,
 				33A947342252728A00CE796D /* Main.storyboard in Resources */,
 				38346BD62252F768005DB04A /* Caculator.xib in Resources */,
 			);
@@ -305,11 +312,13 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		38FFA37722535377008E40C5 /* Localizable.strings */ = {
+		3895F005226DA5190083E0D7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38FFA37622535377008E40C5 /* en */,
-				38FFA37822535378008E40C5 /* zh-HK */,
+				3895F004226DA5190083E0D7 /* en */,
+				3895F007226DA5250083E0D7 /* ko */,
+				3895F008226DA5280083E0D7 /* ja */,
+				3895F009226DA5410083E0D7 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

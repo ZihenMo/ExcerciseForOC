@@ -2,11 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-<<<<<<< HEAD
-      location = "group:RecycleReference/RecycleReference.xcodeproj">
-=======
-      location = "group:UI/UI.xcodeproj">
->>>>>>> feature/UI
+      location = "group:Localizable/Localizable.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:AutoLayout.xcodeproj">

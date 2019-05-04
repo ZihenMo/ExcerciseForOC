@@ -18,7 +18,13 @@
 @end
 
 @implementation ViewController
+- (IBAction)switchLanguageAction:(UIButton *)sender {
+}
+- (IBAction)ssss:(id)sender {
+}
 
+- (IBAction)switchLanguage:(UIButton *)sender {
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
@@ -33,7 +39,8 @@
         make.width.height.equalTo(self.view).multipliedBy(0.618);
     }];
     // -- add menus --
-    NSArray *menus = @[@"计算器(手动实现链式)", @"切换本地化语言", @"局部变量RAC"];
+    NSString *t1 =  Localized(@"calculator");
+    NSArray *menus = @[t1, @"切换本地化语言", @"局部变量RAC"];
     [self addMenus: menus];
     [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
     

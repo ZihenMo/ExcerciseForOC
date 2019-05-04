@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  RAC
+//  Localizable
 //
-//  Created by mozihen on 2019/4/2.
+//  Created by gshopper on 2019/4/22.
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
@@ -17,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[NSUserDefaults standardUserDefaults] setValue:@"zh-Hans" forKey:@"appLanguage"];
-
     return YES;
 }
 
