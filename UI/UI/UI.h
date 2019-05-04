@@ -16,5 +16,6 @@
 #import "MBProgressHUD.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <UIImageView+WebCache.h>
 
 #endif /* Header_h */

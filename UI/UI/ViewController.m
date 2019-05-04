@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ImageViewController.h"
 #import "ButtonViewController.h"
+#import "TableViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -55,6 +56,8 @@
             break;
         case 1:
             nextController = [[ButtonViewController alloc] init];
+        case 2:
+            nextController = [[TableViewController alloc] init];
         default:
             break;
     }

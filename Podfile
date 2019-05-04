@@ -59,3 +59,30 @@ target 'Localizable' do
   # Pods for AutoLayout
   
 end
+
+
+target 'UI' do
+  platform :ios, '10.0'
+  project 'UI/UI.xcodeproj'
+
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Masonry'
+  # 友盟 移动统计
+  pod 'UMCCommon'
+  pod 'UMCCommonLog'
+  pod 'UMCAnalytics'
+  pod 'UMCSecurityPlugins'
+  # logger
+  pod 'CocoaLumberjack'
+  pod 'ReactiveObjC', '~> 3.1.0'
+  # Network
+  pod 'AFNetworking', '~> 3.2.1'
+  # JSON
+  pod 'MJExtension'
+
+  
+end

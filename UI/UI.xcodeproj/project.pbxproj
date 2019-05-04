@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B6836B7AD74D6D57F4CFD61 /* libPods-UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF79F1DEB7940EA349232C9 /* libPods-UI.a */; };
 		330196E12266399D00EA9903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 330196E02266399D00EA9903 /* AppDelegate.m */; };
 		330196E42266399D00EA9903 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330196E32266399D00EA9903 /* ViewController.m */; };
 		330196E72266399D00EA9903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330196E52266399D00EA9903 /* Main.storyboard */; };
@@ -279,12 +278,18 @@
 		337F335B226C6819009EA22F /* NibLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335A226C6819009EA22F /* NibLoadView.xib */; };
 		337F3360226CCD22009EA22F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F335E226CCD22009EA22F /* TableViewController.m */; };
 		337F3361226CCD22009EA22F /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335F226CCD22009EA22F /* TableViewController.xib */; };
+		33B011A8227DA82D00410EB7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011A7227DA82D00410EB7 /* Person.m */; };
+		33B011AD227DB63A00410EB7 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011AB227DB63A00410EB7 /* NSArray+Tool.m */; };
+		33B011AE227DB63A00410EB7 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */; };
+		33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011B1227DD2A300410EB7 /* PersonCell.m */; };
+		33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B011B2227DD2A300410EB7 /* PersonCell.xib */; };
+		33BFB296227DA29B00B998BC /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB295227DA29B00B998BC /* Request.m */; };
 		38B9F722226815C800121900 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F720226815C800121900 /* ButtonViewController.m */; };
 		38B9F723226815C800121900 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B9F721226815C800121900 /* ButtonViewController.xib */; };
+		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BF79F1DEB7940EA349232C9 /* libPods-UI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D58F1328AA71670C811C4B6 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
 		330196DC2266399D00EA9903 /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330196DF2266399D00EA9903 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -570,9 +575,21 @@
 		337F335D226CCD22009EA22F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		337F335E226CCD22009EA22F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		337F335F226CCD22009EA22F /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		33B011A6227DA82D00410EB7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		33B011A7227DA82D00410EB7 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		33B011A9227DB63A00410EB7 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		33B011AA227DB63A00410EB7 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		33B011AB227DB63A00410EB7 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		33B011B0227DD2A300410EB7 /* PersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		33B011B1227DD2A300410EB7 /* PersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		38B9F71F226815C800121900 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		38B9F720226815C800121900 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		38B9F721226815C800121900 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
+		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -581,7 +598,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B6836B7AD74D6D57F4CFD61 /* libPods-UI.a in Frameworks */,
+				A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,9 +627,10 @@
 		330196DE2266399D00EA9903 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				33AB6C36227DA2140084E845 /* Request */,
 				3301991B226647B300EA9903 /* Base */,
 				33019922226647B400EA9903 /* Categories */,
-				33019911226647B300EA9903 /* Model */,
+				33019911226647B300EA9903 /* Models */,
 				330196DF2266399D00EA9903 /* AppDelegate.h */,
 				330196E02266399D00EA9903 /* AppDelegate.m */,
 				330196E22266399D00EA9903 /* ViewController.h */,
@@ -968,9 +986,10 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
-		33019911226647B300EA9903 /* Model */ = {
+		33019911226647B300EA9903 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				33B011A4227DA7FC00410EB7 /* TableView */,
 				337F3356226C67FE009EA22F /* views */,
 				33019912226647B300EA9903 /* ImageViewController.m */,
 				33019913226647B300EA9903 /* ImageViewController.xib */,
@@ -978,11 +997,8 @@
 				38B9F71F226815C800121900 /* ButtonViewController.h */,
 				38B9F720226815C800121900 /* ButtonViewController.m */,
 				38B9F721226815C800121900 /* ButtonViewController.xib */,
-				337F335D226CCD22009EA22F /* TableViewController.h */,
-				337F335E226CCD22009EA22F /* TableViewController.m */,
-				337F335F226CCD22009EA22F /* TableViewController.xib */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3301991B226647B300EA9903 /* Base */ = {
@@ -1001,6 +1017,10 @@
 		33019922226647B400EA9903 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				33B011AA227DB63A00410EB7 /* NSArray+Tool.h */,
+				33B011AB227DB63A00410EB7 /* NSArray+Tool.m */,
+				33B011A9227DB63A00410EB7 /* NSDictionary+Tool.h */,
+				33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */,
 				33019923226647B400EA9903 /* UIViewController+Tools.m */,
 				33019924226647B400EA9903 /* UIColor+Tools.h */,
 				33019925226647B400EA9903 /* UIViewController+Tools.h */,
@@ -1019,6 +1039,46 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		33AB6C36227DA2140084E845 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				33BFB294227DA29B00B998BC /* Request.h */,
+				33BFB295227DA29B00B998BC /* Request.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		33B011A4227DA7FC00410EB7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				33B011AF227DD28400410EB7 /* Views */,
+				33B011A5227DA81F00410EB7 /* Model */,
+				337F335D226CCD22009EA22F /* TableViewController.h */,
+				337F335E226CCD22009EA22F /* TableViewController.m */,
+				337F335F226CCD22009EA22F /* TableViewController.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		33B011A5227DA81F00410EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33B011A6227DA82D00410EB7 /* Person.h */,
+				33B011A7227DA82D00410EB7 /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B011AF227DD28400410EB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33B011B0227DD2A300410EB7 /* PersonCell.h */,
+				33B011B1227DD2A300410EB7 /* PersonCell.m */,
+				33B011B2227DD2A300410EB7 /* PersonCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8AA88266CF47F5C2AD1441B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1032,7 +1092,7 @@
 		FFA2C8D686B014544B09193E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2BF79F1DEB7940EA349232C9 /* libPods-UI.a */,
+				461757DCDE3924451FA6157F /* Pods_UI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1049,6 +1109,7 @@
 				330196D92266399D00EA9903 /* Frameworks */,
 				330196DA2266399D00EA9903 /* Resources */,
 				BEDC2FF6715763A21FE5B245 /* [CP] Copy Pods Resources */,
+				5ED0E26F1DADF697CBC3E7AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1118,6 +1179,7 @@
 				330198982266419700EA9903 /* xiaozhao2_3.png in Resources */,
 				330198632266419700EA9903 /* xiaozhao3_18.png in Resources */,
 				3301981D2266419700EA9903 /* install_b_25.png in Resources */,
+				33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */,
 				330198602266419700EA9903 /* xiaozhao3_9.png in Resources */,
 				330198E32266419700EA9903 /* dazhao_75.png in Resources */,
 				330198062266419700EA9903 /* dead_10.png in Resources */,
@@ -1363,6 +1425,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5ED0E26F1DADF697CBC3E7AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		76B3D44CF4DD51FDF94810AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1411,15 +1490,20 @@
 			files = (
 				33019927226647B400EA9903 /* ImageViewController.m in Sources */,
 				3301992E226647B400EA9903 /* BaseLabel.m in Sources */,
+				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
 				3301992F226647B400EA9903 /* UIViewController+Tools.m in Sources */,
 				3301992C226647B400EA9903 /* BaseViewController.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
+				33B011AD227DB63A00410EB7 /* NSArray+Tool.m in Sources */,
 				330196EF2266399E00EA9903 /* main.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
+				33BFB296227DA29B00B998BC /* Request.m in Sources */,
 				337F3359226C6810009EA22F /* NibLoadView.m in Sources */,
 				3301992D226647B400EA9903 /* BaseButton.m in Sources */,
 				38B9F722226815C800121900 /* ButtonViewController.m in Sources */,
+				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
+				33B011AE227DB63A00410EB7 /* NSDictionary+Tool.m in Sources */,
 				33019930226647B400EA9903 /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
