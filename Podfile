@@ -42,10 +42,11 @@ platform :ios, '10.0'
   # Pods for AutoLayout
   
 end
-target 'RecycleReference' do
-platform :ios, '10.0'
+
+target 'UI' do
+  platform :ios, '10.0'
   # Comment the next line if you don't want to use dynamic frameworks
-  project 'RecycleReference/RecycleReference.xcodeproj'
+  project 'UI/UI.xcodeproj'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'IQKeyboardManager'
   pod 'SDWebImage', '~> 4.0'
@@ -53,4 +54,8 @@ platform :ios, '10.0'
   # logger
   pod 'CocoaLumberjack'
   pod 'ReactiveObjC', '~> 3.1.0'
+  
+  
+  # Pods for AutoLayout
+  
 end

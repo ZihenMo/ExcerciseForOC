@@ -13,7 +13,8 @@
 typedef NS_ENUM(NSInteger, SubjectType) {
     SubjectTypeIntrinsic,
     SubjectTypeCompressionResistance,
-    SubjectTypeContentHugging
+    SubjectTypeContentHugging,
+    SubjectTypeAutoresizing
 };
 
 @interface ViewController ()
@@ -64,6 +65,13 @@ typedef NS_ENUM(NSInteger, SubjectType) {
             break;
         case SubjectTypeCompressionResistance:
             [self addCompressionResistanceLayoutView];
+            break;
+        case SubjectTypeContentHugging:
+            [self addHuggingView];
+            break;
+        case SubjectTypeAutoresizing:
+            [self autoresizing];
+            break;
         default:
             break;
     }
@@ -183,6 +191,34 @@ typedef NS_ENUM(NSInteger, SubjectType) {
     [uncompressBtn setContentCompressionResistancePriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
 }
 
+#pragma mark - 内容吸附
+- (void)addHuggingView {
+    BaseButton *normalBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    BaseButton *lowBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    BaseButton *highBtn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    [normalBtn setTitle:@"一般优先级" forState:UIControlStateNormal];
+    [lowBtn setTitle:@"内容少，优先级低" forState:UIControlStateNormal];
+    [highBtn setTitle:@"内容少，优先级高" forState:UIControlStateNormal];
+    [self.presentView addSubview:normalBtn];
+    [self.presentView addSubview:lowBtn];
+    [self.presentView addSubview:highBtn];
+    [lowBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView).offset(CGPointMake(0, -100));
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [normalBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView);
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [highBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.presentView).offset(CGPointMake(0, 100));
+        make.size.equalTo(CGSizeMake(300, 44)).priority(MASLayoutPriorityDefaultMedium);
+    }];
+    [lowBtn setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
+    [normalBtn setContentHuggingPriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
+    [highBtn setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+}
+
 #pragma mark - 显示与移除布局视图
 - (void)showPresentView {
     [self.view addSubview:self.presentView];
@@ -203,7 +239,18 @@ typedef NS_ENUM(NSInteger, SubjectType) {
     }];
     [self.presentView removeFromSuperview];
 }
-
+#pragma mark - Autoresizing
+- (void)autoresizing {
+    // 大小100， 位置固定右下角 宽度成比例   横竖切换验证
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 150, self.view.bounds.size.height - 150, 100, 100)];
+    v1.backgroundColor = UIColor.randomColor;
+    [self.presentView addSubview:v1];
+//    self.presentView.translatesAutoresizingMaskIntoConstraints = YES;
+    self.presentView.autoresizesSubviews = YES;
+    v1.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
+    self.presentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    self.presentView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
+}
 # pragma mark - getter & setter
 - (UIStackView *)stackView {
     if (!_stackView) {
@@ -219,7 +266,7 @@ typedef NS_ENUM(NSInteger, SubjectType) {
 - (NSArray *)subjects {
     if (!_subjects) {
         _subjects = @[@"固有内容大小",@"压缩阻力",
-                      @"内容支撑"];
+                      @"内容支撑", @"autoresizing"];
     }
     return _subjects;
 }
