@@ -5,5 +5,5 @@ ${BUILT_PRODUCTS_DIR}/MBProgressHUD-framework/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveObjC-framework/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework
-${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
-${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
+${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/MJExtension-framework/MJExtension.framework

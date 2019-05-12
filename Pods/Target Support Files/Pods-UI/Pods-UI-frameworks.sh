@@ -167,8 +167,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-framework/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension-framework/MJExtension.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack-framework/CocoaLumberjack.framework"
@@ -177,8 +177,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-framework/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension-framework/MJExtension.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

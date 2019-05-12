@@ -43,10 +43,10 @@ platform :ios, '10.0'
   
 end
 
-target 'Localizable' do
+target 'NetAndThread' do
   platform :ios, '10.0'
   # Comment the next line if you don't want to use dynamic frameworks
-  project 'Localizable/Localizable.xcodeproj'
+  project 'NetAndThread/NetAndThread.xcodeproj'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'IQKeyboardManager'
   pod 'SDWebImage', '~> 4.0'
@@ -54,9 +54,10 @@ target 'Localizable' do
   # logger
   pod 'CocoaLumberjack'
   pod 'ReactiveObjC', '~> 3.1.0'
-  
-  
-  # Pods for AutoLayout
+  # Network
+  pod 'AFNetworking', '~> 3.2.1'
+  # JSON
+  pod 'MJExtension'
   
 end
 

@@ -998,7 +998,8 @@
 				33019920226647B300EA9903 /* BaseViewController.h */,
 				33019921226647B300EA9903 /* BaseLabel.m */,
 			);
-			path = Base;
+			name = Base;
+			path = ../../NetAndThread/NetAndThread/Base;
 			sourceTree = "<group>";
 		};
 		33019922226647B400EA9903 /* Categories */ = {
