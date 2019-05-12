@@ -47,7 +47,6 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="xFq-LM-n4s" firstAttribute="leading" secondItem="2im-Xn-KUS" secondAttribute="leading" id="3l3-3g-kke"/>
-                    <constraint firstItem="0U2-hV-uKB" firstAttribute="top" secondItem="nWF-gu-YdV" secondAttribute="bottom" constant="20" id="GXO-Np-lqU"/>
                     <constraint firstItem="nWF-gu-YdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="aZO-2A-eNn"/>
                     <constraint firstAttribute="bottom" secondItem="0U2-hV-uKB" secondAttribute="bottom" constant="20" id="b3u-Q9-B7u"/>
                     <constraint firstItem="2im-Xn-KUS" firstAttribute="top" secondItem="nWF-gu-YdV" secondAttribute="top" id="b5E-nP-bjf"/>
@@ -56,6 +55,7 @@
                     <constraint firstItem="2im-Xn-KUS" firstAttribute="leading" secondItem="nWF-gu-YdV" secondAttribute="trailing" constant="25" id="m1T-6i-3yV"/>
                     <constraint firstItem="xFq-LM-n4s" firstAttribute="top" secondItem="2im-Xn-KUS" secondAttribute="bottom" constant="20" id="mPD-XT-Yy1"/>
                     <constraint firstItem="0U2-hV-uKB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pdk-B1-Qsf"/>
+                    <constraint firstItem="0U2-hV-uKB" firstAttribute="top" secondItem="nWF-gu-YdV" secondAttribute="bottom" constant="20" id="vcB-EY-kVR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>

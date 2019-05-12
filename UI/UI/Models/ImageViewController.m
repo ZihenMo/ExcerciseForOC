@@ -29,18 +29,8 @@
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self standAction];
     [self test];
-    [self loadNib];
 }
 #pragma mark - Actions
-
-/**
- 加载Nib对象测试其frame
- */
-- (void)loadNib {
-    UIView *view = [[[UINib nibWithNibName:@"NibLoadView" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
-    NSLog(@"%s -- %@", __PRETTY_FUNCTION__, NSStringFromCGRect(view.frame));
-    [self.view addSubview:view];
-}
 /**
  测试内在内容与frame关系
  */
@@ -67,8 +57,6 @@
     self.imageView.image = image;
     
 }
-
-
  #pragma mark - 播放动画
 - (IBAction)playSkillAction:(UIButton *)sender {
     switch (sender.tag) {

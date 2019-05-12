@@ -5,9 +5,6 @@
       location = "group:UI/UI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Localizable/Localizable.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AutoLayout.xcodeproj">
    </FileRef>
    <FileRef

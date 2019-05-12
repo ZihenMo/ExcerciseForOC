@@ -274,8 +274,6 @@
 		3301992E226647B400EA9903 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019921226647B300EA9903 /* BaseLabel.m */; };
 		3301992F226647B400EA9903 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019923226647B400EA9903 /* UIViewController+Tools.m */; };
 		33019930226647B400EA9903 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019926226647B400EA9903 /* UIColor+Tools.m */; };
-		337F3359226C6810009EA22F /* NibLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F3358226C6810009EA22F /* NibLoadView.m */; };
-		337F335B226C6819009EA22F /* NibLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335A226C6819009EA22F /* NibLoadView.xib */; };
 		337F3360226CCD22009EA22F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F335E226CCD22009EA22F /* TableViewController.m */; };
 		337F3361226CCD22009EA22F /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335F226CCD22009EA22F /* TableViewController.xib */; };
 		33B011A8227DA82D00410EB7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011A7227DA82D00410EB7 /* Person.m */; };
@@ -284,8 +282,6 @@
 		33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011B1227DD2A300410EB7 /* PersonCell.m */; };
 		33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B011B2227DD2A300410EB7 /* PersonCell.xib */; };
 		33BFB296227DA29B00B998BC /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB295227DA29B00B998BC /* Request.m */; };
-		38B9F722226815C800121900 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F720226815C800121900 /* ButtonViewController.m */; };
-		38B9F723226815C800121900 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B9F721226815C800121900 /* ButtonViewController.xib */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -569,9 +565,6 @@
 		33019924226647B400EA9903 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
 		33019925226647B400EA9903 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
 		33019926226647B400EA9903 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
-		337F3357226C6810009EA22F /* NibLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibLoadView.h; sourceTree = "<group>"; };
-		337F3358226C6810009EA22F /* NibLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibLoadView.m; sourceTree = "<group>"; };
-		337F335A226C6819009EA22F /* NibLoadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibLoadView.xib; sourceTree = "<group>"; };
 		337F335D226CCD22009EA22F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		337F335E226CCD22009EA22F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		337F335F226CCD22009EA22F /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -586,9 +579,6 @@
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
-		38B9F71F226815C800121900 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
-		38B9F720226815C800121900 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
-		38B9F721226815C800121900 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -994,9 +984,6 @@
 				33019912226647B300EA9903 /* ImageViewController.m */,
 				33019913226647B300EA9903 /* ImageViewController.xib */,
 				33019914226647B300EA9903 /* ImageViewController.h */,
-				38B9F71F226815C800121900 /* ButtonViewController.h */,
-				38B9F720226815C800121900 /* ButtonViewController.m */,
-				38B9F721226815C800121900 /* ButtonViewController.xib */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1032,9 +1019,6 @@
 		337F3356226C67FE009EA22F /* views */ = {
 			isa = PBXGroup;
 			children = (
-				337F3357226C6810009EA22F /* NibLoadView.h */,
-				337F3358226C6810009EA22F /* NibLoadView.m */,
-				337F335A226C6819009EA22F /* NibLoadView.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1306,7 +1290,6 @@
 				3301983D2266419700EA9903 /* stand_2.png in Resources */,
 				330198402266419700EA9903 /* xiaozhao1_19.png in Resources */,
 				330198772266419700EA9903 /* xiaozhao3_39.png in Resources */,
-				38B9F723226815C800121900 /* ButtonViewController.xib in Resources */,
 				330196E72266399D00EA9903 /* Main.storyboard in Resources */,
 				330198BC2266419700EA9903 /* dazhao_85.png in Resources */,
 				3301982B2266419700EA9903 /* install_b_16.png in Resources */,
@@ -1346,7 +1329,6 @@
 				330198162266419700EA9903 /* dead_2.png in Resources */,
 				330198622266419700EA9903 /* xiaozhao3_24.png in Resources */,
 				330198182266419700EA9903 /* install_b_23.png in Resources */,
-				337F335B226C6819009EA22F /* NibLoadView.xib in Resources */,
 				3301982C2266419700EA9903 /* install_b_17.png in Resources */,
 				330198242266419700EA9903 /* install_b_4.png in Resources */,
 				330198822266419700EA9903 /* xiaozhao2_10.png in Resources */,
@@ -1499,9 +1481,7 @@
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
 				33BFB296227DA29B00B998BC /* Request.m in Sources */,
-				337F3359226C6810009EA22F /* NibLoadView.m in Sources */,
 				3301992D226647B400EA9903 /* BaseButton.m in Sources */,
-				38B9F722226815C800121900 /* ButtonViewController.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
 				33B011AE227DB63A00410EB7 /* NSDictionary+Tool.m in Sources */,
 				33019930226647B400EA9903 /* UIColor+Tools.m in Sources */,

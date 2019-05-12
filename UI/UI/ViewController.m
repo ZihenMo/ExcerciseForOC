@@ -8,17 +8,11 @@
 
 #import "ViewController.h"
 #import "ImageViewController.h"
-#import "ButtonViewController.h"
 #import "TableViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *uiArray;
-
-
-
-
 @end
 
 @implementation ViewController
@@ -55,13 +49,12 @@
             nextController = [[ImageViewController alloc] init];
             break;
         case 1:
-            nextController = [[ButtonViewController alloc] init];
-        case 2:
             nextController = [[TableViewController alloc] init];
+        case 2:
         default:
             break;
     }
-    [self presentViewController:nextController animated:YES completion:nil];
+    [self.navigationController pushViewController:nextController animated:YES];
 }
 
 #pragma mark - Getter
@@ -78,7 +71,7 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
-        _uiArray = @[@"UIImageView", @"UIButton", @"UITableView"];
+        _uiArray = @[@"UIImageView", @"UITableView"];
     }
     return  _uiArray;
 }
