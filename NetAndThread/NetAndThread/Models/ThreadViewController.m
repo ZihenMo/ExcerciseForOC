@@ -32,6 +32,9 @@ void *task (void *name) {
     if (sender.tag == 1) {
         [self createPthread];
     }
+    else {
+        [self createThread];
+    }
 }
 - (IBAction)switchAction:(UIButton *)sender {
 }
@@ -50,7 +53,27 @@ void *task (void *name) {
     //  函数参数
     pthread_create(&thread, NULL, task, (__bridge void *)(name));
 }
+#pragma mark - NSThread
+- (void)createThread {
+    // 1.1 创建并启动任务 block形式
+    [NSThread detachNewThreadWithBlock:^{
+        NSLog(@"当前线程:%@", [NSThread currentThread]);
+        NSLog(@"---block task---");
+    }];
+    // 1.2 创建并启动任务 方法形式
+    [NSThread detachNewThreadSelector:@selector(task) toTarget:self withObject:nil];
+//    [NSThread mainThread];
+    
+}
 
+#pragma mark - Task
+- (void)task {
+    for (NSInteger i = 0; i < MAXFLOAT; ++i) {
+        if (i % 100000000 == 0) {
+            NSLog(@"%s", __func__);
+        }
+    }
+}
 @end
 
 
