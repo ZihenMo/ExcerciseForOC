@@ -269,19 +269,28 @@
 		330198FE2266419700EA9903 /* dazhao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 330198002266419700EA9903 /* dazhao.mp3 */; };
 		33019927226647B400EA9903 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019912226647B300EA9903 /* ImageViewController.m */; };
 		33019928226647B400EA9903 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33019913226647B300EA9903 /* ImageViewController.xib */; };
-		3301992C226647B400EA9903 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301991D226647B300EA9903 /* BaseViewController.m */; };
-		3301992D226647B400EA9903 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301991F226647B300EA9903 /* BaseButton.m */; };
-		3301992E226647B400EA9903 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019921226647B300EA9903 /* BaseLabel.m */; };
-		3301992F226647B400EA9903 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019923226647B400EA9903 /* UIViewController+Tools.m */; };
-		33019930226647B400EA9903 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019926226647B400EA9903 /* UIColor+Tools.m */; };
 		337F3360226CCD22009EA22F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F335E226CCD22009EA22F /* TableViewController.m */; };
 		337F3361226CCD22009EA22F /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335F226CCD22009EA22F /* TableViewController.xib */; };
 		33B011A8227DA82D00410EB7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011A7227DA82D00410EB7 /* Person.m */; };
-		33B011AD227DB63A00410EB7 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011AB227DB63A00410EB7 /* NSArray+Tool.m */; };
-		33B011AE227DB63A00410EB7 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */; };
 		33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011B1227DD2A300410EB7 /* PersonCell.m */; };
 		33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B011B2227DD2A300410EB7 /* PersonCell.xib */; };
 		33BFB296227DA29B00B998BC /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB295227DA29B00B998BC /* Request.m */; };
+		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
+		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
+		382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */; };
+		382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */; };
+		3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */; };
+		3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */; };
+		3876D5DC228A9CBF00A6A3B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */; };
+		3876D5DD228A9CBF00A6A3B3 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */; };
+		3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */; };
+		3876D5DF228A9CBF00A6A3B3 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */; };
+		3876D5E0228A9CBF00A6A3B3 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */; };
+		3876D5E1228A9CBF00A6A3B3 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */; };
+		3876D5E2228A9CBF00A6A3B3 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */; };
+		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
+		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
+		3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /* BGView.m */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -555,30 +564,52 @@
 		33019912226647B300EA9903 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		33019913226647B300EA9903 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		33019914226647B300EA9903 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		3301991C226647B300EA9903 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		3301991D226647B300EA9903 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		3301991E226647B300EA9903 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		3301991F226647B300EA9903 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		33019920226647B300EA9903 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		33019921226647B300EA9903 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		33019923226647B400EA9903 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
-		33019924226647B400EA9903 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
-		33019925226647B400EA9903 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
-		33019926226647B400EA9903 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		337F335D226CCD22009EA22F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		337F335E226CCD22009EA22F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		337F335F226CCD22009EA22F /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		33B011A6227DA82D00410EB7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		33B011A7227DA82D00410EB7 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		33B011A9227DB63A00410EB7 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
-		33B011AA227DB63A00410EB7 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
-		33B011AB227DB63A00410EB7 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
-		33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
 		33B011B0227DD2A300410EB7 /* PersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
 		33B011B1227DD2A300410EB7 /* PersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
+		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
+		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
+		382F2C3D228BF9D100CEC190 /* LocalDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataTableViewController.h; sourceTree = "<group>"; };
+		382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataTableViewController.m; sourceTree = "<group>"; };
+		382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalDataTableViewController.xib; sourceTree = "<group>"; };
+		3876D59F228A8FA700A6A3B3 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
+		3876D5A4228A903700A6A3B3 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3876D5A5228A903700A6A3B3 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3876D5A6228A903700A6A3B3 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3876D5A7228A903700A6A3B3 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3876D5A8228A903700A6A3B3 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3876D5A9228A903700A6A3B3 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3876D5AA228A903700A6A3B3 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3876D5AB228A903700A6A3B3 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3876D5CD228A9CBF00A6A3B3 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3876D5CF228A9CBF00A6A3B3 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		3876D5D1228A9CBF00A6A3B3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3876D5D5228A9CBF00A6A3B3 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3876D5D6228A9CBF00A6A3B3 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3876D5D7228A9CBF00A6A3B3 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3876D5D8228A9CBF00A6A3B3 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3876D5E5228AA0BF00A6A3B3 /* CGDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawViewController.h; sourceTree = "<group>"; };
+		3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDrawViewController.m; sourceTree = "<group>"; };
+		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
+		3876D5EB228AA43B00A6A3B3 /* BGView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
+		3876D5EC228AA43B00A6A3B3 /* BGView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -617,9 +648,10 @@
 		330196DE2266399D00EA9903 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3876D5CC228A9CBF00A6A3B3 /* Base */,
+				3876D5D3228A9CBF00A6A3B3 /* Categories */,
 				33AB6C36227DA2140084E845 /* Request */,
-				3301991B226647B300EA9903 /* Base */,
-				33019922226647B400EA9903 /* Categories */,
+				3876D5AC228A903700A6A3B3 /* Categories */,
 				33019911226647B300EA9903 /* Models */,
 				330196DF2266399D00EA9903 /* AppDelegate.h */,
 				330196E02266399D00EA9903 /* AppDelegate.m */,
@@ -979,49 +1011,13 @@
 		33019911226647B300EA9903 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3804F4AD228D09FA005B29FE /* NavigationItem */,
+				3876D5E4228AA05F00A6A3B3 /* CoreGraphic */,
+				3876D59E228A8F7E00A6A3B3 /* Button */,
 				33B011A4227DA7FC00410EB7 /* TableView */,
-				337F3356226C67FE009EA22F /* views */,
-				33019912226647B300EA9903 /* ImageViewController.m */,
-				33019913226647B300EA9903 /* ImageViewController.xib */,
-				33019914226647B300EA9903 /* ImageViewController.h */,
+				3876D5E3228AA01F00A6A3B3 /* ImageView */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		3301991B226647B300EA9903 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				3301991C226647B300EA9903 /* BaseButton.h */,
-				3301991D226647B300EA9903 /* BaseViewController.m */,
-				3301991E226647B300EA9903 /* BaseLabel.h */,
-				3301991F226647B300EA9903 /* BaseButton.m */,
-				33019920226647B300EA9903 /* BaseViewController.h */,
-				33019921226647B300EA9903 /* BaseLabel.m */,
-			);
-			name = Base;
-			path = ../../NetAndThread/NetAndThread/Base;
-			sourceTree = "<group>";
-		};
-		33019922226647B400EA9903 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				33B011AA227DB63A00410EB7 /* NSArray+Tool.h */,
-				33B011AB227DB63A00410EB7 /* NSArray+Tool.m */,
-				33B011A9227DB63A00410EB7 /* NSDictionary+Tool.h */,
-				33B011AC227DB63A00410EB7 /* NSDictionary+Tool.m */,
-				33019923226647B400EA9903 /* UIViewController+Tools.m */,
-				33019924226647B400EA9903 /* UIColor+Tools.h */,
-				33019925226647B400EA9903 /* UIViewController+Tools.h */,
-				33019926226647B400EA9903 /* UIColor+Tools.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		337F3356226C67FE009EA22F /* views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		33AB6C36227DA2140084E845 /* Request */ = {
@@ -1041,6 +1037,9 @@
 				337F335D226CCD22009EA22F /* TableViewController.h */,
 				337F335E226CCD22009EA22F /* TableViewController.m */,
 				337F335F226CCD22009EA22F /* TableViewController.xib */,
+				382F2C3D228BF9D100CEC190 /* LocalDataTableViewController.h */,
+				382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */,
+				382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -1060,6 +1059,101 @@
 				33B011B0227DD2A300410EB7 /* PersonCell.h */,
 				33B011B1227DD2A300410EB7 /* PersonCell.m */,
 				33B011B2227DD2A300410EB7 /* PersonCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3804F4AD228D09FA005B29FE /* NavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				3804F4AE228D0A1A005B29FE /* NavigationItemController.h */,
+				3804F4AF228D0A1A005B29FE /* NavigationItemController.m */,
+				3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */,
+			);
+			path = NavigationItem;
+			sourceTree = "<group>";
+		};
+		3876D59E228A8F7E00A6A3B3 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3876D59F228A8FA700A6A3B3 /* ButtonViewController.h */,
+				3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */,
+				3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		3876D5AC228A903700A6A3B3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3876D5A4228A903700A6A3B3 /* UIViewController+Tools.m */,
+				3876D5A5228A903700A6A3B3 /* NSArray+Tool.h */,
+				3876D5A6228A903700A6A3B3 /* NSDictionary+Tool.h */,
+				3876D5A7228A903700A6A3B3 /* UIColor+Tools.h */,
+				3876D5A8228A903700A6A3B3 /* UIViewController+Tools.h */,
+				3876D5A9228A903700A6A3B3 /* NSArray+Tool.m */,
+				3876D5AA228A903700A6A3B3 /* NSDictionary+Tool.m */,
+				3876D5AB228A903700A6A3B3 /* UIColor+Tools.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3876D5CC228A9CBF00A6A3B3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3876D5CD228A9CBF00A6A3B3 /* BaseButton.h */,
+				3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */,
+				3876D5CF228A9CBF00A6A3B3 /* BaseLabel.h */,
+				3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */,
+				3876D5D1228A9CBF00A6A3B3 /* BaseViewController.h */,
+				3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */,
+			);
+			name = Base;
+			path = ../../common/Base;
+			sourceTree = "<group>";
+		};
+		3876D5D3228A9CBF00A6A3B3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */,
+				3876D5D5228A9CBF00A6A3B3 /* NSArray+Tool.h */,
+				3876D5D6228A9CBF00A6A3B3 /* NSDictionary+Tool.h */,
+				3876D5D7228A9CBF00A6A3B3 /* UIColor+Tools.h */,
+				3876D5D8228A9CBF00A6A3B3 /* UIViewController+Tools.h */,
+				3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */,
+				3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */,
+				3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */,
+			);
+			name = Categories;
+			path = ../../common/Categories;
+			sourceTree = "<group>";
+		};
+		3876D5E3228AA01F00A6A3B3 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				33019912226647B300EA9903 /* ImageViewController.m */,
+				33019913226647B300EA9903 /* ImageViewController.xib */,
+				33019914226647B300EA9903 /* ImageViewController.h */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		3876D5E4228AA05F00A6A3B3 /* CoreGraphic */ = {
+			isa = PBXGroup;
+			children = (
+				3876D5EA228AA40C00A6A3B3 /* Views */,
+				3876D5E5228AA0BF00A6A3B3 /* CGDrawViewController.h */,
+				3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */,
+				3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */,
+			);
+			path = CoreGraphic;
+			sourceTree = "<group>";
+		};
+		3876D5EA228AA40C00A6A3B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3876D5EB228AA43B00A6A3B3 /* BGView.h */,
+				3876D5EC228AA43B00A6A3B3 /* BGView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1157,6 +1251,7 @@
 				3301986B2266419700EA9903 /* xiaozhao3_15.png in Resources */,
 				3301980D2266419700EA9903 /* dead_23.png in Resources */,
 				330198292266419700EA9903 /* install_b_8.png in Resources */,
+				3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */,
 				330198A72266419700EA9903 /* dazhao_40.png in Resources */,
 				330198AA2266419700EA9903 /* dazhao_7.png in Resources */,
 				330198A22266419700EA9903 /* dazhao_5.png in Resources */,
@@ -1229,6 +1324,7 @@
 				3301985C2266419700EA9903 /* xiaozhao3_27.png in Resources */,
 				330198792266419700EA9903 /* xiaozhao3_10.png in Resources */,
 				330198BF2266419700EA9903 /* dazhao_53.png in Resources */,
+				3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */,
 				330198C72266419700EA9903 /* dazhao_22.png in Resources */,
 				330198ED2266419700EA9903 /* dazhao_71.png in Resources */,
 				330198B62266419700EA9903 /* dazhao_87.png in Resources */,
@@ -1256,6 +1352,7 @@
 				330198542266419700EA9903 /* xiaozhao3_35.png in Resources */,
 				330198112266419700EA9903 /* dead_20.png in Resources */,
 				3301984A2266419700EA9903 /* xiaozhao1_4.png in Resources */,
+				382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */,
 				330198B82266419700EA9903 /* dazhao_50.png in Resources */,
 				3301982F2266419700EA9903 /* install_b_28.png in Resources */,
 				330198422266419700EA9903 /* xiaozhao1_9.png in Resources */,
@@ -1263,6 +1360,7 @@
 				330198912266419700EA9903 /* xiaozhao2_19.png in Resources */,
 				3301989D2266419700EA9903 /* xiaozhao2_2.png in Resources */,
 				330198A92266419700EA9903 /* dazhao_83.png in Resources */,
+				3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */,
 				330198612266419700EA9903 /* xiaozhao3_30.png in Resources */,
 				330198372266419700EA9903 /* stand_10.png in Resources */,
 				330198C12266419700EA9903 /* dazhao_20.png in Resources */,
@@ -1471,21 +1569,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3876D5DF228A9CBF00A6A3B3 /* UIViewController+Tools.m in Sources */,
 				33019927226647B400EA9903 /* ImageViewController.m in Sources */,
-				3301992E226647B400EA9903 /* BaseLabel.m in Sources */,
+				3876D5E1228A9CBF00A6A3B3 /* NSDictionary+Tool.m in Sources */,
+				3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */,
+				3876D5E2228A9CBF00A6A3B3 /* UIColor+Tools.m in Sources */,
+				3876D5DC228A9CBF00A6A3B3 /* BaseViewController.m in Sources */,
 				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
-				3301992F226647B400EA9903 /* UIViewController+Tools.m in Sources */,
-				3301992C226647B400EA9903 /* BaseViewController.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
-				33B011AD227DB63A00410EB7 /* NSArray+Tool.m in Sources */,
+				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
 				330196EF2266399E00EA9903 /* main.m in Sources */,
+				3876D5E0228A9CBF00A6A3B3 /* NSArray+Tool.m in Sources */,
+				3876D5DD228A9CBF00A6A3B3 /* BaseButton.m in Sources */,
+				3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
+				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,
 				33BFB296227DA29B00B998BC /* Request.m in Sources */,
-				3301992D226647B400EA9903 /* BaseButton.m in Sources */,
+				3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */,
+				3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
-				33B011AE227DB63A00410EB7 /* NSDictionary+Tool.m in Sources */,
-				33019930226647B400EA9903 /* UIColor+Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

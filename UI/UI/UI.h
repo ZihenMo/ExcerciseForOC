@@ -12,7 +12,9 @@
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
 
+
 #import "UIColor+Tools.h"
+#import "BaseButton.h"
 #import "MBProgressHUD.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>

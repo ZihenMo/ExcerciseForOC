@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "Person.h"
 #import "PersonCell.h"
+#import "LocalDataTableViewController.h"
 
 @interface TableViewController ()
 
@@ -53,9 +54,20 @@
     UIBarButtonItem *editingBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(enterEditingAction:)];
     
     self.navigationItem.rightBarButtonItems = @[editingBtnItem];
+    UIBarButtonItem *localBtn = [[UIBarButtonItem alloc] initWithTitle:@"加载本地数据" style:UIBarButtonItemStyleDone target:self action:@selector(localBtnAction:)];
+    UIBarButtonItem *backBtn =  [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.leftBarButtonItems = @[localBtn];
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 #pragma mark - Actions
+- (void)backAction: (id) sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)localBtnAction: (UIBarButtonItem *)sender {
+    LocalDataTableViewController *localVC = [LocalDataTableViewController new];
+    [self.navigationController pushViewController:localVC animated:YES];
+}
 - (void)enterEditingAction: (UIBarButtonItem *)sender {
     self.tableView.editing = !self.tableView.editing;
     NSArray *rightBtnItems = self.navigationItem.rightBarButtonItems;

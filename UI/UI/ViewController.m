@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "ImageViewController.h"
 #import "TableViewController.h"
+#import "ButtonViewController.h"
+#import "CGDrawViewController.h"
+#import "NavigationItemController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -24,7 +27,9 @@
 }
 #pragma mark - UI
 - (void)setupUI {
+    self.title = @"首页";
     [self tableView];
+    self.tableView.allowsSelection = YES;
 }
 - (void)loadData {
     [self uiArray];
@@ -50,7 +55,16 @@
             break;
         case 1:
             nextController = [[TableViewController alloc] init];
+            break;
         case 2:
+            nextController = [[ButtonViewController alloc] init];
+            break;
+        case 3:
+            nextController = [[CGDrawViewController alloc] init];
+            break;
+        case 4:
+            nextController = [[NavigationItemController alloc] init];
+            break;
         default:
             break;
     }
@@ -71,7 +85,7 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
-        _uiArray = @[@"UIImageView", @"UITableView"];
+        _uiArray = @[@"UIImageView", @"UITableView", @"Button & Image", @"图形绘制", @"NavigationItem"];
     }
     return  _uiArray;
 }

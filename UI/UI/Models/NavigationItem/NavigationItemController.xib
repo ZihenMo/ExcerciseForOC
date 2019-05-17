@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationItemController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T2Y-Rc-BpC">
+                    <rect key="frame" x="50" y="323" width="314" height="260"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUn-d0-Ded" customClass="BaseButton">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="tJ0-wD-K8F"/>
+                            </constraints>
+                            <state key="normal" title="显示/隐藏返回按钮">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="supportOrHideBackBtnItemAction:" destination="-1" eventType="touchUpInside" id="dNd-D8-RAN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ya-Gx-K8h" customClass="BaseButton">
+                            <rect key="frame" x="0.0" y="53" width="314" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="显示上一页标题或返回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showBackTitleAction:" destination="-1" eventType="touchUpInside" id="yep-Oz-inn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWm-YV-pv6" customClass="BaseButton">
+                            <rect key="frame" x="0.0" y="106" width="314" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="添加左边按钮">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="addLeftBarBtnItemAction:" destination="-1" eventType="touchUpInside" id="roT-xt-0Qa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-MF-WGj" customClass="BaseButton">
+                            <rect key="frame" x="0.0" y="159" width="314" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="添加右边按钮">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="addRightBarBtnItemAction:" destination="-1" eventType="touchUpInside" id="eQJ-JO-CXw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byW-vF-cuz" customClass="BaseButton">
+                            <rect key="frame" x="0.0" y="212" width="314" height="48"/>
+                            <color key="backgroundColor" red="1" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="替换返回图标">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="replaceBackIcon:" destination="-1" eventType="touchUpInside" id="Nqc-Oh-chK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="T2Y-Rc-BpC" secondAttribute="trailing" constant="50" id="1Y4-ib-2T4"/>
+                <constraint firstItem="T2Y-Rc-BpC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Q2N-ya-2Qe"/>
+                <constraint firstItem="T2Y-Rc-BpC" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Yq6-aE-CQM"/>
+                <constraint firstItem="T2Y-Rc-BpC" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="zQq-mi-cS4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
