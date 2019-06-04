@@ -28,6 +28,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    // 实现转换首字线大写
+    // 1. 创建源序列
+    RACSequence *sequence = @[@"what", @"are", @"the", @"fuck", @"thing"].rac_sequence;
+    // 2. 获取序列信号量
+    RACSignal *signal = sequence.signal;
+    // 3. 生成首字线大写的信号量
+    RACSignal *capitalizedSignal = [signal map:^id _Nullable(NSString *value) {
+        return [value capitalizedString];
+    }];
+    // 4. 订阅信号量(新的信号与原信号互不影响）
+    // 4.1 序列信号量订阅时，按序触发
+    [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+    // 4.2 首字母大写信号量
+    [capitalizedSignal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
 }
 
 # pragma mark - UI
@@ -67,7 +85,7 @@
                     return [RACSignal empty];
                     break;
             }
-            [self presentViewController:nextVC animated:YES completion:nil];
+            [self.navigationController pushViewController:nextVC animated:YES];
             return [RACSignal empty];
         }];
         [self.stackView addArrangedSubview:menuBtn];
