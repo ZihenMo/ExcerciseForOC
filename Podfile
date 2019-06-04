@@ -84,6 +84,27 @@ target 'UI' do
   pod 'AFNetworking', '~> 3.2.1'
   # JSON
   pod 'MJExtension'
+  # 上下拉刷新
+  pod 'KafkaRefresh'
 
   
+end
+
+target 'SendbirdChat' do
+  platform :ios, '10.0'
+  # Comment the next line if you don't want to use dynamic frameworks
+  project 'SendbirdChat/SendbirdChat.xcodeproj'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Masonry'
+  # logger
+  pod 'CocoaLumberjack'
+  pod 'ReactiveObjC', '~> 3.1.0'
+  # Network
+  pod 'AFNetworking', '~> 3.2.1'
+  # JSON
+  pod 'MJExtension'
+  # sendbird 聊天SDK
+  pod 'SendBirdDesk', :git => 'https://github.com/smilefam/SendBird-Desk-iOS-Framework', :tag => 'v1.0.3'
 end

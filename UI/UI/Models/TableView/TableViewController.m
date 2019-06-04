@@ -55,7 +55,6 @@
     
     self.navigationItem.rightBarButtonItems = @[editingBtnItem];
     UIBarButtonItem *localBtn = [[UIBarButtonItem alloc] initWithTitle:@"加载本地数据" style:UIBarButtonItemStyleDone target:self action:@selector(localBtnAction:)];
-    UIBarButtonItem *backBtn =  [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.leftBarButtonItems = @[localBtn];
     self.navigationItem.leftItemsSupplementBackButton = YES;
 }
@@ -65,7 +64,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)localBtnAction: (UIBarButtonItem *)sender {
-    LocalDataTableViewController *localVC = [LocalDataTableViewController new];
+    LocalDataTableViewController *localVC = [[LocalDataTableViewController alloc] init];
+
     [self.navigationController pushViewController:localVC animated:YES];
 }
 - (void)enterEditingAction: (UIBarButtonItem *)sender {

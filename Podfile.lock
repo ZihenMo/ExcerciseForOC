@@ -14,17 +14,55 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.5.2):
-    - CocoaLumberjack/Core (= 3.5.2)
-  - CocoaLumberjack/Core (3.5.2)
-  - IQKeyboardManager (6.2.0)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - IQKeyboardManager (6.3.0)
+  - KafkaRefresh (1.4.0):
+    - KafkaRefresh/Category (= 1.4.0)
+    - KafkaRefresh/Configuration (= 1.4.0)
+    - KafkaRefresh/Core (= 1.4.0)
+    - KafkaRefresh/Default (= 1.4.0)
+    - KafkaRefresh/Style (= 1.4.0)
+    - KafkaRefresh/UIKit (= 1.4.0)
+  - KafkaRefresh/Category (1.4.0)
+  - KafkaRefresh/Configuration (1.4.0):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.4.0):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.4.0):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.4.0)
+  - KafkaRefresh/UIKit (1.4.0):
+    - KafkaRefresh/UIKit/FootKit (= 1.4.0)
+    - KafkaRefresh/UIKit/HeadKit (= 1.4.0)
+    - KafkaRefresh/UIKit/LayerKit (= 1.4.0)
+  - KafkaRefresh/UIKit/FootKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.4.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - MJExtension (3.0.16)
-  - ReactiveObjC (3.1.0)
+  - MJExtension (3.0.17)
+  - ReactiveObjC (3.1.1)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
+  - SendBirdDesk (1.0.3):
+    - SendBirdSDK
+  - SendBirdSDK (3.0.137)
   - UMCAnalytics (6.0.3):
     - UMCCommon
   - UMCCommon (2.0.1)
@@ -35,11 +73,13 @@ DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - CocoaLumberjack
   - IQKeyboardManager
+  - KafkaRefresh
   - Masonry
   - MBProgressHUD (~> 1.1.0)
   - MJExtension
   - ReactiveObjC (~> 3.1.0)
   - SDWebImage (~> 4.0)
+  - SendBirdDesk (from `https://github.com/smilefam/SendBird-Desk-iOS-Framework`, tag `v1.0.3`)
   - UMCAnalytics
   - UMCCommon
   - UMCCommonLog
@@ -50,30 +90,45 @@ SPEC REPOS:
     - AFNetworking
     - CocoaLumberjack
     - IQKeyboardManager
+    - KafkaRefresh
     - Masonry
     - MBProgressHUD
     - MJExtension
     - ReactiveObjC
     - SDWebImage
+    - SendBirdSDK
     - UMCAnalytics
     - UMCCommon
     - UMCCommonLog
     - UMCSecurityPlugins
 
+EXTERNAL SOURCES:
+  SendBirdDesk:
+    :git: https://github.com/smilefam/SendBird-Desk-iOS-Framework
+    :tag: v1.0.3
+
+CHECKOUT OPTIONS:
+  SendBirdDesk:
+    :git: https://github.com/smilefam/SendBird-Desk-iOS-Framework
+    :tag: v1.0.3
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
-  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJExtension: 54dbbf6ee728f1a88e9aad904353d007831c7847
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SendBirdDesk: 34318178d498c268c6fe8fe715e4cdecf029c7a4
+  SendBirdSDK: f088a755c1d6bca9ae39805b0574dc6d20ee710d
   UMCAnalytics: ff58714ada407682c4a07548156f94bcec92f055
   UMCCommon: 0263a057a2e1ae1da4c8308541e56904a493ce13
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 7773e6ddf4c4748ae2b830b352c23382fb8e70d3
+PODFILE CHECKSUM: 0a2f1e08d387a86e22b7cb4b1b50077858e5dc01
 
-COCOAPODS: 1.7.0.beta.1
+COCOAPODS: 1.6.1

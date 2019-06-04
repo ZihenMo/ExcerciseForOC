@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -291,6 +291,7 @@
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
 		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
 		3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /* BGView.m */; };
+		388658042294F03C00DB4E25 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 388658032294F03C00DB4E25 /* UIView+Tools.m */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -610,6 +611,8 @@
 		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
 		3876D5EB228AA43B00A6A3B3 /* BGView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
 		3876D5EC228AA43B00A6A3B3 /* BGView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
+		388658022294F03C00DB4E25 /* UIView+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		388658032294F03C00DB4E25 /* UIView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1123,6 +1126,8 @@
 				3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */,
 				3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */,
 				3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */,
+				388658022294F03C00DB4E25 /* UIView+Tools.h */,
+				388658032294F03C00DB4E25 /* UIView+Tools.m */,
 			);
 			name = Categories;
 			path = ../../common/Categories;
@@ -1512,11 +1517,32 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack-framework/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager-framework/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD-framework/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC-framework/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking-framework/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension-framework/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1551,11 +1577,16 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-resources.sh",
+				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UI/Pods-UI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMCommonLog.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1588,6 +1619,7 @@
 				33BFB296227DA29B00B998BC /* Request.m in Sources */,
 				3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */,
 				3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */,
+				388658042294F03C00DB4E25 /* UIView+Tools.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

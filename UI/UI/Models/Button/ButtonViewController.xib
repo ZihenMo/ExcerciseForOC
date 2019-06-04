@@ -26,14 +26,29 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="AX2-5N-KjA"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="运动效果"/>
+                    <connections>
+                        <action selector="motionAction:" destination="-1" eventType="touchUpInside" id="sXZ-Dl-Nub"/>
+                    </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eoP-FJ-wSD">
+                    <rect key="frame" x="107" y="431" width="200" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="UF7-dU-24x"/>
+                        <constraint firstAttribute="width" constant="200" id="VAQ-nR-pLs"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="a57-X1-npU" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="-200" id="CtV-y2-8lw"/>
+                <constraint firstItem="eoP-FJ-wSD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="Eqt-7m-fcX"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="a57-X1-npU" secondAttribute="trailing" constant="20" id="OfL-DV-s6a"/>
                 <constraint firstItem="a57-X1-npU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="w8F-1C-jCi"/>
+                <constraint firstItem="eoP-FJ-wSD" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="ycE-db-JUZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>

@@ -10,6 +10,7 @@
 #import <pthread/pthread.h>
 
 @interface ThreadViewController ()
+@property (nonatomic, strong) NSThread *thread;
 @end
 
 void *task (void *name) {
@@ -37,6 +38,7 @@ void *task (void *name) {
     }
 }
 - (IBAction)switchAction:(UIButton *)sender {
+    [self threadCommunication];
 }
 - (IBAction)destoryAction:(UIButton *)sender {
 }
@@ -54,6 +56,10 @@ void *task (void *name) {
     pthread_create(&thread, NULL, task, (__bridge void *)(name));
 }
 #pragma mark - NSThread
+
+/**
+ 创建线程
+ */
 - (void)createThread {
     // 1.1 创建并启动任务 block形式
     [NSThread detachNewThreadWithBlock:^{
@@ -62,16 +68,42 @@ void *task (void *name) {
     }];
     // 1.2 创建并启动任务 方法形式
     [NSThread detachNewThreadSelector:@selector(task) toTarget:self withObject:nil];
-//    [NSThread mainThread];
-    
+    // 1.3 创建线程，等待启动
+    NSThread *thread = [[NSThread alloc] initWithBlock:^{
+        NSLog(@"当前线程:%@", [NSThread currentThread]);
+        NSLog(@"--block task2--");
+    }];
+    self.thread = thread;
+    // 2. 启动线程
+    [thread start];
+}
+
+/**
+ 线程通信
+ */
+- (void)threadCommunication {
+    // 线程star之后便不可再用
+//    NSThread *thread = self.thread;
+//    [self performSelector:@selector(task2) onThread:thread withObject:nil waitUntilDone:NO];
+    // 切换至主线程执行
+    [self performSelectorOnMainThread:@selector(task2) withObject:nil waitUntilDone:NO];
 }
 
 #pragma mark - Task
 - (void)task {
+    NSThread *thread = [NSThread currentThread];
+    NSLog(@"当前线程:%@ ,task1", thread);
     for (NSInteger i = 0; i < MAXFLOAT; ++i) {
-        if (i % 100000000 == 0) {
-            NSLog(@"%s", __func__);
-        }
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"%s", __func__);
+    }
+}
+- (void)task2 {
+    NSThread *thread = [NSThread currentThread];
+    NSLog(@"当前线程:%@, task2", thread);
+    for (NSInteger i = 0; i < 10; ++i) {
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"%s", __func__);
     }
 }
 @end

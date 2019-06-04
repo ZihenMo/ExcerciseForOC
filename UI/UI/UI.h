@@ -14,6 +14,7 @@
 
 
 #import "UIColor+Tools.h"
+#import "UIView+Tools.h"
 #import "BaseButton.h"
 #import "MBProgressHUD.h"
 #import <Masonry/Masonry.h>
