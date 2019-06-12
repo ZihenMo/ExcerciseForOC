@@ -10,11 +10,10 @@
 #import "CaculatorController.h"
 #import "LocalizedViewController.h"
 #import "PartViewController.h"
-
+#import "ChannelController.h"
 @interface ViewController ()
 @property (nonatomic, strong) UIStackView *stackView;
-
-
+@property (nonatomic, assign) NSTimeInterval lastTimeStamp;
 @end
 
 @implementation ViewController
@@ -28,24 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    // 实现转换首字线大写
-    // 1. 创建源序列
-    RACSequence *sequence = @[@"what", @"are", @"the", @"fuck", @"thing"].rac_sequence;
-    // 2. 获取序列信号量
-    RACSignal *signal = sequence.signal;
-    // 3. 生成首字线大写的信号量
-    RACSignal *capitalizedSignal = [signal map:^id _Nullable(NSString *value) {
-        return [value capitalizedString];
-    }];
-    // 4. 订阅信号量(新的信号与原信号互不影响）
-    // 4.1 序列信号量订阅时，按序触发
-    [signal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@", x);
-    }];
-    // 4.2 首字母大写信号量
-    [capitalizedSignal subscribeNext:^(id  _Nullable x) {
-        NSLog(@"%@", x);
-    }];
 }
 
 # pragma mark - UI
@@ -58,10 +39,9 @@
     }];
     // -- add menus --
     NSString *t1 =  Localized(@"calculator");
-    NSArray *menus = @[t1, @"切换本地化语言", @"局部变量RAC"];
+    NSArray *menus = @[t1, @"切换本地化语言", @"局部变量RAC", @"渠道测试"];
     [self addMenus: menus];
     [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
-    
 }
 
 - (void)addMenus: (NSArray<NSString *> *)menus {
@@ -80,6 +60,9 @@
                     break;
                 case 2:
                     nextVC = [[PartViewController alloc] init];
+                    break;
+                case 3:
+                    nextVC = [[ChannelController alloc] init];
                     break;
                 default:
                     return [RACSignal empty];
@@ -105,6 +88,12 @@
         _stackView.spacing = 40.f;
     }
     return _stackView;
+}
+- (NSTimeInterval)lastTimeStamp {
+    if (!_lastTimeStamp) {
+        _lastTimeStamp = [NSDate date].timeIntervalSince1970 * 1000;
+    }
+    return _lastTimeStamp;
 }
 
 @end

@@ -1,6 +1,0 @@
-framework module SendBirdDesk {
-  umbrella header "SendBirdDesk.h"
-
-  export *
-  module * { export * }
-}

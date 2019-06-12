@@ -52,7 +52,8 @@
 }
 
 + (instancetype)disposableWithBlock:(void (^)(void))block {
-	return [(RACDisposable *)[self alloc] initWithBlock:block];
+//    return [(RACDisposable *)[self alloc] initWithBlock:block];
+    return [[RACDisposable alloc] initWithBlock:block];
 }
 
 - (void)dealloc {

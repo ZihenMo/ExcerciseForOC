@@ -15,9 +15,6 @@
 @property (nonatomic,assign) NSInteger age;
 @property (nonatomic,assign) CGSize body;
 
-
-
-
 @end
 
 @implementation Person
@@ -26,19 +23,56 @@
 
 
 @interface PartViewController ()
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
 @implementation PartViewController
-
+#pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    [self signalSwitch];
-    [self combiningLatest];
-    [self merge];
+    
+    [self signalBase];
+    
+//    [self signalSwitch];
+//    [self combiningLatest];
+//    [self merge];
 }
-#pragma mark - RAC
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+    self.timer = nil;
+}
+- (void)dealloc
+{
+    NSLog(@"dealloc%@", NSStringFromClass(self.class));
+}
+#pragma mark - RACSignal
+
+/**
+ 信号概念基本使用
+ */
+- (void)signalBase {
+    // 1. 创建信号，信号本身是冷信号
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        // 2. 创建的信号需手动调用订阅者发送信号
+        [subscriber sendNext:@"这是信号内容"];
+        // 处理者，每次信号完成或失败时触发
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"--处理已完成的信号--"); // 若不发送信号，也会触发该block
+        }];
+    }];
+    // 3. 订阅信号，激活信号 （订阅操作返回是的一个处理者）
+    // 测试，订阅两次信号
+    for (int i = 0; i < 3; ++i) {
+        [signal subscribeNext:^(id  _Nullable x) {
+            NSLog(@"--订阅信号%d--%@:", i, x);
+        }];
+    }
+}
+
+
 //信号开关Switch
 - (void)signalSwitch {
     //创建3个可接收信号的对象（subject对象用于无RAC链接到RAC，手动发送事件（sendNex)）
@@ -111,30 +145,9 @@
 }
 
 
-#pragma mark - UI
-- (void)setupUI {
-    self.view.backgroundColor = UIColor.whiteColor;
-    UITextField *tf = [[UITextField alloc] init];
-    tf.placeholder = @"输入内容，同步显示";
-    tf.backgroundColor = UIColor.randomColor;
-    tf.textColor = UIColor.whiteColor;
-    [self.view addSubview:tf];
-    [tf makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.centerY.equalTo(self.view).offset(-50);
-        make.size.equalTo(@(CGSizeMake(200, 40)));
-    }];
-     BaseLabel *lbl = [[BaseLabel alloc] init];
-    [self.view addSubview:lbl];
-    [lbl makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-    }];
-    [tf.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
-        lbl.text = x;
-    }];
-}
-
-
+/**
+ RAC监听局部变量
+ */
 - (void) obserLocalValue {
     // --- RAC监听局部变量
     Person *p = [Person new];
@@ -158,6 +171,64 @@
     }];
     // --- 结论：成功 --
 }
+
+#pragma mark - UI
+- (void)setupUI {
+    self.view.backgroundColor = UIColor.whiteColor;
+    UITextField *tf = [[UITextField alloc] init];
+    tf.placeholder = @"输入内容，同步显示";
+    tf.backgroundColor = UIColor.randomColor;
+    tf.textColor = UIColor.whiteColor;
+    [self.view addSubview:tf];
+    [tf makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view).offset(-50);
+        make.size.equalTo(@(CGSizeMake(200, 40)));
+    }];
+     BaseLabel *lbl = [[BaseLabel alloc] init];
+    [self.view addSubview:lbl];
+    [lbl makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+    }];
+    [tf.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+        lbl.text = x;
+    }];
+    
+    [self debounceClick];
+}
+
+- (void)debounceClick {
+    // 防止多次点击，延迟执行
+    BaseButton *btn = [BaseButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"多次点击" forState:UIControlStateNormal];
+    __weak typeof(self) weakSelf = self;    // 内循环引用导致内存泄漏
+#if 0
+    // 方式一： NSTimer，需要注意循环引用
+    btn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        [weakSelf.timer invalidate];
+        weakSelf.timer = nil;
+        weakSelf.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:NO block:^(NSTimer * _Nonnull timer) {
+            NSLog(@"只执行一次");
+        }];
+        return [RACSignal empty];
+    }];
+#endif
+    btn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(UIView * input) {
+        [input debounceAction:@selector(dosomething) object:nil delay:0.5];
+        return [RACSignal empty];
+    }];
+    
+    [self.view addSubview:btn];
+    [btn makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.equalTo(@(CGSizeMake(100, 44)));
+    }];
+}
+
+- (void)dosomething {
+    NSLog(@"执行某事");
+}
+
 
 
 @end

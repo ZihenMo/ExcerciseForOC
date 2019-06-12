@@ -153,14 +153,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework"
-  install_dsym "${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework.dSYM"
   install_framework "${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework"
   install_dsym "${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework"
-  install_dsym "${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework.dSYM"
   install_framework "${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework"
   install_dsym "${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM"
 fi

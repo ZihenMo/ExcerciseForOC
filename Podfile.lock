@@ -60,8 +60,6 @@ PODS:
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
-  - SendBirdDesk (1.0.3):
-    - SendBirdSDK
   - SendBirdSDK (3.0.137)
   - UMCAnalytics (6.0.3):
     - UMCCommon
@@ -79,7 +77,7 @@ DEPENDENCIES:
   - MJExtension
   - ReactiveObjC (~> 3.1.0)
   - SDWebImage (~> 4.0)
-  - SendBirdDesk (from `https://github.com/smilefam/SendBird-Desk-iOS-Framework`, tag `v1.0.3`)
+  - SendBirdSDK
   - UMCAnalytics
   - UMCCommon
   - UMCCommonLog
@@ -102,16 +100,6 @@ SPEC REPOS:
     - UMCCommonLog
     - UMCSecurityPlugins
 
-EXTERNAL SOURCES:
-  SendBirdDesk:
-    :git: https://github.com/smilefam/SendBird-Desk-iOS-Framework
-    :tag: v1.0.3
-
-CHECKOUT OPTIONS:
-  SendBirdDesk:
-    :git: https://github.com/smilefam/SendBird-Desk-iOS-Framework
-    :tag: v1.0.3
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
@@ -122,13 +110,12 @@ SPEC CHECKSUMS:
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
-  SendBirdDesk: 34318178d498c268c6fe8fe715e4cdecf029c7a4
   SendBirdSDK: f088a755c1d6bca9ae39805b0574dc6d20ee710d
   UMCAnalytics: ff58714ada407682c4a07548156f94bcec92f055
   UMCCommon: 0263a057a2e1ae1da4c8308541e56904a493ce13
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 0a2f1e08d387a86e22b7cb4b1b50077858e5dc01
+PODFILE CHECKSUM: edae268a6037640bd6eaeabdd0ae3c7d85b164e3
 
 COCOAPODS: 1.6.1

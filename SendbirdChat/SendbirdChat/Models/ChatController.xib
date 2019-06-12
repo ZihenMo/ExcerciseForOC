@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatController">
+            <connections>
+                <outlet property="sendBtn" destination="0yO-iQ-BXQ" id="IH1-Og-Vpb"/>
+                <outlet property="tableView" destination="wSa-g7-3MH" id="Ovl-k0-4BR"/>
+                <outlet property="textField" destination="xOU-Z6-2N4" id="rF3-B1-4Ly"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-g7-3MH">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="m4u-Ay-tvN"/>
+                        <outlet property="delegate" destination="-1" id="zqh-wx-dau"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5W1-nW-96l">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOU-Z6-2N4">
+                            <rect key="frame" x="10" y="10" width="313" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-iQ-BXQ">
+                            <rect key="frame" x="333" y="15" width="71" height="18"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="sendAction:" destination="-1" eventType="touchUpInside" id="TsM-NH-TzL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xOU-Z6-2N4" firstAttribute="leading" secondItem="5W1-nW-96l" secondAttribute="leading" constant="10" id="3A0-vD-0Dw"/>
+                        <constraint firstAttribute="trailing" secondItem="0yO-iQ-BXQ" secondAttribute="trailing" constant="10" id="BH1-iq-qkF"/>
+                        <constraint firstItem="xOU-Z6-2N4" firstAttribute="top" secondItem="5W1-nW-96l" secondAttribute="top" constant="10" id="Bsz-5k-Xwn"/>
+                        <constraint firstAttribute="bottom" secondItem="xOU-Z6-2N4" secondAttribute="bottom" constant="10" id="T7C-Vg-JlB"/>
+                        <constraint firstItem="0yO-iQ-BXQ" firstAttribute="firstBaseline" secondItem="xOU-Z6-2N4" secondAttribute="firstBaseline" id="rut-EH-Img"/>
+                        <constraint firstItem="0yO-iQ-BXQ" firstAttribute="leading" secondItem="xOU-Z6-2N4" secondAttribute="trailing" constant="10" id="sOr-5P-F51"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wSa-g7-3MH" secondAttribute="trailing" id="Gd3-Ex-mus"/>
+                <constraint firstItem="wSa-g7-3MH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Woj-qv-H0U"/>
+                <constraint firstItem="wSa-g7-3MH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="aRc-mA-jhV"/>
+                <constraint firstItem="5W1-nW-96l" firstAttribute="top" secondItem="wSa-g7-3MH" secondAttribute="bottom" id="eLX-nH-vx6"/>
+                <constraint firstItem="5W1-nW-96l" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hR6-QH-rnU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5W1-nW-96l" secondAttribute="trailing" id="kEq-Dy-xre"/>
+                <constraint firstAttribute="bottomMargin" secondItem="5W1-nW-96l" secondAttribute="bottom" id="zbq-YA-cfg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

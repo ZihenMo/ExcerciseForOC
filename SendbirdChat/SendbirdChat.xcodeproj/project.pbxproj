@@ -14,6 +14,18 @@
 		381FB166229677460090C697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381FB165229677460090C697 /* Assets.xcassets */; };
 		381FB169229677460090C697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381FB167229677460090C697 /* LaunchScreen.storyboard */; };
 		381FB16C229677460090C697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 381FB16B229677460090C697 /* main.m */; };
+		3855BF6022ADF676005704AC /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5622ADF675005704AC /* UIViewController+Tools.m */; };
+		3855BF6122ADF676005704AC /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5C22ADF675005704AC /* NSArray+Tool.m */; };
+		3855BF6222ADF676005704AC /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */; };
+		3855BF6322ADF676005704AC /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5E22ADF675005704AC /* UIView+Tools.m */; };
+		3855BF6422ADF676005704AC /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5F22ADF675005704AC /* UIColor+Tools.m */; };
+		3855BF6722ADF691005704AC /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF6622ADF691005704AC /* NSString+Tools.m */; };
+		38F77F1D22AF820C0063FDD1 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F77F1B22AF820C0063FDD1 /* MessageCell.m */; };
+		38F77F1E22AF820C0063FDD1 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F77F1C22AF820C0063FDD1 /* MessageCell.xib */; };
+		38FB791022AE29F900ECD731 /* ChannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB790E22AE29F900ECD731 /* ChannelController.m */; };
+		38FB791122AE29F900ECD731 /* ChannelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FB790F22AE29F900ECD731 /* ChannelController.xib */; };
+		38FB791A22AE6F4200ECD731 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB791822AE6F4200ECD731 /* ChatController.m */; };
+		38FB791B22AE6F4200ECD731 /* ChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FB791922AE6F4200ECD731 /* ChatController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +39,28 @@
 		381FB168229677460090C697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		381FB16A229677460090C697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381FB16B229677460090C697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3855BF5622ADF675005704AC /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3855BF5722ADF675005704AC /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3855BF5822ADF675005704AC /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3855BF5922ADF675005704AC /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		3855BF5A22ADF675005704AC /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3855BF5B22ADF675005704AC /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3855BF5C22ADF675005704AC /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3855BF5E22ADF675005704AC /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		3855BF5F22ADF675005704AC /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3855BF6522ADF691005704AC /* NSString+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		3855BF6622ADF691005704AC /* NSString+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		3855BF6822ADF708005704AC /* SendBirdChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendBirdChat.h; sourceTree = "<group>"; };
+		38F77F1A22AF820C0063FDD1 /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		38F77F1B22AF820C0063FDD1 /* MessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		38F77F1C22AF820C0063FDD1 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		38FB790D22AE29F900ECD731 /* ChannelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelController.h; sourceTree = "<group>"; };
+		38FB790E22AE29F900ECD731 /* ChannelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelController.m; sourceTree = "<group>"; };
+		38FB790F22AE29F900ECD731 /* ChannelController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelController.xib; sourceTree = "<group>"; };
+		38FB791722AE6F4200ECD731 /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
+		38FB791822AE6F4200ECD731 /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		38FB791922AE6F4200ECD731 /* ChatController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatController.xib; sourceTree = "<group>"; };
 		85F1EFC8F64D0101CFD44157 /* Pods-SendbirdChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdChat.release.xcconfig"; path = "Target Support Files/Pods-SendbirdChat/Pods-SendbirdChat.release.xcconfig"; sourceTree = "<group>"; };
 		AED93E2A280AE3E1A298C2A9 /* Pods-SendbirdChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendbirdChat.debug.xcconfig"; path = "Target Support Files/Pods-SendbirdChat/Pods-SendbirdChat.debug.xcconfig"; sourceTree = "<group>"; };
 		B350B7EA55925A92CC4086CB /* libPods-SendbirdChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SendbirdChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,10 +109,11 @@
 		381FB15B229677440090C697 /* SendbirdChat */ = {
 			isa = PBXGroup;
 			children = (
+				3855BF6822ADF708005704AC /* SendBirdChat.h */,
+				38F77F1822AF7A280063FDD1 /* Models */,
+				3855BF5522ADF675005704AC /* Categories */,
 				381FB15C229677440090C697 /* AppDelegate.h */,
 				381FB15D229677440090C697 /* AppDelegate.m */,
-				381FB15F229677440090C697 /* ViewController.h */,
-				381FB160229677440090C697 /* ViewController.m */,
 				381FB162229677440090C697 /* Main.storyboard */,
 				381FB165229677460090C697 /* Assets.xcassets */,
 				381FB167229677460090C697 /* LaunchScreen.storyboard */,
@@ -86,6 +121,52 @@
 				381FB16B229677460090C697 /* main.m */,
 			);
 			path = SendbirdChat;
+			sourceTree = "<group>";
+		};
+		3855BF5522ADF675005704AC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3855BF5622ADF675005704AC /* UIViewController+Tools.m */,
+				3855BF5722ADF675005704AC /* NSArray+Tool.h */,
+				3855BF5822ADF675005704AC /* NSDictionary+Tool.h */,
+				3855BF5922ADF675005704AC /* UIView+Tools.h */,
+				3855BF5A22ADF675005704AC /* UIColor+Tools.h */,
+				3855BF5B22ADF675005704AC /* UIViewController+Tools.h */,
+				3855BF5C22ADF675005704AC /* NSArray+Tool.m */,
+				3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */,
+				3855BF5E22ADF675005704AC /* UIView+Tools.m */,
+				3855BF5F22ADF675005704AC /* UIColor+Tools.m */,
+				3855BF6522ADF691005704AC /* NSString+Tools.h */,
+				3855BF6622ADF691005704AC /* NSString+Tools.m */,
+			);
+			name = Categories;
+			path = ../../common/Categories;
+			sourceTree = "<group>";
+		};
+		38F77F1822AF7A280063FDD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38F77F1922AF81E50063FDD1 /* Views */,
+				381FB15F229677440090C697 /* ViewController.h */,
+				381FB160229677440090C697 /* ViewController.m */,
+				38FB791722AE6F4200ECD731 /* ChatController.h */,
+				38FB791822AE6F4200ECD731 /* ChatController.m */,
+				38FB791922AE6F4200ECD731 /* ChatController.xib */,
+				38FB790D22AE29F900ECD731 /* ChannelController.h */,
+				38FB790E22AE29F900ECD731 /* ChannelController.m */,
+				38FB790F22AE29F900ECD731 /* ChannelController.xib */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38F77F1922AF81E50063FDD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38F77F1A22AF820C0063FDD1 /* MessageCell.h */,
+				38F77F1B22AF820C0063FDD1 /* MessageCell.m */,
+				38F77F1C22AF820C0063FDD1 /* MessageCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5A4F4DC8D9955A5DC1391D53 /* Frameworks */ = {
@@ -157,8 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				381FB169229677460090C697 /* LaunchScreen.storyboard in Resources */,
+				38F77F1E22AF820C0063FDD1 /* MessageCell.xib in Resources */,
+				38FB791B22AE6F4200ECD731 /* ChatController.xib in Resources */,
 				381FB166229677460090C697 /* Assets.xcassets in Resources */,
 				381FB164229677440090C697 /* Main.storyboard in Resources */,
+				38FB791122AE29F900ECD731 /* ChannelController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +302,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SendbirdChat/Pods-SendbirdChat-frameworks.sh",
-				"${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework",
-				"${PODS_ROOT}/SendBirdDesk/SendBirdDesk.framework.dSYM",
 				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework",
 				"${PODS_ROOT}/SendBirdSDK/SendBirdSDK.framework.dSYM",
 			);
@@ -227,8 +309,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdDesk.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/SendBirdDesk.framework.dSYM",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendBirdSDK.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/SendBirdSDK.framework.dSYM",
 			);
@@ -244,8 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3855BF6022ADF676005704AC /* UIViewController+Tools.m in Sources */,
+				38FB791A22AE6F4200ECD731 /* ChatController.m in Sources */,
+				3855BF6122ADF676005704AC /* NSArray+Tool.m in Sources */,
+				3855BF6222ADF676005704AC /* NSDictionary+Tool.m in Sources */,
+				3855BF6422ADF676005704AC /* UIColor+Tools.m in Sources */,
+				3855BF6722ADF691005704AC /* NSString+Tools.m in Sources */,
+				38FB791022AE29F900ECD731 /* ChannelController.m in Sources */,
 				381FB161229677440090C697 /* ViewController.m in Sources */,
 				381FB16C229677460090C697 /* main.m in Sources */,
+				38F77F1D22AF820C0063FDD1 /* MessageCell.m in Sources */,
+				3855BF6322ADF676005704AC /* UIView+Tools.m in Sources */,
 				381FB15E229677440090C697 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SendbirdChat/SendBirdChat.h";
 				INFOPLIST_FILE = SendbirdChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,6 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SendbirdChat/SendBirdChat.h";
 				INFOPLIST_FILE = SendbirdChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

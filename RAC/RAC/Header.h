@@ -20,6 +20,7 @@
 
 // -- tools --
 #import "UIColor+Tools.h"
+#import "UIView+Tools.h"
 // -- base --
 #import "BaseButton.h"
 #import "BaseLabel.h"

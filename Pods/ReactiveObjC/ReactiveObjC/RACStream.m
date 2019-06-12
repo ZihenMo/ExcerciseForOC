@@ -61,8 +61,9 @@
 
 	NSString *str = [[NSString alloc] initWithFormat:format arguments:args];
 	va_end(args);
-
+    
 	self.name = str;
+    
 	return self;
 }
 

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <SendBirdSDK/SendBirdSDK.h>
+NSString *APP_ID = @"429CACE9-6D11-4072-9047-001135BD005D";
 
 @interface AppDelegate ()
 
@@ -16,8 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [SBDMain initWithApplicationId:APP_ID];
+    [self apperance];
     return YES;
+}
+
+- (void)apperance {
+    UITableViewCell.appearance.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 

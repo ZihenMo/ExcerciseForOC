@@ -106,5 +106,6 @@ target 'SendbirdChat' do
   # JSON
   pod 'MJExtension'
   # sendbird 聊天SDK
-  pod 'SendBirdDesk', :git => 'https://github.com/smilefam/SendBird-Desk-iOS-Framework', :tag => 'v1.0.3'
+#  pod 'SendBirdDesk', :git => 'https://github.com/smilefam/SendBird-Desk-iOS-Framework', :tag => 'v1.0.3'
+  pod 'SendBirdSDK'
 end
