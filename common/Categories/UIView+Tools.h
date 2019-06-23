@@ -43,4 +43,16 @@ typedef void(^TapAction)(UIView *sender);
 - (void)hideHUD;
 @end
 
+
+@interface UIView (frame)
+
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGPoint origin;
+
+@end
+
 NS_ASSUME_NONNULL_END

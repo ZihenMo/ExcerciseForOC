@@ -28,10 +28,7 @@
     self.label = label;
 }
 
-- (void)setText:(NSString *)text {
-    self.label.text = text;
-}
-
+/*
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *bp = [UIBezierPath bezierPath];
     CGFloat radius = 4.0;
@@ -50,8 +47,8 @@
     [bp addLineToPoint:CGPointMake(0, radius)];
     [bp addArcWithCenter:CGPointMake(radius, radius) radius:radius startAngle:0 endAngle:M_PI_2 clockwise:YES];
     [bp stroke];
-    
 }
+ */
 
 
 @end

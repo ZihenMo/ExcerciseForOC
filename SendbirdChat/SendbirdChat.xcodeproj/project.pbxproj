@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		25EE086C3F5755B4FC9E02C9 /* libPods-SendbirdChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B350B7EA55925A92CC4086CB /* libPods-SendbirdChat.a */; };
+		3328E8EA22BF64370025472D /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8E822BF64370025472D /* ChannelCell.m */; };
+		3328E8EB22BF64370025472D /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3328E8E922BF64370025472D /* ChannelCell.xib */; };
+		3328E8F222BF73570025472D /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8F122BF73570025472D /* Message.m */; };
+		3328E90A22BFE5F90025472D /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8F522BFE5F90025472D /* UIViewController+Tools.m */; };
+		3328E90B22BFE5F90025472D /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8F722BFE5F90025472D /* NSString+Tools.m */; };
+		3328E90C22BFE5F90025472D /* UITableViewCell+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8F822BFE5F90025472D /* UITableViewCell+Tools.m */; };
+		3328E90D22BFE5F90025472D /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E8FF22BFE5F90025472D /* NSArray+Tool.m */; };
+		3328E90E22BFE5F90025472D /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90022BFE5F90025472D /* NSDictionary+Tool.m */; };
+		3328E90F22BFE5F90025472D /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90122BFE5F90025472D /* UIView+Tools.m */; };
+		3328E91022BFE5F90025472D /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90222BFE5F90025472D /* UIColor+Tools.m */; };
+		3328E91122BFE5F90025472D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90522BFE5F90025472D /* BaseViewController.m */; };
+		3328E91222BFE5F90025472D /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90722BFE5F90025472D /* BaseButton.m */; };
+		3328E91322BFE5F90025472D /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E90922BFE5F90025472D /* BaseLabel.m */; };
+		3328E91622BFE69C0025472D /* PicTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3328E91522BFE69C0025472D /* PicTextButton.m */; };
 		381FB15E229677440090C697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 381FB15D229677440090C697 /* AppDelegate.m */; };
 		381FB161229677440090C697 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381FB160229677440090C697 /* ViewController.m */; };
 		381FB164229677440090C697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381FB162229677440090C697 /* Main.storyboard */; };
 		381FB166229677460090C697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381FB165229677460090C697 /* Assets.xcassets */; };
 		381FB169229677460090C697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381FB167229677460090C697 /* LaunchScreen.storyboard */; };
 		381FB16C229677460090C697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 381FB16B229677460090C697 /* main.m */; };
-		3855BF6022ADF676005704AC /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5622ADF675005704AC /* UIViewController+Tools.m */; };
-		3855BF6122ADF676005704AC /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5C22ADF675005704AC /* NSArray+Tool.m */; };
-		3855BF6222ADF676005704AC /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */; };
-		3855BF6322ADF676005704AC /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5E22ADF675005704AC /* UIView+Tools.m */; };
-		3855BF6422ADF676005704AC /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF5F22ADF675005704AC /* UIColor+Tools.m */; };
-		3855BF6722ADF691005704AC /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3855BF6622ADF691005704AC /* NSString+Tools.m */; };
 		38F77F1D22AF820C0063FDD1 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F77F1B22AF820C0063FDD1 /* MessageCell.m */; };
 		38F77F1E22AF820C0063FDD1 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F77F1C22AF820C0063FDD1 /* MessageCell.xib */; };
 		38FB791022AE29F900ECD731 /* ChannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB790E22AE29F900ECD731 /* ChannelController.m */; };
@@ -29,6 +37,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3328E8E722BF64370025472D /* ChannelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		3328E8E822BF64370025472D /* ChannelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
+		3328E8E922BF64370025472D /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		3328E8F022BF73570025472D /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		3328E8F122BF73570025472D /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		3328E8F522BFE5F90025472D /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3328E8F622BFE5F90025472D /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3328E8F722BFE5F90025472D /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		3328E8F822BFE5F90025472D /* UITableViewCell+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Tools.m"; sourceTree = "<group>"; };
+		3328E8F922BFE5F90025472D /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3328E8FA22BFE5F90025472D /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		3328E8FB22BFE5F90025472D /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3328E8FC22BFE5F90025472D /* UITableViewCell+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Tools.h"; sourceTree = "<group>"; };
+		3328E8FD22BFE5F90025472D /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		3328E8FE22BFE5F90025472D /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3328E8FF22BFE5F90025472D /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3328E90022BFE5F90025472D /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3328E90122BFE5F90025472D /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		3328E90222BFE5F90025472D /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3328E90422BFE5F90025472D /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		3328E90522BFE5F90025472D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3328E90622BFE5F90025472D /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		3328E90722BFE5F90025472D /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		3328E90822BFE5F90025472D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3328E90922BFE5F90025472D /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		3328E91422BFE69C0025472D /* PicTextButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicTextButton.h; sourceTree = "<group>"; };
+		3328E91522BFE69C0025472D /* PicTextButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicTextButton.m; sourceTree = "<group>"; };
 		381FB159229677440090C697 /* SendbirdChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendbirdChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381FB15C229677440090C697 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		381FB15D229677440090C697 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,18 +74,6 @@
 		381FB168229677460090C697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		381FB16A229677460090C697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381FB16B229677460090C697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3855BF5622ADF675005704AC /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
-		3855BF5722ADF675005704AC /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
-		3855BF5822ADF675005704AC /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
-		3855BF5922ADF675005704AC /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
-		3855BF5A22ADF675005704AC /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
-		3855BF5B22ADF675005704AC /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
-		3855BF5C22ADF675005704AC /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
-		3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
-		3855BF5E22ADF675005704AC /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
-		3855BF5F22ADF675005704AC /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
-		3855BF6522ADF691005704AC /* NSString+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
-		3855BF6622ADF691005704AC /* NSString+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
 		3855BF6822ADF708005704AC /* SendBirdChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendBirdChat.h; sourceTree = "<group>"; };
 		38F77F1A22AF820C0063FDD1 /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		38F77F1B22AF820C0063FDD1 /* MessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
@@ -88,6 +111,61 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		3328E8EF22BF73220025472D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3328E8F022BF73570025472D /* Message.h */,
+				3328E8F122BF73570025472D /* Message.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3328E8F322BFE5F90025472D /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3328E8F422BFE5F90025472D /* Categories */,
+				3328E90322BFE5F90025472D /* Base */,
+			);
+			name = common;
+			path = ../../common;
+			sourceTree = "<group>";
+		};
+		3328E8F422BFE5F90025472D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3328E8F522BFE5F90025472D /* UIViewController+Tools.m */,
+				3328E8F622BFE5F90025472D /* NSArray+Tool.h */,
+				3328E8F722BFE5F90025472D /* NSString+Tools.m */,
+				3328E8F822BFE5F90025472D /* UITableViewCell+Tools.m */,
+				3328E8F922BFE5F90025472D /* NSDictionary+Tool.h */,
+				3328E8FA22BFE5F90025472D /* UIView+Tools.h */,
+				3328E8FB22BFE5F90025472D /* UIColor+Tools.h */,
+				3328E8FC22BFE5F90025472D /* UITableViewCell+Tools.h */,
+				3328E8FD22BFE5F90025472D /* NSString+Tools.h */,
+				3328E8FE22BFE5F90025472D /* UIViewController+Tools.h */,
+				3328E8FF22BFE5F90025472D /* NSArray+Tool.m */,
+				3328E90022BFE5F90025472D /* NSDictionary+Tool.m */,
+				3328E90122BFE5F90025472D /* UIView+Tools.m */,
+				3328E90222BFE5F90025472D /* UIColor+Tools.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3328E90322BFE5F90025472D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3328E90422BFE5F90025472D /* BaseButton.h */,
+				3328E90522BFE5F90025472D /* BaseViewController.m */,
+				3328E90722BFE5F90025472D /* BaseButton.m */,
+				3328E90822BFE5F90025472D /* BaseViewController.h */,
+				3328E90622BFE5F90025472D /* BaseLabel.h */,
+				3328E90922BFE5F90025472D /* BaseLabel.m */,
+				3328E91422BFE69C0025472D /* PicTextButton.h */,
+				3328E91522BFE69C0025472D /* PicTextButton.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		381FB150229677440090C697 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +187,9 @@
 		381FB15B229677440090C697 /* SendbirdChat */ = {
 			isa = PBXGroup;
 			children = (
+				3328E8F322BFE5F90025472D /* common */,
 				3855BF6822ADF708005704AC /* SendBirdChat.h */,
-				38F77F1822AF7A280063FDD1 /* Models */,
-				3855BF5522ADF675005704AC /* Categories */,
+				38F77F1822AF7A280063FDD1 /* Modules */,
 				381FB15C229677440090C697 /* AppDelegate.h */,
 				381FB15D229677440090C697 /* AppDelegate.m */,
 				381FB162229677440090C697 /* Main.storyboard */,
@@ -123,29 +201,10 @@
 			path = SendbirdChat;
 			sourceTree = "<group>";
 		};
-		3855BF5522ADF675005704AC /* Categories */ = {
+		38F77F1822AF7A280063FDD1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3855BF5622ADF675005704AC /* UIViewController+Tools.m */,
-				3855BF5722ADF675005704AC /* NSArray+Tool.h */,
-				3855BF5822ADF675005704AC /* NSDictionary+Tool.h */,
-				3855BF5922ADF675005704AC /* UIView+Tools.h */,
-				3855BF5A22ADF675005704AC /* UIColor+Tools.h */,
-				3855BF5B22ADF675005704AC /* UIViewController+Tools.h */,
-				3855BF5C22ADF675005704AC /* NSArray+Tool.m */,
-				3855BF5D22ADF675005704AC /* NSDictionary+Tool.m */,
-				3855BF5E22ADF675005704AC /* UIView+Tools.m */,
-				3855BF5F22ADF675005704AC /* UIColor+Tools.m */,
-				3855BF6522ADF691005704AC /* NSString+Tools.h */,
-				3855BF6622ADF691005704AC /* NSString+Tools.m */,
-			);
-			name = Categories;
-			path = ../../common/Categories;
-			sourceTree = "<group>";
-		};
-		38F77F1822AF7A280063FDD1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
+				3328E8EF22BF73220025472D /* Models */,
 				38F77F1922AF81E50063FDD1 /* Views */,
 				381FB15F229677440090C697 /* ViewController.h */,
 				381FB160229677440090C697 /* ViewController.m */,
@@ -156,7 +215,7 @@
 				38FB790E22AE29F900ECD731 /* ChannelController.m */,
 				38FB790F22AE29F900ECD731 /* ChannelController.xib */,
 			);
-			path = Models;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		38F77F1922AF81E50063FDD1 /* Views */ = {
@@ -165,6 +224,9 @@
 				38F77F1A22AF820C0063FDD1 /* MessageCell.h */,
 				38F77F1B22AF820C0063FDD1 /* MessageCell.m */,
 				38F77F1C22AF820C0063FDD1 /* MessageCell.xib */,
+				3328E8E722BF64370025472D /* ChannelCell.h */,
+				3328E8E822BF64370025472D /* ChannelCell.m */,
+				3328E8E922BF64370025472D /* ChannelCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +301,7 @@
 			files = (
 				381FB169229677460090C697 /* LaunchScreen.storyboard in Resources */,
 				38F77F1E22AF820C0063FDD1 /* MessageCell.xib in Resources */,
+				3328E8EB22BF64370025472D /* ChannelCell.xib in Resources */,
 				38FB791B22AE6F4200ECD731 /* ChatController.xib in Resources */,
 				381FB166229677460090C697 /* Assets.xcassets in Resources */,
 				381FB164229677440090C697 /* Main.storyboard in Resources */,
@@ -324,18 +387,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3855BF6022ADF676005704AC /* UIViewController+Tools.m in Sources */,
+				3328E91622BFE69C0025472D /* PicTextButton.m in Sources */,
 				38FB791A22AE6F4200ECD731 /* ChatController.m in Sources */,
-				3855BF6122ADF676005704AC /* NSArray+Tool.m in Sources */,
-				3855BF6222ADF676005704AC /* NSDictionary+Tool.m in Sources */,
-				3855BF6422ADF676005704AC /* UIColor+Tools.m in Sources */,
-				3855BF6722ADF691005704AC /* NSString+Tools.m in Sources */,
+				3328E90E22BFE5F90025472D /* NSDictionary+Tool.m in Sources */,
+				3328E90B22BFE5F90025472D /* NSString+Tools.m in Sources */,
+				3328E90C22BFE5F90025472D /* UITableViewCell+Tools.m in Sources */,
 				38FB791022AE29F900ECD731 /* ChannelController.m in Sources */,
+				3328E8F222BF73570025472D /* Message.m in Sources */,
 				381FB161229677440090C697 /* ViewController.m in Sources */,
 				381FB16C229677460090C697 /* main.m in Sources */,
+				3328E91022BFE5F90025472D /* UIColor+Tools.m in Sources */,
+				3328E8EA22BF64370025472D /* ChannelCell.m in Sources */,
 				38F77F1D22AF820C0063FDD1 /* MessageCell.m in Sources */,
-				3855BF6322ADF676005704AC /* UIView+Tools.m in Sources */,
+				3328E90A22BFE5F90025472D /* UIViewController+Tools.m in Sources */,
+				3328E90D22BFE5F90025472D /* NSArray+Tool.m in Sources */,
+				3328E90F22BFE5F90025472D /* UIView+Tools.m in Sources */,
 				381FB15E229677440090C697 /* AppDelegate.m in Sources */,
+				3328E91322BFE5F90025472D /* BaseLabel.m in Sources */,
+				3328E91222BFE5F90025472D /* BaseButton.m in Sources */,
+				3328E91122BFE5F90025472D /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

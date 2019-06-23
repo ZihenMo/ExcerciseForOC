@@ -9,11 +9,18 @@
 #import "ChatController.h"
 #import <SendBirdSDK/SendBirdSDK.h>
 #import "MessageCell.h"
+#import "PicTextButton.h"
 
 @interface ChatController ()<UITableViewDelegate, UITableViewDataSource, SBDChannelDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *sendBtn;
+@property (weak, nonatomic) IBOutlet UIView *toolsView;
+@property (weak, nonatomic) IBOutlet PicTextButton *pictureButton;
+@property (weak, nonatomic) IBOutlet PicTextButton *cameraButton;
+@property (weak, nonatomic) IBOutlet PicTextButton *fileButton;
+@property (weak, nonatomic) IBOutlet PicTextButton *videoButton;
+
 @property (nonatomic, strong) NSMutableArray *messageList;
 @end
 
@@ -21,11 +28,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"MessageCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+
+    [self setupUI];
     [SBDMain addChannelDelegate:self identifier:[[NSUserDefaults standardUserDefaults] objectForKey:SendBirdUserId]];
     [self loadPreviousMessage];
+}
+
+- (void)setupUI {
+    self.pictureButton.type = PicTextTypePicRight;
+    self.cameraButton.type = PicTextTypePicTop;
+    self.fileButton.type = PicTextButtonPicLeft;
+    self.videoButton.type = PicTextTypePicBottom;
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MessageCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
 - (IBAction)sendAction:(id)sender {
     NSString *message = self.textField.text;
@@ -78,7 +93,6 @@
     }
     else {
         cell.textLabel.textAlignment = NSTextAlignmentLeft;
-//        cell.textLabel.backgroundColor = UIColor.blueColor;
     }
     return cell;
 }
@@ -101,7 +115,6 @@
         if (messages.count > 0) {
             NSLog(@"有历史消息");
         }
-//        NSArray<NSString *> *historyMessages = [messages valueForKey:@"message"];
         self.messageList = [messages arrayByAddingObjectsFromArray:self.messageList].mutableCopy;
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
