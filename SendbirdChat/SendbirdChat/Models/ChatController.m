@@ -32,26 +32,7 @@
     if (message.isEmpty || self.channel == nil) {
         return;
     }
-    SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:message];
-//    [params setCustomType:@""]; // 用来筛选
-    [params setData:message];
-//    [params setMentionType:SBDMentionTypeUsers];        // Either SBDMentionTypeUsers or SBDMentionTypeChannel
-//    [params setMentionedUserIds:@[userId, serviceId]];  // or setMentionedUsers:
-//    [params setMetaArrayKeys:@[@"key1", @"key2"]];
-//    [params setTargetLanguages:@[@"fr", @"de"]];        // French and German
     
-    [params setPushNotificationDeliveryOption:SBDPushNotificationDeliveryOptionDefault];
-    
-    [self.channel sendUserMessageWithParams:params completionHandler:^(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error) {
-        if (error != nil) { // Error.
-            [self.view show:error.localizedDescription];
-            return;
-        }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.messageList addObject:userMessage];
-            [self.tableView reloadData];
-        });
-    }];
 }
 #pragma mark - UITableView Delegate & DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

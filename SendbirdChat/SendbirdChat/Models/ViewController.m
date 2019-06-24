@@ -47,19 +47,7 @@
             [self.view show:error.localizedDescription];
             return;
         }
-        // 推送权限
-        [SBDMain registerDevicePushToken:[SBDMain getPendingPushToken] unique:YES completionHandler:^(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error) {
-            if (error != nil) {
-                NSLog(@"APNS registration failed.");
-                return;
-            }
-            if (status == SBDPushTokenRegistrationStatusPending) {
-                NSLog(@"Push registration is pending.");
-            }
-            else {
-                NSLog(@"APNS Token is registered.");
-            }
-        }];
+ 
         NSLog(@"%@", user);
         [self.view hideHUD];
         [[NSUserDefaults standardUserDefaults] setObject:user.userId forKey:SendBirdUserId];

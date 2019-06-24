@@ -275,8 +275,13 @@
 		33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011B1227DD2A300410EB7 /* PersonCell.m */; };
 		33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B011B2227DD2A300410EB7 /* PersonCell.xib */; };
 		33BFB296227DA29B00B998BC /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB295227DA29B00B998BC /* Request.m */; };
+		3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802363E22BCBE8100CC8363 /* TableViewCell.m */; };
+		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
+		381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */; };
+		381EF73022B9CE5D00947159 /* CustomizedKeyBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */; };
+		381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF73322B9CFAB00947159 /* KeyBoardView.m */; };
 		382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */; };
 		382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */; };
 		3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */; };
@@ -575,9 +580,17 @@
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		3802363D22BCBE8100CC8363 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		3802363E22BCBE8100CC8363 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		3802363F22BCBE8100CC8363 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
+		381EF72C22B9CE5D00947159 /* CustomizedKeyBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomizedKeyBoardController.h; sourceTree = "<group>"; };
+		381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomizedKeyBoardController.m; sourceTree = "<group>"; };
+		381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizedKeyBoardController.xib; sourceTree = "<group>"; };
+		381EF73222B9CFAB00947159 /* KeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyBoardView.h; sourceTree = "<group>"; };
+		381EF73322B9CFAB00947159 /* KeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardView.m; sourceTree = "<group>"; };
 		382F2C3D228BF9D100CEC190 /* LocalDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataTableViewController.h; sourceTree = "<group>"; };
 		382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataTableViewController.m; sourceTree = "<group>"; };
 		382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalDataTableViewController.xib; sourceTree = "<group>"; };
@@ -655,7 +668,7 @@
 				3876D5D3228A9CBF00A6A3B3 /* Categories */,
 				33AB6C36227DA2140084E845 /* Request */,
 				3876D5AC228A903700A6A3B3 /* Categories */,
-				33019911226647B300EA9903 /* Models */,
+				33019911226647B300EA9903 /* Modules */,
 				330196DF2266399D00EA9903 /* AppDelegate.h */,
 				330196E02266399D00EA9903 /* AppDelegate.m */,
 				330196E22266399D00EA9903 /* ViewController.h */,
@@ -1011,16 +1024,17 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
-		33019911226647B300EA9903 /* Models */ = {
+		33019911226647B300EA9903 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */,
 				3804F4AD228D09FA005B29FE /* NavigationItem */,
 				3876D5E4228AA05F00A6A3B3 /* CoreGraphic */,
 				3876D59E228A8F7E00A6A3B3 /* Button */,
 				33B011A4227DA7FC00410EB7 /* TableView */,
 				3876D5E3228AA01F00A6A3B3 /* ImageView */,
 			);
-			path = Models;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		33AB6C36227DA2140084E845 /* Request */ = {
@@ -1062,6 +1076,9 @@
 				33B011B0227DD2A300410EB7 /* PersonCell.h */,
 				33B011B1227DD2A300410EB7 /* PersonCell.m */,
 				33B011B2227DD2A300410EB7 /* PersonCell.xib */,
+				3802363D22BCBE8100CC8363 /* TableViewCell.h */,
+				3802363E22BCBE8100CC8363 /* TableViewCell.m */,
+				3802363F22BCBE8100CC8363 /* TableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1074,6 +1091,26 @@
 				3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */,
 			);
 			path = NavigationItem;
+			sourceTree = "<group>";
+		};
+		381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				381EF73122B9CF3900947159 /* Views */,
+				381EF72C22B9CE5D00947159 /* CustomizedKeyBoardController.h */,
+				381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */,
+				381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */,
+			);
+			path = CustomizedKeyBoard;
+			sourceTree = "<group>";
+		};
+		381EF73122B9CF3900947159 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				381EF73222B9CFAB00947159 /* KeyBoardView.h */,
+				381EF73322B9CFAB00947159 /* KeyBoardView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3876D59E228A8F7E00A6A3B3 /* Button */ = {
@@ -1460,6 +1497,7 @@
 				337F3361226CCD22009EA22F /* TableViewController.xib in Resources */,
 				330198962266419700EA9903 /* xiaozhao2_18.png in Resources */,
 				330198D02266419700EA9903 /* dazhao_30.png in Resources */,
+				3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */,
 				330198CA2266419700EA9903 /* dazhao_26.png in Resources */,
 				330198C62266419700EA9903 /* dazhao_23.png in Resources */,
 				330198842266419700EA9903 /* xiaozhao2_8.png in Resources */,
@@ -1504,6 +1542,7 @@
 				330198D12266419700EA9903 /* dazhao_24.png in Resources */,
 				330198832266419700EA9903 /* xiaozhao2_11.png in Resources */,
 				3301987C2266419700EA9903 /* xiaozhao2_17.png in Resources */,
+				381EF73022B9CE5D00947159 /* CustomizedKeyBoardController.xib in Resources */,
 				330198652266419700EA9903 /* xiaozhao3_25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1606,12 +1645,14 @@
 				3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */,
 				3876D5E2228A9CBF00A6A3B3 /* UIColor+Tools.m in Sources */,
 				3876D5DC228A9CBF00A6A3B3 /* BaseViewController.m in Sources */,
+				381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */,
 				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
 				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
 				330196EF2266399E00EA9903 /* main.m in Sources */,
 				3876D5E0228A9CBF00A6A3B3 /* NSArray+Tool.m in Sources */,
 				3876D5DD228A9CBF00A6A3B3 /* BaseButton.m in Sources */,
+				3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */,
 				3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
@@ -1619,6 +1660,7 @@
 				33BFB296227DA29B00B998BC /* Request.m in Sources */,
 				3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */,
 				3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */,
+				381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */,
 				388658042294F03C00DB4E25 /* UIView+Tools.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
 			);

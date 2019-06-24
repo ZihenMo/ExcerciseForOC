@@ -12,6 +12,7 @@
 #import "ButtonViewController.h"
 #import "CGDrawViewController.h"
 #import "NavigationItemController.h"
+#import "CustomizedKeyBoardController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -57,7 +58,6 @@
             nextController = [[TableViewController alloc] init];
             break;
         case 2:
-//            nextController = [[ButtonViewController alloc] init];
             nextController = [[ButtonViewController alloc] init];
             break;
         case 3:
@@ -66,6 +66,8 @@
         case 4:
             nextController = [[NavigationItemController alloc] init];
             break;
+        case 5:// 自定义键盘
+            nextController = [[CustomizedKeyBoardController alloc] init];
         default:
             break;
     }
@@ -86,7 +88,9 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
-        _uiArray = @[@"UIImageView", @"UITableView", @"Button & Image", @"图形绘制", @"NavigationItem"];
+        _uiArray = @[@"UIImageView",@"UITableView",
+                     @"Button & Image", @"图形绘制",
+                     @"NavigationItem", @"自定义键盘"];
     }
     return  _uiArray;
 }

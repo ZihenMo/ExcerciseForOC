@@ -9,6 +9,7 @@
 #import "LocalDataTableViewController.h"
 #import <objc/runtime.h>
 #import <KafkaRefresh/KafkaRefresh.h>
+#import "TableViewCell.h"
 
 @interface UITableView (Base)
 
@@ -319,7 +320,9 @@ static char GSEmptySubTitleLabelTextKey;
 #pragma mark - UI
 - (void)setupUI {
     self.tableView.enableCustomEditing = YES;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerNib: [UINib nibWithNibName:@"TableViewCell" bundle:nil]  forCellReuseIdentifier:@"cell"];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 200;
     [self addRefresh];
 }
 
@@ -376,9 +379,17 @@ static char GSEmptySubTitleLabelTextKey;
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = [self.dataArray[indexPath.row] stringValue];
-    cell.textLabel.textAlignment = NSTextAlignmentRight;
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+//    cell.textLabel.text = [self.dataArray[indexPath.row] stringValue];
+//    cell.textLabel.textAlignment = NSTextAlignmentRight;
+    if (indexPath.row % 3) {
+        cell.photo.image = [UIImage imageNamed:@"stand"];
+    }
+    else {
+        cell.photo.image = [UIImage imageNamed:@"Kr_1"];
+    }
+//    [cell setNeedsUpdateConstraints];
+//    [cell updateConstraintsIfNeeded];
     return cell;
 }
 
@@ -392,10 +403,13 @@ static char GSEmptySubTitleLabelTextKey;
     }
     
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 88;
-}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row % 2) {
+        return UITableViewAutomaticDimension;
+    }
+        return 150;
+}
 
 #pragma mark - Getter
 - (NSMutableArray *)dataArray {
