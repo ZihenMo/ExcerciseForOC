@@ -44,7 +44,7 @@ void *task (void *name) {
 }
 
 #pragma mark - pthread
-// p指POSIX
+// p指POSIX 应该也是代指linux吧
 - (void)createPthread {
     pthread_t thread;
     NSString *name = @"taskName";

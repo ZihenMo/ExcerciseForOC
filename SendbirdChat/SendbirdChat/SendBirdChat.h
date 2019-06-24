@@ -12,6 +12,7 @@
 // -- category
 #import "NSString+Tools.h"
 #import "UIView+Tools.h"
+#import "UITableViewCell+Tools.h"
 // framework
 #import <ReactiveObjC.h>
 #import <MBProgressHUD.h>

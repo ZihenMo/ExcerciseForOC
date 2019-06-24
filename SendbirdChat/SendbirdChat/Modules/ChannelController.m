@@ -6,9 +6,11 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
+#import <SendBirdSDK/SendBirdSDK.h>
 #import "ChannelController.h"
 #import "ChatController.h"
-#import <SendBirdSDK/SendBirdSDK.h>
+#import "ChannelCell.h"
+
 @interface ChannelController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *channels;
@@ -25,8 +27,9 @@
 
 - (void)setupUI {
     self.title = @"频道列表";
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    self.tableView.rowHeight = 60.f;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass(ChannelCell.class) bundle:nil] forCellReuseIdentifier:NSStringFromClass(ChannelCell.class)];
+    self.tableView.rowHeight = 100;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }
 
 #pragma mark - LoadList
@@ -66,7 +69,7 @@
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请输入客服ID" message:nil preferredStyle:UIAlertControllerStyleAlert];
     NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:SendBirdUserId];
     __block NSString *serviceId;
-    UIAlertAction *okAciton = [UIAlertAction actionWithTitle:@"连接" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *okAciton = [UIAlertAction actionWithTitle:@"连接" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self.view endEditing:YES];
         // isDistinct 创建相同成员的频道会合并消息
         [SBDGroupChannel createChannelWithUserIds:@[userId, serviceId]isDistinct:YES completionHandler:^(SBDGroupChannel * _Nullable channel, SBDError * _Nullable error) {
@@ -97,21 +100,19 @@
     return self.channels.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    ChannelCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(ChannelCell.class) forIndexPath:indexPath];
     SBDGroupChannel * groupChannel = self.channels[indexPath.row];
 //    cell.textLabel.text = groupChannel.name;
     NSString *membersName = @"";
     NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:SendBirdUserId];
+    // 显示已经接的ID
     for (SBDMember *member in groupChannel.members) {
-        if ([member.userId isEqualToString:userId]) {
+        if (![member.userId isEqualToString:userId]) {
             membersName = [membersName stringByAppendingFormat:@"%@\t", member.userId];
         }
     }
-    UIImageView *imageView = cell.imageView;
-    [imageView sd_setImageWithURL:[NSURL URLWithString:groupChannel.coverUrl]];
-    imageView.layer.cornerRadius = 25.f;
-    imageView.layer.masksToBounds = YES;
-    cell.textLabel.text = membersName;
+    [cell bindData:@{@"coverUrl": groupChannel.coverUrl,
+                     @"title": membersName}];
     return cell;
 }
 

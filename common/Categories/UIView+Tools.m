@@ -88,3 +88,49 @@
 }
 
 @end
+
+@implementation UIView (frame)
+
+- (CGFloat)height {
+    return self.size.height;
+}
+- (CGFloat)width {
+    return self.size.width;
+}
+- (CGSize)size {
+    return self.frame.size;
+}
+- (CGPoint)origin {
+    return self.frame.origin;
+}
+- (void)setHeight:(CGFloat)height {
+    CGSize size = self.size;
+    size.height = height;
+    self.size = size;
+}
+- (void)setWidth:(CGFloat)width {
+    CGSize size = self.size;
+    size.width = width;
+    self.size = size;
+}
+- (void)setX:(CGFloat)x {
+    CGPoint origin = self.origin;
+    origin.x = x;
+    self.origin = origin;
+}
+- (void)setY:(CGFloat)y {
+    CGPoint origin = self.origin;
+    origin.y = y;
+    self.origin = origin;
+}
+- (void)setSize:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+- (void)setOrigin:(CGPoint)origin {
+    CGRect frame = self.frame;
+    frame.origin = origin;
+    self.frame = frame;
+}
+@end

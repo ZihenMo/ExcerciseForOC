@@ -1,8 +1,8 @@
 //
-//  MessageCell.h
+//  ChannelCell.h
 //  SendbirdChat
 //
-//  Created by gshopper on 2019/6/11.
+//  Created by mozihen on 2019/6/23.
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MessageCell : UITableViewCell
-- (void)setMessage: (NSString *)message;
+@interface ChannelCell : UITableViewCell
+
 @end
 
 NS_ASSUME_NONNULL_END
