@@ -1,0 +1,6 @@
+framework module ASDK {
+  umbrella header "ASDK.h"
+
+  export *
+  module * { export * }
+}

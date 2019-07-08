@@ -10,22 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** 混排样式
- 图与标题的位置
- */
-typedef enum : NSUInteger {
-    PicTextTypePicTop,
-    PicTextTypePicBottom,
-    PicTextButtonPicLeft,
-    PicTextTypePicRight
-} PicTextType;
-/**
+/*
  图文混排按钮
+ @depredecate 请采用BaseButton
  */
 @interface PicTextButton : BaseButton
-@property (nonatomic, assign) PicTextType type;
-
-- (instancetype)initWithPicTextType: (PicTextType)type;
 
 @end
 

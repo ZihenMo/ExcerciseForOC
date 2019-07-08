@@ -275,10 +275,29 @@
 		33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011B1227DD2A300410EB7 /* PersonCell.m */; };
 		33B011B4227DD2A300410EB7 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B011B2227DD2A300410EB7 /* PersonCell.xib */; };
 		33BFB296227DA29B00B998BC /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BFB295227DA29B00B998BC /* Request.m */; };
+		3801383922C5E82A00F0C33B /* ASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3801383822C5E82A00F0C33B /* ASDK.framework */; };
+		3801431A22C1B34C007A2F68 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430322C1B34B007A2F68 /* UIViewController+Tools.m */; };
+		3801431B22C1B34C007A2F68 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430522C1B34B007A2F68 /* NSString+Tools.m */; };
+		3801431C22C1B34C007A2F68 /* UITableViewCell+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430622C1B34B007A2F68 /* UITableViewCell+Tools.m */; };
+		3801431D22C1B34C007A2F68 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430D22C1B34B007A2F68 /* NSArray+Tool.m */; };
+		3801431E22C1B34C007A2F68 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430E22C1B34B007A2F68 /* NSDictionary+Tool.m */; };
+		3801431F22C1B34C007A2F68 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430F22C1B34B007A2F68 /* UIView+Tools.m */; };
+		3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431022C1B34B007A2F68 /* UIColor+Tools.m */; };
+		3801432122C1B34C007A2F68 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431322C1B34B007A2F68 /* BaseViewController.m */; };
+		3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431422C1B34B007A2F68 /* PicTextButton.m */; };
+		3801432322C1B34C007A2F68 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431622C1B34B007A2F68 /* BaseButton.m */; };
+		3801432422C1B34C007A2F68 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431822C1B34B007A2F68 /* BaseLabel.m */; };
 		3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802363E22BCBE8100CC8363 /* TableViewCell.m */; };
 		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
+		3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F64622C459CD00562C5C /* DynamicInputView.m */; };
+		3806F65422C4675200562C5C /* eye_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3806F65022C4675200562C5C /* eye_close@2x.png */; };
+		3806F65522C4675200562C5C /* eye_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3806F65122C4675200562C5C /* eye_open@2x.png */; };
+		3806F65622C4675200562C5C /* eye_open@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3806F65222C4675200562C5C /* eye_open@3x.png */; };
+		3806F65722C4675200562C5C /* eye_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3806F65322C4675200562C5C /* eye_close@3x.png */; };
+		3806F66722C4870F00562C5C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F66522C4870F00562C5C /* LoginViewController.m */; };
+		3806F66822C4870F00562C5C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3806F66622C4870F00562C5C /* LoginViewController.xib */; };
 		381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */; };
 		381EF73022B9CE5D00947159 /* CustomizedKeyBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */; };
 		381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF73322B9CFAB00947159 /* KeyBoardView.m */; };
@@ -286,17 +305,9 @@
 		382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */; };
 		3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */; };
 		3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */; };
-		3876D5DC228A9CBF00A6A3B3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */; };
-		3876D5DD228A9CBF00A6A3B3 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */; };
-		3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */; };
-		3876D5DF228A9CBF00A6A3B3 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */; };
-		3876D5E0228A9CBF00A6A3B3 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */; };
-		3876D5E1228A9CBF00A6A3B3 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */; };
-		3876D5E2228A9CBF00A6A3B3 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */; };
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
 		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
 		3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /* BGView.m */; };
-		388658042294F03C00DB4E25 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 388658032294F03C00DB4E25 /* UIView+Tools.m */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -580,12 +591,44 @@
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		3801383822C5E82A00F0C33B /* ASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASDK.framework; path = ../../ASDK/Products/ASDK.framework; sourceTree = "<group>"; };
+		3801430322C1B34B007A2F68 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3801430422C1B34B007A2F68 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3801430522C1B34B007A2F68 /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		3801430622C1B34B007A2F68 /* UITableViewCell+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Tools.m"; sourceTree = "<group>"; };
+		3801430722C1B34B007A2F68 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3801430822C1B34B007A2F68 /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		3801430922C1B34B007A2F68 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3801430A22C1B34B007A2F68 /* UITableViewCell+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Tools.h"; sourceTree = "<group>"; };
+		3801430B22C1B34B007A2F68 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		3801430C22C1B34B007A2F68 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3801430D22C1B34B007A2F68 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3801430E22C1B34B007A2F68 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3801430F22C1B34B007A2F68 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		3801431022C1B34B007A2F68 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3801431222C1B34B007A2F68 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		3801431322C1B34B007A2F68 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3801431422C1B34B007A2F68 /* PicTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTextButton.m; sourceTree = "<group>"; };
+		3801431522C1B34B007A2F68 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		3801431622C1B34B007A2F68 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		3801431722C1B34B007A2F68 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3801431822C1B34B007A2F68 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		3801431922C1B34B007A2F68 /* PicTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTextButton.h; sourceTree = "<group>"; };
 		3802363D22BCBE8100CC8363 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		3802363E22BCBE8100CC8363 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		3802363F22BCBE8100CC8363 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
+		3806F64522C459CD00562C5C /* DynamicInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicInputView.h; sourceTree = "<group>"; };
+		3806F64622C459CD00562C5C /* DynamicInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicInputView.m; sourceTree = "<group>"; };
+		3806F65022C4675200562C5C /* eye_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_close@2x.png"; sourceTree = "<group>"; };
+		3806F65122C4675200562C5C /* eye_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_open@2x.png"; sourceTree = "<group>"; };
+		3806F65222C4675200562C5C /* eye_open@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_open@3x.png"; sourceTree = "<group>"; };
+		3806F65322C4675200562C5C /* eye_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_close@3x.png"; sourceTree = "<group>"; };
+		3806F66422C4870F00562C5C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3806F66522C4870F00562C5C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3806F66622C4870F00562C5C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		381EF72C22B9CE5D00947159 /* CustomizedKeyBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomizedKeyBoardController.h; sourceTree = "<group>"; };
 		381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomizedKeyBoardController.m; sourceTree = "<group>"; };
 		381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizedKeyBoardController.xib; sourceTree = "<group>"; };
@@ -597,35 +640,11 @@
 		3876D59F228A8FA700A6A3B3 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
-		3876D5A4228A903700A6A3B3 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
-		3876D5A5228A903700A6A3B3 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
-		3876D5A6228A903700A6A3B3 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
-		3876D5A7228A903700A6A3B3 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
-		3876D5A8228A903700A6A3B3 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
-		3876D5A9228A903700A6A3B3 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
-		3876D5AA228A903700A6A3B3 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
-		3876D5AB228A903700A6A3B3 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
-		3876D5CD228A9CBF00A6A3B3 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		3876D5CF228A9CBF00A6A3B3 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		3876D5D1228A9CBF00A6A3B3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
-		3876D5D5228A9CBF00A6A3B3 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
-		3876D5D6228A9CBF00A6A3B3 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
-		3876D5D7228A9CBF00A6A3B3 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
-		3876D5D8228A9CBF00A6A3B3 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
-		3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
-		3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
-		3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		3876D5E5228AA0BF00A6A3B3 /* CGDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawViewController.h; sourceTree = "<group>"; };
 		3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDrawViewController.m; sourceTree = "<group>"; };
 		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
 		3876D5EB228AA43B00A6A3B3 /* BGView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
 		3876D5EC228AA43B00A6A3B3 /* BGView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
-		388658022294F03C00DB4E25 /* UIView+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
-		388658032294F03C00DB4E25 /* UIView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -636,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */,
+				3801383922C5E82A00F0C33B /* ASDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,10 +684,9 @@
 		330196DE2266399D00EA9903 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3876D5CC228A9CBF00A6A3B3 /* Base */,
-				3876D5D3228A9CBF00A6A3B3 /* Categories */,
+				3801383822C5E82A00F0C33B /* ASDK.framework */,
+				3801430122C1B34B007A2F68 /* common */,
 				33AB6C36227DA2140084E845 /* Request */,
-				3876D5AC228A903700A6A3B3 /* Categories */,
 				33019911226647B300EA9903 /* Modules */,
 				330196DF2266399D00EA9903 /* AppDelegate.h */,
 				330196E02266399D00EA9903 /* AppDelegate.m */,
@@ -1083,6 +1102,58 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3801430122C1B34B007A2F68 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3801430222C1B34B007A2F68 /* Categories */,
+				3801431122C1B34B007A2F68 /* Base */,
+			);
+			name = common;
+			path = ../../common;
+			sourceTree = "<group>";
+		};
+		3801430222C1B34B007A2F68 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3801430322C1B34B007A2F68 /* UIViewController+Tools.m */,
+				3801430422C1B34B007A2F68 /* NSArray+Tool.h */,
+				3801430522C1B34B007A2F68 /* NSString+Tools.m */,
+				3801430622C1B34B007A2F68 /* UITableViewCell+Tools.m */,
+				3801430722C1B34B007A2F68 /* NSDictionary+Tool.h */,
+				3801430822C1B34B007A2F68 /* UIView+Tools.h */,
+				3801430922C1B34B007A2F68 /* UIColor+Tools.h */,
+				3801430A22C1B34B007A2F68 /* UITableViewCell+Tools.h */,
+				3801430B22C1B34B007A2F68 /* NSString+Tools.h */,
+				3801430C22C1B34B007A2F68 /* UIViewController+Tools.h */,
+				3801430D22C1B34B007A2F68 /* NSArray+Tool.m */,
+				3801430E22C1B34B007A2F68 /* NSDictionary+Tool.m */,
+				3801430F22C1B34B007A2F68 /* UIView+Tools.m */,
+				3801431022C1B34B007A2F68 /* UIColor+Tools.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3801431122C1B34B007A2F68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3806F66322C4677500562C5C /* resource */,
+				3801431222C1B34B007A2F68 /* BaseButton.h */,
+				3801431622C1B34B007A2F68 /* BaseButton.m */,
+				3801431822C1B34B007A2F68 /* BaseLabel.m */,
+				3801431522C1B34B007A2F68 /* BaseLabel.h */,
+				3801431322C1B34B007A2F68 /* BaseViewController.m */,
+				3801431722C1B34B007A2F68 /* BaseViewController.h */,
+				3801431922C1B34B007A2F68 /* PicTextButton.h */,
+				3801431422C1B34B007A2F68 /* PicTextButton.m */,
+				3806F64522C459CD00562C5C /* DynamicInputView.h */,
+				3806F64622C459CD00562C5C /* DynamicInputView.m */,
+				3806F66422C4870F00562C5C /* LoginViewController.h */,
+				3806F66522C4870F00562C5C /* LoginViewController.m */,
+				3806F66622C4870F00562C5C /* LoginViewController.xib */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3804F4AD228D09FA005B29FE /* NavigationItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -1091,6 +1162,17 @@
 				3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */,
 			);
 			path = NavigationItem;
+			sourceTree = "<group>";
+		};
+		3806F66322C4677500562C5C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3806F65022C4675200562C5C /* eye_close@2x.png */,
+				3806F65322C4675200562C5C /* eye_close@3x.png */,
+				3806F65122C4675200562C5C /* eye_open@2x.png */,
+				3806F65222C4675200562C5C /* eye_open@3x.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */ = {
@@ -1121,53 +1203,6 @@
 				3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */,
 			);
 			path = Button;
-			sourceTree = "<group>";
-		};
-		3876D5AC228A903700A6A3B3 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				3876D5A4228A903700A6A3B3 /* UIViewController+Tools.m */,
-				3876D5A5228A903700A6A3B3 /* NSArray+Tool.h */,
-				3876D5A6228A903700A6A3B3 /* NSDictionary+Tool.h */,
-				3876D5A7228A903700A6A3B3 /* UIColor+Tools.h */,
-				3876D5A8228A903700A6A3B3 /* UIViewController+Tools.h */,
-				3876D5A9228A903700A6A3B3 /* NSArray+Tool.m */,
-				3876D5AA228A903700A6A3B3 /* NSDictionary+Tool.m */,
-				3876D5AB228A903700A6A3B3 /* UIColor+Tools.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		3876D5CC228A9CBF00A6A3B3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				3876D5CD228A9CBF00A6A3B3 /* BaseButton.h */,
-				3876D5CE228A9CBF00A6A3B3 /* BaseViewController.m */,
-				3876D5CF228A9CBF00A6A3B3 /* BaseLabel.h */,
-				3876D5D0228A9CBF00A6A3B3 /* BaseButton.m */,
-				3876D5D1228A9CBF00A6A3B3 /* BaseViewController.h */,
-				3876D5D2228A9CBF00A6A3B3 /* BaseLabel.m */,
-			);
-			name = Base;
-			path = ../../common/Base;
-			sourceTree = "<group>";
-		};
-		3876D5D3228A9CBF00A6A3B3 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				3876D5D4228A9CBF00A6A3B3 /* UIViewController+Tools.m */,
-				3876D5D5228A9CBF00A6A3B3 /* NSArray+Tool.h */,
-				3876D5D6228A9CBF00A6A3B3 /* NSDictionary+Tool.h */,
-				3876D5D7228A9CBF00A6A3B3 /* UIColor+Tools.h */,
-				3876D5D8228A9CBF00A6A3B3 /* UIViewController+Tools.h */,
-				3876D5D9228A9CBF00A6A3B3 /* NSArray+Tool.m */,
-				3876D5DA228A9CBF00A6A3B3 /* NSDictionary+Tool.m */,
-				3876D5DB228A9CBF00A6A3B3 /* UIColor+Tools.m */,
-				388658022294F03C00DB4E25 /* UIView+Tools.h */,
-				388658032294F03C00DB4E25 /* UIView+Tools.m */,
-			);
-			name = Categories;
-			path = ../../common/Categories;
 			sourceTree = "<group>";
 		};
 		3876D5E3228AA01F00A6A3B3 /* ImageView */ = {
@@ -1252,6 +1287,7 @@
 				TargetAttributes = {
 					330196DB2266399D00EA9903 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -1311,6 +1347,7 @@
 				330198212266419700EA9903 /* install_b_27.png in Resources */,
 				3301983F2266419700EA9903 /* xiaozhao1_18.png in Resources */,
 				3301981A2266419700EA9903 /* install_b_20.png in Resources */,
+				3806F65422C4675200562C5C /* eye_close@2x.png in Resources */,
 				3301984D2266419700EA9903 /* xiaozhao1_17.png in Resources */,
 				330198472266419700EA9903 /* xiaozhao1_6.png in Resources */,
 				330198252266419700EA9903 /* install_b_5.png in Resources */,
@@ -1319,6 +1356,7 @@
 				330198192266419700EA9903 /* install_b_22.png in Resources */,
 				330198F22266419700EA9903 /* dazhao_9.png in Resources */,
 				330198CD2266419700EA9903 /* dazhao_19.png in Resources */,
+				3806F65722C4675200562C5C /* eye_close@3x.png in Resources */,
 				330198F72266419700EA9903 /* run_1.png in Resources */,
 				330198B02266419700EA9903 /* dazhao_79.png in Resources */,
 				330198DA2266419700EA9903 /* dazhao_12.png in Resources */,
@@ -1458,6 +1496,7 @@
 				330198482266419700EA9903 /* xiaozhao1_10.png in Resources */,
 				3301981B2266419700EA9903 /* install_b_21.png in Resources */,
 				330198592266419700EA9903 /* xiaozhao3_36.png in Resources */,
+				3806F65622C4675200562C5C /* eye_open@3x.png in Resources */,
 				330198AF2266419700EA9903 /* dazhao_55.png in Resources */,
 				330198AB2266419700EA9903 /* dazhao_6.png in Resources */,
 				3301987D2266419700EA9903 /* xiaozhao2_15.png in Resources */,
@@ -1477,6 +1516,7 @@
 				330198322266419700EA9903 /* install_b_11.png in Resources */,
 				330198D72266419700EA9903 /* dazhao_16.png in Resources */,
 				330198782266419700EA9903 /* xiaozhao3_38.png in Resources */,
+				3806F65522C4675200562C5C /* eye_open@2x.png in Resources */,
 				330198992266419700EA9903 /* xiaozhao2_26.png in Resources */,
 				3301980C2266419700EA9903 /* dead_22.png in Resources */,
 				330198A52266419700EA9903 /* dazhao_42.png in Resources */,
@@ -1522,6 +1562,7 @@
 				3301985D2266419700EA9903 /* xiaozhao3_33.png in Resources */,
 				330198E52266419700EA9903 /* dazhao_49.png in Resources */,
 				330198072266419700EA9903 /* dead_9.png in Resources */,
+				3806F66822C4870F00562C5C /* LoginViewController.xib in Resources */,
 				330198AE2266419700EA9903 /* dazhao_41.png in Resources */,
 				330198932266419700EA9903 /* xiaozhao2_25.png in Resources */,
 				330198CF2266419700EA9903 /* dazhao_31.png in Resources */,
@@ -1639,29 +1680,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3876D5DF228A9CBF00A6A3B3 /* UIViewController+Tools.m in Sources */,
+				3806F66722C4870F00562C5C /* LoginViewController.m in Sources */,
 				33019927226647B400EA9903 /* ImageViewController.m in Sources */,
-				3876D5E1228A9CBF00A6A3B3 /* NSDictionary+Tool.m in Sources */,
+				3801432122C1B34C007A2F68 /* BaseViewController.m in Sources */,
 				3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */,
-				3876D5E2228A9CBF00A6A3B3 /* UIColor+Tools.m in Sources */,
-				3876D5DC228A9CBF00A6A3B3 /* BaseViewController.m in Sources */,
+				3801432422C1B34C007A2F68 /* BaseLabel.m in Sources */,
 				381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */,
+				3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */,
 				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
+				3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
 				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
+				3801431D22C1B34C007A2F68 /* NSArray+Tool.m in Sources */,
 				330196EF2266399E00EA9903 /* main.m in Sources */,
-				3876D5E0228A9CBF00A6A3B3 /* NSArray+Tool.m in Sources */,
-				3876D5DD228A9CBF00A6A3B3 /* BaseButton.m in Sources */,
+				3801432322C1B34C007A2F68 /* BaseButton.m in Sources */,
 				3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */,
 				3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
+				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,
 				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,
+				3801431C22C1B34C007A2F68 /* UITableViewCell+Tools.m in Sources */,
+				3801431F22C1B34C007A2F68 /* UIView+Tools.m in Sources */,
+				3801431E22C1B34C007A2F68 /* NSDictionary+Tool.m in Sources */,
 				33BFB296227DA29B00B998BC /* Request.m in Sources */,
-				3876D5DE228A9CBF00A6A3B3 /* BaseLabel.m in Sources */,
+				3801431B22C1B34C007A2F68 /* NSString+Tools.m in Sources */,
 				3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */,
+				3801431A22C1B34C007A2F68 /* UIViewController+Tools.m in Sources */,
 				381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */,
-				388658042294F03C00DB4E25 /* UIView+Tools.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1805,16 +1851,76 @@
 			baseConfigurationReference = EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UI",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UI/UI.h";
 				INFOPLIST_FILE = UI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"KafkaRefresh\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SecurityEnvSDK\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMAnalytics\"",
+					"-framework",
+					"\"UMCommon\"",
+					"-framework",
+					"\"UMCommonLog\"",
+					"-framework",
+					"\"UTDID\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.UI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../common/Base/UI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1824,16 +1930,75 @@
 			baseConfigurationReference = 2D58F1328AA71670C811C4B6 /* Pods-UI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C9K388S8H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UI",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UI/UI.h";
 				INFOPLIST_FILE = UI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"KafkaRefresh\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SecurityEnvSDK\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMAnalytics\"",
+					"-framework",
+					"\"UMCommon\"",
+					"-framework",
+					"\"UMCommonLog\"",
+					"-framework",
+					"\"UTDID\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.UI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../common/Base/UI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

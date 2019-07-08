@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "Person+Tool.h"
 void test(NSString *format, ...);
 void duration();
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        test(@"hello:");
 //        test(@"你大爷%@", @"滚出");
-        duration();
+        Person *person = [[Person alloc] init];
+        [person makeFood];
+        
+//        duration();
     }
     return 0;
 }

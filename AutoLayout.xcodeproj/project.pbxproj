@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333A0562225A3A95001E8EA3 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0561225A3A95001E8EA3 /* BaseLabel.m */; };
-		333A058A225A5C4A001E8EA3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A0589225A5C4A001E8EA3 /* BaseViewController.m */; };
 		33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3725C22512D28006BDB9A /* PresentViewController.m */; };
-		38346BFB2252FC63005DB04A /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BF52252FC62005DB04A /* BaseButton.m */; };
-		38346BFC2252FC63005DB04A /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BF72252FC63005DB04A /* UIViewController+Tools.m */; };
-		38346BFD2252FC63005DB04A /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 38346BFA2252FC63005DB04A /* UIColor+Tools.m */; };
+		3801429722C1B318007A2F68 /* UIViewController+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428022C1B318007A2F68 /* UIViewController+Tools.m */; };
+		3801429822C1B318007A2F68 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428222C1B318007A2F68 /* NSString+Tools.m */; };
+		3801429922C1B318007A2F68 /* UITableViewCell+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428322C1B318007A2F68 /* UITableViewCell+Tools.m */; };
+		3801429A22C1B318007A2F68 /* NSArray+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428A22C1B318007A2F68 /* NSArray+Tool.m */; };
+		3801429B22C1B318007A2F68 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428B22C1B318007A2F68 /* NSDictionary+Tool.m */; };
+		3801429C22C1B318007A2F68 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428C22C1B318007A2F68 /* UIView+Tools.m */; };
+		3801429D22C1B318007A2F68 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801428D22C1B318007A2F68 /* UIColor+Tools.m */; };
+		3801429E22C1B318007A2F68 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801429022C1B318007A2F68 /* BaseViewController.m */; };
+		3801429F22C1B318007A2F68 /* PicTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801429122C1B318007A2F68 /* PicTextButton.m */; };
+		380142A022C1B318007A2F68 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801429322C1B318007A2F68 /* BaseButton.m */; };
+		380142A122C1B318007A2F68 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801429522C1B318007A2F68 /* BaseLabel.m */; };
 		38A0F0D622505BAA003D881D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0F0D522505BAA003D881D /* AppDelegate.m */; };
 		38A0F0D922505BAA003D881D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0F0D822505BAA003D881D /* ViewController.m */; };
 		38A0F0DC22505BAA003D881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A0F0DA22505BAA003D881D /* Main.storyboard */; };
@@ -23,19 +29,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333A0560225A3A95001E8EA3 /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
-		333A0561225A3A95001E8EA3 /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		333A0588225A5C4A001E8EA3 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		333A0589225A5C4A001E8EA3 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		33A37254225124A2006BDB9A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		33A3725B22512D28006BDB9A /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
 		33A3725C22512D28006BDB9A /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
-		38346BF42252FC62005DB04A /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		38346BF52252FC62005DB04A /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		38346BF72252FC63005DB04A /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
-		38346BF82252FC63005DB04A /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
-		38346BF92252FC63005DB04A /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
-		38346BFA2252FC63005DB04A /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3801428022C1B318007A2F68 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
+		3801428122C1B318007A2F68 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
+		3801428222C1B318007A2F68 /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		3801428322C1B318007A2F68 /* UITableViewCell+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Tools.m"; sourceTree = "<group>"; };
+		3801428422C1B318007A2F68 /* NSDictionary+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tool.h"; sourceTree = "<group>"; };
+		3801428522C1B318007A2F68 /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		3801428622C1B318007A2F68 /* UIColor+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		3801428722C1B318007A2F68 /* UITableViewCell+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Tools.h"; sourceTree = "<group>"; };
+		3801428822C1B318007A2F68 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		3801428922C1B318007A2F68 /* UIViewController+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tools.h"; sourceTree = "<group>"; };
+		3801428A22C1B318007A2F68 /* NSArray+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Tool.m"; sourceTree = "<group>"; };
+		3801428B22C1B318007A2F68 /* NSDictionary+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tool.m"; sourceTree = "<group>"; };
+		3801428C22C1B318007A2F68 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		3801428D22C1B318007A2F68 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		3801428F22C1B318007A2F68 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		3801429022C1B318007A2F68 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3801429122C1B318007A2F68 /* PicTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTextButton.m; sourceTree = "<group>"; };
+		3801429222C1B318007A2F68 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		3801429322C1B318007A2F68 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		3801429422C1B318007A2F68 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3801429522C1B318007A2F68 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		3801429622C1B318007A2F68 /* PicTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTextButton.h; sourceTree = "<group>"; };
 		38A0F0D122505BAA003D881D /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A0F0D422505BAA003D881D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38A0F0D522505BAA003D881D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,30 +98,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		38346BF32252FC62005DB04A /* Base */ = {
+		3801427E22C1B318007A2F68 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				38346BF42252FC62005DB04A /* BaseButton.h */,
-				38346BF52252FC62005DB04A /* BaseButton.m */,
-				333A0560225A3A95001E8EA3 /* BaseLabel.h */,
-				333A0561225A3A95001E8EA3 /* BaseLabel.m */,
-				333A0588225A5C4A001E8EA3 /* BaseViewController.h */,
-				333A0589225A5C4A001E8EA3 /* BaseViewController.m */,
+				3801427F22C1B318007A2F68 /* Categories */,
+				3801428E22C1B318007A2F68 /* Base */,
 			);
-			path = Base;
+			path = common;
 			sourceTree = SOURCE_ROOT;
 		};
-		38346BF62252FC63005DB04A /* Categories */ = {
+		3801427F22C1B318007A2F68 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				38346BF72252FC63005DB04A /* UIViewController+Tools.m */,
-				38346BF82252FC63005DB04A /* UIColor+Tools.h */,
-				38346BF92252FC63005DB04A /* UIViewController+Tools.h */,
-				38346BFA2252FC63005DB04A /* UIColor+Tools.m */,
+				3801428022C1B318007A2F68 /* UIViewController+Tools.m */,
+				3801428122C1B318007A2F68 /* NSArray+Tool.h */,
+				3801428222C1B318007A2F68 /* NSString+Tools.m */,
+				3801428322C1B318007A2F68 /* UITableViewCell+Tools.m */,
+				3801428422C1B318007A2F68 /* NSDictionary+Tool.h */,
+				3801428522C1B318007A2F68 /* UIView+Tools.h */,
+				3801428622C1B318007A2F68 /* UIColor+Tools.h */,
+				3801428722C1B318007A2F68 /* UITableViewCell+Tools.h */,
+				3801428822C1B318007A2F68 /* NSString+Tools.h */,
+				3801428922C1B318007A2F68 /* UIViewController+Tools.h */,
+				3801428A22C1B318007A2F68 /* NSArray+Tool.m */,
+				3801428B22C1B318007A2F68 /* NSDictionary+Tool.m */,
+				3801428C22C1B318007A2F68 /* UIView+Tools.m */,
+				3801428D22C1B318007A2F68 /* UIColor+Tools.m */,
 			);
-			name = Categories;
-			path = Localizable/Localizable/Categories;
-			sourceTree = SOURCE_ROOT;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3801428E22C1B318007A2F68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3801428F22C1B318007A2F68 /* BaseButton.h */,
+				3801429022C1B318007A2F68 /* BaseViewController.m */,
+				3801429122C1B318007A2F68 /* PicTextButton.m */,
+				3801429222C1B318007A2F68 /* BaseLabel.h */,
+				3801429322C1B318007A2F68 /* BaseButton.m */,
+				3801429422C1B318007A2F68 /* BaseViewController.h */,
+				3801429522C1B318007A2F68 /* BaseLabel.m */,
+				3801429622C1B318007A2F68 /* PicTextButton.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
 		};
 		38A0F0C822505BA9003D881D = {
 			isa = PBXGroup;
@@ -126,8 +164,7 @@
 		38A0F0D322505BAA003D881D /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				38346BF32252FC62005DB04A /* Base */,
-				38346BF62252FC63005DB04A /* Categories */,
+				3801427E22C1B318007A2F68 /* common */,
 				38A0F0D422505BAA003D881D /* AppDelegate.h */,
 				38A0F0D522505BAA003D881D /* AppDelegate.m */,
 				38A0F0D722505BAA003D881D /* ViewController.h */,
@@ -301,14 +338,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A0F0D922505BAA003D881D /* ViewController.m in Sources */,
-				333A058A225A5C4A001E8EA3 /* BaseViewController.m in Sources */,
-				333A0562225A3A95001E8EA3 /* BaseLabel.m in Sources */,
-				38346BFD2252FC63005DB04A /* UIColor+Tools.m in Sources */,
+				3801429E22C1B318007A2F68 /* BaseViewController.m in Sources */,
+				3801429822C1B318007A2F68 /* NSString+Tools.m in Sources */,
+				3801429D22C1B318007A2F68 /* UIColor+Tools.m in Sources */,
+				3801429B22C1B318007A2F68 /* NSDictionary+Tool.m in Sources */,
+				3801429A22C1B318007A2F68 /* NSArray+Tool.m in Sources */,
+				380142A022C1B318007A2F68 /* BaseButton.m in Sources */,
 				33A3725D22512D28006BDB9A /* PresentViewController.m in Sources */,
-				38346BFC2252FC63005DB04A /* UIViewController+Tools.m in Sources */,
+				3801429722C1B318007A2F68 /* UIViewController+Tools.m in Sources */,
+				3801429922C1B318007A2F68 /* UITableViewCell+Tools.m in Sources */,
 				38A0F0E422505BAB003D881D /* main.m in Sources */,
-				38346BFB2252FC63005DB04A /* BaseButton.m in Sources */,
+				3801429C22C1B318007A2F68 /* UIView+Tools.m in Sources */,
+				380142A122C1B318007A2F68 /* BaseLabel.m in Sources */,
 				38A0F0D622505BAA003D881D /* AppDelegate.m in Sources */,
+				3801429F22C1B318007A2F68 /* PicTextButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

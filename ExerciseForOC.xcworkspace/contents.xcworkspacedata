@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Homepwner/Homepwner.xcodeproj">
+      location = "group:Grammer/Grammer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ASDK/ASDK.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SendbirdChat/SendbirdChat.xcodeproj">

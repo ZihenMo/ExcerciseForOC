@@ -10,12 +10,12 @@
 
 @implementation PicTextButton
 
-- (instancetype)initWithPicTextType:(PicTextType)type {
-    if (self = [super init]) {
-        _type = type;
-    }
-    return self;
-}
+//- (instancetype)initWithPicTextType:(PicTextType)type {
+//    if (self = [super init]) {
+//        _type = type;
+//    }
+//    return self;
+//}
 
 - (void)setType:(PicTextType)type {
     [self layoutIfNeeded]; //  必要，为获取正确的size

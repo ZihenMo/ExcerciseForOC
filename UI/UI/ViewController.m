@@ -13,10 +13,12 @@
 #import "CGDrawViewController.h"
 #import "NavigationItemController.h"
 #import "CustomizedKeyBoardController.h"
-
+#import "LoginViewController.h"
+#import <ASDK/ASDK.h>
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *uiArray;
+
 @end
 
 @implementation ViewController
@@ -31,11 +33,18 @@
     self.title = @"首页";
     [self tableView];
     self.tableView.allowsSelection = YES;
+    UIBarButtonItem *loginButton = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(pushToLogin:)];
+    self.navigationItem.leftBarButtonItem = loginButton;
 }
 - (void)loadData {
     [self uiArray];
     [self.tableView reloadData];
 }
+#pragma mark - Actions
+- (void)pushToLogin: (UIBarButtonItem *)sender {
+    [self presentViewController:[[LoginViewController alloc] init] animated:YES completion:nil];
+}
+
 
 #pragma mark - TableView Delegate & DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

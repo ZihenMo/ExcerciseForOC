@@ -18,6 +18,12 @@ NSString *APP_ID = @"429CACE9-6D11-4072-9047-001135BD005D";
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    UIViewController *rootVC = [[UIViewController alloc] init];
+//
+//    rootVC.view.backgroundColor = UIColor.redColor;
+//    self.window.rootViewController = rootVC;
+//    [self.window makeKeyAndVisible];
+    
     
     [SBDMain initWithApplicationId:APP_ID];
     [self apperance];

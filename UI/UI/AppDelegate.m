@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 200, UIScreen.mainScreen.bounds.size.width, 200)];
+//    UIViewController *rootVC = [[UIViewController alloc] init];
+//    rootVC.view.backgroundColor = UIColor.blueColor;
+//    self.window.rootViewController = rootVC;
+//    [self.window makeKeyAndVisible];
+    // 显示第二个窗口
+//    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 100, UIScreen.mainScreen.bounds.size.width, 100)];
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    vc.view.backgroundColor = UIColor.blueColor;
+//    window.rootViewController = vc;
+//    window.backgroundColor = UIColor.redColor;
+//    [window makeKeyAndVisible];
+//    self.window.windowLevel = UIWindowLevelAlert;
+//    self.window.windowLevel = UIWindowLevelStatusBar;
     return YES;
 }
 

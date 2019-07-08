@@ -70,25 +70,25 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PSK-OP-d85">
                             <rect key="frame" x="10" y="10" width="394" height="80"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvR-f3-03L" customClass="PicTextButton">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvR-f3-03L" customClass="BaseButton">
                                     <rect key="frame" x="0.0" y="0.0" width="91" height="80"/>
                                     <state key="normal" title="相册" image="album">
                                         <color key="titleColor" red="1" green="0.089473320659999994" blue="0.1620036259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkL-je-xSu" customClass="PicTextButton">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkL-je-xSu" customClass="BaseButton">
                                     <rect key="frame" x="101" y="0.0" width="91" height="80"/>
                                     <state key="normal" title="拍照" image="camera">
                                         <color key="titleColor" red="1" green="0.089473320659999994" blue="0.1620036259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnl-ma-V9P" userLabel="holder" customClass="PicTextButton">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnl-ma-V9P" userLabel="holder" customClass="BaseButton">
                                     <rect key="frame" x="202" y="0.0" width="91" height="80"/>
                                     <state key="normal" title="文件" image="file">
                                         <color key="titleColor" red="1" green="0.089473320659999994" blue="0.1620036259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lW-jy-7oW" userLabel="holder" customClass="PicTextButton">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lW-jy-7oW" userLabel="holder" customClass="BaseButton">
                                     <rect key="frame" x="303" y="0.0" width="91" height="80"/>
                                     <state key="normal" title="视频" image="video">
                                         <color key="titleColor" red="1" green="0.089473320659999994" blue="0.1620036259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

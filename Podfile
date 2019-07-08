@@ -72,6 +72,8 @@ target 'UI' do
   pod 'IQKeyboardManager'
   pod 'SDWebImage', '~> 4.0'
   pod 'Masonry'
+  # 动画标签
+  pod 'LTMorphingLabel'
   # 友盟 移动统计
   pod 'UMCCommon'
   pod 'UMCCommonLog'

@@ -16,10 +16,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *sendBtn;
 @property (weak, nonatomic) IBOutlet UIView *toolsView;
-@property (weak, nonatomic) IBOutlet PicTextButton *pictureButton;
-@property (weak, nonatomic) IBOutlet PicTextButton *cameraButton;
-@property (weak, nonatomic) IBOutlet PicTextButton *fileButton;
-@property (weak, nonatomic) IBOutlet PicTextButton *videoButton;
+@property (weak, nonatomic) IBOutlet BaseButton *pictureButton;
+@property (weak, nonatomic) IBOutlet BaseButton *cameraButton;
+@property (weak, nonatomic) IBOutlet BaseButton *fileButton;
+@property (weak, nonatomic) IBOutlet BaseButton *videoButton;
 
 @property (nonatomic, strong) NSMutableArray *messageList;
 @end

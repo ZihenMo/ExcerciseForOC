@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		380CAECF22A7943700321AF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 380CAECE22A7943700321AF4 /* main.m */; };
+		3814586422CAEDD700AD0D3F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586322CAEDD700AD0D3F /* Person.m */; };
+		3814586722CAEE6F00AD0D3F /* Person+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586622CAEE6F00AD0D3F /* Person+Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		380CAECB22A7943700321AF4 /* Grammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Grammer; sourceTree = BUILT_PRODUCTS_DIR; };
 		380CAECE22A7943700321AF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3814586222CAEDD700AD0D3F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3814586322CAEDD700AD0D3F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3814586522CAEE6F00AD0D3F /* Person+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Tool.h"; sourceTree = "<group>"; };
+		3814586622CAEE6F00AD0D3F /* Person+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				380CAECE22A7943700321AF4 /* main.m */,
+				3814586222CAEDD700AD0D3F /* Person.h */,
+				3814586522CAEE6F00AD0D3F /* Person+Tool.h */,
+				3814586622CAEE6F00AD0D3F /* Person+Tool.m */,
+				3814586322CAEDD700AD0D3F /* Person.m */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3814586722CAEE6F00AD0D3F /* Person+Tool.m in Sources */,
+				3814586422CAEDD700AD0D3F /* Person.m in Sources */,
 				380CAECF22A7943700321AF4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

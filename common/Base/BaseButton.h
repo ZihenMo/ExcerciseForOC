@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/** 混排样式
+ 图与标题的位置
+ */
+typedef enum : NSUInteger {
+    PicTextTypePicTop,
+    PicTextTypePicBottom,
+    PicTextButtonPicLeft,
+    PicTextTypePicRight
+} PicTextType;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseButton : UIButton
+@property (nonatomic, assign) PicTextType type;
 
 @end
 

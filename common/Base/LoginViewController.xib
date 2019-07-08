@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginButton" destination="UYx-th-ka3" id="B26-Oj-sad"/>
+                <outlet property="passwordInputView" destination="SA1-gT-8oK" id="XQ3-h2-Cg3"/>
+                <outlet property="userNameInputView" destination="lUr-f5-f2c" id="KSC-3p-yOc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="otV-4M-8Zh">
+                    <rect key="frame" x="0.0" y="220" width="414" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-f5-f2c" customClass="DynamicInputView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SA1-gT-8oK" customClass="DynamicInputView">
+                            <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Nsp-jS-fAa"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYx-th-ka3" customClass="BaseButton">
+                    <rect key="frame" x="15" y="380" width="384" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ljS-3Y-dGH"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="bTA-qf-j15"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="otV-4M-8Zh" secondAttribute="trailing" id="1Sr-c0-1bg"/>
+                <constraint firstItem="otV-4M-8Zh" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" multiplier="0.618" id="GuM-7m-6Zc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UYx-th-ka3" secondAttribute="trailing" constant="15" id="Osm-5U-Bh6"/>
+                <constraint firstItem="UYx-th-ka3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="kIT-9L-5u2"/>
+                <constraint firstItem="otV-4M-8Zh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="r2G-ha-7y5"/>
+                <constraint firstItem="UYx-th-ka3" firstAttribute="top" secondItem="otV-4M-8Zh" secondAttribute="bottom" constant="40" id="wgJ-Ms-xPq"/>
+                <constraint firstItem="otV-4M-8Zh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="xR7-Ct-C6B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>
