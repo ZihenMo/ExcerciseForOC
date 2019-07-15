@@ -289,6 +289,7 @@
 		3801432422C1B34C007A2F68 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431822C1B34B007A2F68 /* BaseLabel.m */; };
 		3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802363E22BCBE8100CC8363 /* TableViewCell.m */; };
 		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
+		3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
 		3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F64622C459CD00562C5C /* DynamicInputView.m */; };
@@ -618,6 +619,8 @@
 		3802363D22BCBE8100CC8363 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		3802363E22BCBE8100CC8363 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		3802363F22BCBE8100CC8363 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3803BE8322DC0E18005080A5 /* GestureRecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizeViewController.h; sourceTree = "<group>"; };
+		3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizeViewController.m; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
@@ -1046,6 +1049,7 @@
 		33019911226647B300EA9903 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3803BE8222DC0DE3005080A5 /* GestureRecognize */,
 				381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */,
 				3804F4AD228D09FA005B29FE /* NavigationItem */,
 				3876D5E4228AA05F00A6A3B3 /* CoreGraphic */,
@@ -1152,6 +1156,15 @@
 				3806F66622C4870F00562C5C /* LoginViewController.xib */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		3803BE8222DC0DE3005080A5 /* GestureRecognize */ = {
+			isa = PBXGroup;
+			children = (
+				3803BE8322DC0E18005080A5 /* GestureRecognizeViewController.h */,
+				3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */,
+			);
+			path = GestureRecognize;
 			sourceTree = "<group>";
 		};
 		3804F4AD228D09FA005B29FE /* NavigationItem */ = {
@@ -1680,6 +1693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */,
 				3806F66722C4870F00562C5C /* LoginViewController.m in Sources */,
 				33019927226647B400EA9903 /* ImageViewController.m in Sources */,
 				3801432122C1B34C007A2F68 /* BaseViewController.m in Sources */,

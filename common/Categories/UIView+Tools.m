@@ -77,6 +77,7 @@
     hud.mode = MBProgressHUDModeText;
     hud.label.text = message;
     hud.graceTime = 2.0;
+    [hud hideAnimated:YES afterDelay:2.0];
 }
 
 - (void)showHUD {
