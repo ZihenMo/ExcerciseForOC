@@ -14,6 +14,7 @@
 #import "NavigationItemController.h"
 #import "CustomizedKeyBoardController.h"
 #import "LoginViewController.h"
+#import "GestureRecognizeViewController.h"
 #import <ASDK/ASDK.h>
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -53,33 +54,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
-    cell.textLabel.text = self.uiArray[indexPath.row];
+    cell.textLabel.text = self.uiArray[indexPath.row][@"name"];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *nextController;
-    switch (indexPath.row) {
-        case 0:
-            nextController = [[ImageViewController alloc] init];
-            break;
-        case 1:
-            nextController = [[TableViewController alloc] init];
-            break;
-        case 2:
-            nextController = [[ButtonViewController alloc] init];
-            break;
-        case 3:
-            nextController = [[CGDrawViewController alloc] init];
-            break;
-        case 4:
-            nextController = [[NavigationItemController alloc] init];
-            break;
-        case 5:// 自定义键盘
-            nextController = [[CustomizedKeyBoardController alloc] init];
-        default:
-            break;
-    }
+    UIViewController *nextController = [[self.uiArray[indexPath.row][@"target"] alloc] init];
     [self.navigationController pushViewController:nextController animated:YES];
 }
 
@@ -97,9 +77,13 @@
 }
 - (NSArray *)uiArray {
     if (!_uiArray) {
-        _uiArray = @[@"UIImageView",@"UITableView",
-                     @"Button & Image", @"图形绘制",
-                     @"NavigationItem", @"自定义键盘"];
+        _uiArray = @[@{@"name": @"UIImageView", @"target": ImageViewController.class},
+                     @{@"name": @"UITableView", @"target": TableViewController.class},
+                     @{@"name": @"Button & Image", @"target": ButtonViewController.class},
+                     @{@"name": @"图形绘制", @"target": CGDrawViewController.class},
+                     @{@"name": @"NavigationItem", @"target": NavigationItemController.class},
+                     @{@"name": @"自定义键盘", @"target": CustomizedKeyBoardController.class},
+                     @{@"name": @"手势", @"target": GestureRecognizeViewController.class}];
     }
     return  _uiArray;
 }

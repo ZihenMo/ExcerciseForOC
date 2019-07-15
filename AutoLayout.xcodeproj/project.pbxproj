@@ -29,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33A37254225124A2006BDB9A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		33A3725B22512D28006BDB9A /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
 		33A3725C22512D28006BDB9A /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 		3801428022C1B318007A2F68 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
@@ -174,7 +173,6 @@
 				38A0F0DF22505BAB003D881D /* LaunchScreen.storyboard */,
 				38A0F0E222505BAB003D881D /* Info.plist */,
 				38A0F0E322505BAB003D881D /* main.m */,
-				33A37254225124A2006BDB9A /* Header.h */,
 				33A3725B22512D28006BDB9A /* PresentViewController.h */,
 				33A3725C22512D28006BDB9A /* PresentViewController.m */,
 			);

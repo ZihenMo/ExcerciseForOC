@@ -11,11 +11,18 @@
 /// Masonry 去前缀
 #define MAS_SHORTHAND
 #define MAS_SHORTHAND_GLOBALS
-#import <ASDK/ASDK.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarnning;
+#endif
 
 #import "UIColor+Tools.h"
 #import "UIView+Tools.h"
 #import "BaseButton.h"
+#import "BaseViewController.h"
 #import "MBProgressHUD.h"
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
