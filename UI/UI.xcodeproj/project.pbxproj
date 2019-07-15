@@ -307,7 +307,7 @@
 		3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */; };
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
 		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
-		3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /* BGView.m */; };
+		3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -591,6 +591,7 @@
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		33DB7FA622DB975700F634C4 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		3801383822C5E82A00F0C33B /* ASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASDK.framework; path = ../../ASDK/Products/ASDK.framework; sourceTree = "<group>"; };
 		3801430322C1B34B007A2F68 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
 		3801430422C1B34B007A2F68 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
@@ -643,8 +644,7 @@
 		3876D5E5228AA0BF00A6A3B3 /* CGDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawViewController.h; sourceTree = "<group>"; };
 		3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDrawViewController.m; sourceTree = "<group>"; };
 		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
-		3876D5EB228AA43B00A6A3B3 /* BGView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
-		3876D5EC228AA43B00A6A3B3 /* BGView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
+		3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = " CanvasView.m"; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE02471CDFBDE9E1803D977 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1229,8 +1229,8 @@
 		3876D5EA228AA40C00A6A3B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3876D5EB228AA43B00A6A3B3 /* BGView.h */,
-				3876D5EC228AA43B00A6A3B3 /* BGView.m */,
+				33DB7FA622DB975700F634C4 /* CanvasView.h */,
+				3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1695,7 +1695,7 @@
 				330196EF2266399E00EA9903 /* main.m in Sources */,
 				3801432322C1B34C007A2F68 /* BaseButton.m in Sources */,
 				3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */,
-				3876D5ED228AA43B00A6A3B3 /* BGView.m in Sources */,
+				3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
 				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,

@@ -6,9 +6,9 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "BGView.h"
+#import "CanvasView.h"
 
-@implementation BGView
+@implementation CanvasView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -18,9 +18,21 @@
     }
     return self;
 }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.hidden = YES;
+}
 
 // 自定义绘制View
 - (void)drawRect:(CGRect)rect {
+    switch (self.type) {
+        case ShapeTypeTriangle:
+            [self drawTriangle];
+            break;
+            
+        default:
+            break;
+    }
+    
 //    [self drawConcentricCircle];
 //    [self drawTriangle];
 //    [self drawImage:[UIImage imageNamed:@"timg"]];
@@ -29,6 +41,23 @@
 //    [self cg_drawImageAndShadow:[UIImage imageNamed:@"timg"]];
 //    [self cg_drawGradientColor];
     [self cg_drawGradientPath];
+}
+/**
+ 绘制三角形
+ */
+- (void)drawTriangle {
+    UIBezierPath *bp = [UIBezierPath bezierPath];
+    CGPoint center = self.center;
+    CGPoint point1 = CGPointMake(center.x, center.y - 150);
+    CGPoint point2 = CGPointMake(center.x - 150, center.y + 150);
+    CGPoint point3 = CGPointMake(center.x + 150, center.y + 150);
+    [[UIColor orangeColor] setStroke];
+    [bp moveToPoint:point1];
+    [bp addLineToPoint:point2]; // 线的终点是下次绘制的起点
+    [bp addLineToPoint:point3];
+    //    [bp addLineToPoint:point1];
+    [bp closePath];
+    [bp stroke];
 }
 
 
@@ -54,22 +83,7 @@
     [bp stroke];
 }
 
-/**
- 绘制三角形
- */
-- (void)drawTriangle {
-    UIBezierPath *bp = [UIBezierPath bezierPath];
-    CGPoint center = self.center;
-    CGPoint point1 = CGPointMake(center.x, center.y - 150);
-    CGPoint point2 = CGPointMake(center.x - 150, center.y + 150);
-    CGPoint point3 = CGPointMake(center.x + 150, center.y + 150);
-    [[UIColor orangeColor] setStroke];
-    [bp moveToPoint:point1];
-    [bp addLineToPoint:point2]; // 线的终点是下次绘制的起点
-    [bp addLineToPoint:point3];
-    [bp addLineToPoint:point1];
-    [bp stroke];
-}
+
 
 /**
  Core Graphic方式绘制同心圆

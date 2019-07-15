@@ -7,10 +7,12 @@
 //
 
 #import "CGDrawViewController.h"
-#import "BGView.h"
+#import "CanvasView.h"
 
-@interface CGDrawViewController ()
-
+@interface CGDrawViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *shapeList;
+@property (nonatomic, strong) CanvasView *canvas;
 @end
 
 @implementation CGDrawViewController
@@ -22,21 +24,45 @@
 
 #pragma mark - UI
 - (void)setupUI {
-    BGView *backgroundView = [[BGView alloc] init];
-    [self.view insertSubview:backgroundView atIndex:0]; // 插入到底层
-    [backgroundView makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(self.view);
-        make.center.equalTo(self.view);
-    }];
-//    backgroundView.layer.zPosition = -1;// 仅移动图层，事件依然受影响
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:NSStringFromClass(UITableViewCell.class)];
+}
+#pragma mark - TableView Delegate & DataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.shapeList.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(UITableViewCell.class) forIndexPath:indexPath];
+    cell.textLabel.text = self.shapeList[indexPath.row][@"name"];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ShapeType type = [self.shapeList[indexPath.row][@"type"] integerValue];
+    [self showCanvasWithShapeType:type];
+}
+# pragma mark - Acitons
+- (void)showCanvasWithShapeType: (ShapeType)type {
+    self.canvas.type = type;
+    [self.canvas setNeedsDisplay];
+    self.canvas.hidden = NO;
+}
+#pragma mark - Getter
+- (CanvasView *)canvas {
+    if (_canvas == nil) {
+        _canvas = [[CanvasView alloc] initWithFrame:self.view.bounds];
+        [self.view addSubview:_canvas];
+    }
+    return _canvas;
 }
 
-- (IBAction)drawConcentricCircleAction:(id)sender {
-
+- (NSArray *)shapeList {
+    if (_shapeList == nil) {
+        _shapeList = @[@{@"name": @"三角形", @"type": @(ShapeTypeTriangle)},
+                       @{@"name": @"圆形", @"type": @(ShapeTypeCircle)},
+                       @{@"name": @"饼图", @"type": @(ShapeTypePie)},
+                       @{@"name": @"字符", @"type": @(ShapeTypeString)},
+                       @{@"name": @"图片", @"type": @(ShapeTypeImage)},
+                       @{@"name": @"梯度和阴影", @"type": @(ShapeTypeGradient)}];
+    }
+    return _shapeList;
 }
-- (IBAction)drawImageAction:(id)sender {
-}
-
-
-
 @end
