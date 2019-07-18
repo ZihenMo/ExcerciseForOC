@@ -88,9 +88,15 @@ target 'UI' do
   pod 'MJExtension'
   # 上下拉刷新
   pod 'KafkaRefresh'
-
-  
+  # Monkey压测
+  pod "SwiftMonkeyPaws", '~> 2.1.0'
 end
+
+target 'UIUITests' do
+  project 'UI/UI.xcodeproj'
+  pod 'SwiftMonkey', '~> 2.1.0'
+end
+
 
 target 'SendbirdChat' do
   platform :ios, '10.0'
@@ -111,20 +117,20 @@ target 'SendbirdChat' do
 #  pod 'SendBirdDesk', :git => 'https://github.com/smilefam/SendBird-Desk-iOS-Framework', :tag => 'v1.0.3'
   pod 'SendBirdSDK'
 end
-
-target 'Homepwner' do
-  platform :ios, '10.0'
-  # Comment the next line if you don't want to use dynamic frameworks
-  project 'Homepwner/Homepwner.xcodeproj'
-  pod 'MBProgressHUD', '~> 1.1.0'
-  pod 'IQKeyboardManager'
-  pod 'SDWebImage', '~> 4.0'
-  pod 'Masonry'
-  # logger
-  pod 'CocoaLumberjack'
-  pod 'ReactiveObjC', '~> 3.1.0'
-  # Network
-  pod 'AFNetworking', '~> 3.2.1'
-  # JSON
-  pod 'MJExtension'
-end
+#
+#target 'Homepwner' do
+#  platform :ios, '10.0'
+#  # Comment the next line if you don't want to use dynamic frameworks
+#  project 'Homepwner/Homepwner.xcodeproj'
+#  pod 'MBProgressHUD', '~> 1.1.0'
+#  pod 'IQKeyboardManager'
+#  pod 'SDWebImage', '~> 4.0'
+#  pod 'Masonry'
+#  # logger
+#  pod 'CocoaLumberjack'
+#  pod 'ReactiveObjC', '~> 3.1.0'
+#  # Network
+#  pod 'AFNetworking', '~> 3.2.1'
+#  # JSON
+#  pod 'MJExtension'
+#end

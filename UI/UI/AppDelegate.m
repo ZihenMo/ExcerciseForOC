@@ -8,8 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <UI-Swift.h>
 
 @interface AppDelegate ()
+@property (strong, nonatomic) id paws;
 
 @end
 
@@ -17,6 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    self.paws = [Monkey getPaws:self.window];
 
     [self configureDDLog];
     return YES;
@@ -33,23 +37,12 @@
     fileLogger.maximumFileSize = 1024 * 1024 * 2;   // 限制日志大小
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7;    // 7个文件，最多存储近一周的日志
     [DDLog addLogger:fileLogger];
-//    [self testLog];
-            DDLogVerbose(@"Verbose");   // 详细日志
-            DDLogDebug(@"Debug");       // 调试日志
-            DDLogInfo(@"Info");         // 信息日志
-            DDLogWarn(@"Warn");         // 警告日志
-            DDLogError(@"Error");       // 错误日志
-}
 
-
-/**
- 测试写入日志
- */
-- (void)testLog {
-    for (NSInteger i = 0; i < 1000000; ++i) {
-        // 产生Log
-
-    }
+    DDLogVerbose(@"Verbose");   // 详细日志
+    DDLogDebug(@"Debug");       // 调试日志
+    DDLogInfo(@"Info");         // 信息日志
+    DDLogWarn(@"Warn");         // 警告日志
+    DDLogError(@"Error");       // 错误日志
 }
 
 @end

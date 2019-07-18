@@ -18,7 +18,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarnning;
 #endif
-
 #import "UIColor+Tools.h"
 #import "UIView+Tools.h"
 #import "BaseButton.h"
