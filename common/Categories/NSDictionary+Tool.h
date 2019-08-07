@@ -13,6 +13,12 @@
 - (nullable NSString *)toJsonString;
 /** 把字典拼成url字符串 */
 - (nullable NSString *)toURLString;
-/** 去空 */
-- (id)processDictionaryIsNSNull;
+/** 空值替换为空字符串 */
+/**
+ 替换空值为指定对象，若不指定Object，则替换成空字符串。
+
+ @param obj 指定对象
+ @return  过滤后的字典
+ */
+- (instancetype)replaceNullValueWithObject: (id _Nullable) obj;
 @end

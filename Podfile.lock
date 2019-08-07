@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
@@ -72,6 +73,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - Bugly
   - CocoaLumberjack
   - IQKeyboardManager
   - KafkaRefresh
@@ -92,6 +94,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Bugly
     - CocoaLumberjack
     - IQKeyboardManager
     - KafkaRefresh
@@ -111,6 +114,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
@@ -128,6 +132,6 @@ SPEC CHECKSUMS:
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 5247c5e6e7e90c05a7966c80e193e647b9abedce
+PODFILE CHECKSUM: d4af657e27279f29c5e2b8b78c4e8dba766a92d1
 
 COCOAPODS: 1.6.1

@@ -12,9 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Tools)
 
-- (void)doSomething;
-
-
 @end
+
 
 NS_ASSUME_NONNULL_END

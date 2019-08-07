@@ -283,13 +283,16 @@
 		3801431E22C1B34C007A2F68 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430E22C1B34B007A2F68 /* NSDictionary+Tool.m */; };
 		3801431F22C1B34C007A2F68 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801430F22C1B34B007A2F68 /* UIView+Tools.m */; };
 		3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431022C1B34B007A2F68 /* UIColor+Tools.m */; };
-		3801432122C1B34C007A2F68 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431322C1B34B007A2F68 /* BaseViewController.m */; };
 		3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431422C1B34B007A2F68 /* PicTextButton.m */; };
 		3801432322C1B34C007A2F68 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431622C1B34B007A2F68 /* BaseButton.m */; };
 		3801432422C1B34C007A2F68 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801431822C1B34B007A2F68 /* BaseLabel.m */; };
 		3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802363E22BCBE8100CC8363 /* TableViewCell.m */; };
 		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
 		3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */; };
+		3803BF4122FAD70E00281357 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF3F22FAD70D00281357 /* XibViewController.m */; };
+		3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4022FAD70D00281357 /* XibViewController.xib */; };
+		3803BF4522FAD78200281357 /* MZHQuantityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF4422FAD78200281357 /* MZHQuantityView.m */; };
+		3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4622FAD79100281357 /* MZHQunatityView.xib */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
 		3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F64622C459CD00562C5C /* DynamicInputView.m */; };
@@ -299,6 +302,9 @@
 		3806F65722C4675200562C5C /* eye_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3806F65322C4675200562C5C /* eye_close@3x.png */; };
 		3806F66722C4870F00562C5C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F66522C4870F00562C5C /* LoginViewController.m */; };
 		3806F66822C4870F00562C5C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3806F66622C4870F00562C5C /* LoginViewController.xib */; };
+		38070AC222E7F197002C344F /* WGCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 38070AC122E7F197002C344F /* WGCollectionViewLayout.m */; };
+		38070AC622E7F2E3002C344F /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38070AC422E7F2E3002C344F /* ReviewCell.m */; };
+		38070AC722E7F2E3002C344F /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38070AC522E7F2E3002C344F /* ReviewCell.xib */; };
 		381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */; };
 		381EF73022B9CE5D00947159 /* CustomizedKeyBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */; };
 		381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 381EF73322B9CFAB00947159 /* KeyBoardView.m */; };
@@ -311,6 +317,14 @@
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
 		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
 		3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */; };
+		387F6F7E22EED7BD00CF22F4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F6F7D22EED7BD00CF22F4 /* CollectionViewController.m */; };
+		388A90A122F03E7C00244BBB /* BuglyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388A909F22F03E7C00244BBB /* BuglyViewController.m */; };
+		388A90A222F03E7C00244BBB /* BuglyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388A90A022F03E7C00244BBB /* BuglyViewController.xib */; };
+		38DA5A8522EE9DED001001D9 /* LocalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DA5A8322EE9DED001001D9 /* LocalCell.m */; };
+		38DA5A8822EEB6A7001001D9 /* LocalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DA5A8722EEB6A7001001D9 /* LocalCell.xib */; };
+		38EAA5C422F131B200CCB4A4 /* MZHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */; };
+		38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */; };
+		38EAA5DC22F171E100CCB4A4 /* MZHSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */; };
 		8AB48154975C42C6DFB70639 /* libPods-UIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
@@ -622,18 +636,22 @@
 		3801430F22C1B34B007A2F68 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		3801431022C1B34B007A2F68 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		3801431222C1B34B007A2F68 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		3801431322C1B34B007A2F68 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		3801431422C1B34B007A2F68 /* PicTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTextButton.m; sourceTree = "<group>"; };
+		3801431422C1B34B007A2F68 /* PicTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicTextButton.m; path = ../PicTextButton.m; sourceTree = "<group>"; };
 		3801431522C1B34B007A2F68 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
 		3801431622C1B34B007A2F68 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		3801431722C1B34B007A2F68 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		3801431822C1B34B007A2F68 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
-		3801431922C1B34B007A2F68 /* PicTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTextButton.h; sourceTree = "<group>"; };
+		3801431822C1B34B007A2F68 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseLabel.m; path = ../BaseLabel.m; sourceTree = "<group>"; };
+		3801431922C1B34B007A2F68 /* PicTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicTextButton.h; path = ../PicTextButton.h; sourceTree = "<group>"; };
 		3802363D22BCBE8100CC8363 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		3802363E22BCBE8100CC8363 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		3802363F22BCBE8100CC8363 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3803BE8322DC0E18005080A5 /* GestureRecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizeViewController.h; sourceTree = "<group>"; };
 		3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizeViewController.m; sourceTree = "<group>"; };
+		3803BF3E22FAD70D00281357 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
+		3803BF3F22FAD70D00281357 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		3803BF4022FAD70D00281357 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
+		3803BF4322FAD78200281357 /* MZHQuantityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHQuantityView.h; sourceTree = "<group>"; };
+		3803BF4422FAD78200281357 /* MZHQuantityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHQuantityView.m; sourceTree = "<group>"; };
+		3803BF4622FAD79100281357 /* MZHQunatityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHQunatityView.xib; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
@@ -645,7 +663,12 @@
 		3806F65322C4675200562C5C /* eye_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye_close@3x.png"; sourceTree = "<group>"; };
 		3806F66422C4870F00562C5C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3806F66522C4870F00562C5C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		3806F66622C4870F00562C5C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3806F66622C4870F00562C5C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		38070AC022E7F197002C344F /* WGCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGCollectionViewLayout.h; sourceTree = "<group>"; };
+		38070AC122E7F197002C344F /* WGCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGCollectionViewLayout.m; sourceTree = "<group>"; };
+		38070AC322E7F2E3002C344F /* ReviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReviewCell.h; sourceTree = "<group>"; };
+		38070AC422E7F2E3002C344F /* ReviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReviewCell.m; sourceTree = "<group>"; };
+		38070AC522E7F2E3002C344F /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		381EF72C22B9CE5D00947159 /* CustomizedKeyBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomizedKeyBoardController.h; sourceTree = "<group>"; };
 		381EF72D22B9CE5D00947159 /* CustomizedKeyBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomizedKeyBoardController.m; sourceTree = "<group>"; };
 		381EF72E22B9CE5D00947159 /* CustomizedKeyBoardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomizedKeyBoardController.xib; sourceTree = "<group>"; };
@@ -666,6 +689,21 @@
 		3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDrawViewController.m; sourceTree = "<group>"; };
 		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
 		3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = " CanvasView.m"; sourceTree = "<group>"; };
+		387F6F7C22EED7BD00CF22F4 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		387F6F7D22EED7BD00CF22F4 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		388A909E22F03E7C00244BBB /* BuglyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyViewController.h; sourceTree = "<group>"; };
+		388A909F22F03E7C00244BBB /* BuglyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuglyViewController.m; sourceTree = "<group>"; };
+		388A90A022F03E7C00244BBB /* BuglyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuglyViewController.xib; sourceTree = "<group>"; };
+		38DA5A8222EE9DED001001D9 /* LocalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalCell.h; sourceTree = "<group>"; };
+		38DA5A8322EE9DED001001D9 /* LocalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalCell.m; sourceTree = "<group>"; };
+		38DA5A8722EEB6A7001001D9 /* LocalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalCell.xib; sourceTree = "<group>"; };
+		38EAA5C222F131B200CCB4A4 /* MZHNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHNavigationBar.h; sourceTree = "<group>"; };
+		38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHNavigationBar.m; sourceTree = "<group>"; };
+		38EAA5C522F1330800CCB4A4 /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZHViewController.m; sourceTree = "<group>"; };
+		38EAA5CF22F137C000CCB4A4 /* MZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZHViewController.h; sourceTree = "<group>"; };
+		38EAA5DA22F171E100CCB4A4 /* MZHSearchResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHSearchResultController.h; sourceTree = "<group>"; };
+		38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHSearchResultController.m; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E0947C16D712AA1B2083E9 /* Pods-UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIUITests/Pods-UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -724,8 +762,6 @@
 				33019911226647B300EA9903 /* Modules */,
 				330196DF2266399D00EA9903 /* AppDelegate.h */,
 				330196E02266399D00EA9903 /* AppDelegate.m */,
-				330196E22266399D00EA9903 /* ViewController.h */,
-				330196E32266399D00EA9903 /* ViewController.m */,
 				330196E52266399D00EA9903 /* Main.storyboard */,
 				330196E82266399E00EA9903 /* Assets.xcassets */,
 				330196EA2266399E00EA9903 /* LaunchScreen.storyboard */,
@@ -1082,6 +1118,10 @@
 		33019911226647B300EA9903 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3803BF3C22FAD6C800281357 /* Xib */,
+				38EAA5D322F15A6F00CCB4A4 /* Home */,
+				388A909D22F03E5900244BBB /* Bugly */,
+				387F6F7A22EED79B00CF22F4 /* CollectionView */,
 				3803BE8222DC0DE3005080A5 /* GestureRecognize */,
 				381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */,
 				3804F4AD228D09FA005B29FE /* NavigationItem */,
@@ -1129,12 +1169,20 @@
 		33B011AF227DD28400410EB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38070AC022E7F197002C344F /* WGCollectionViewLayout.h */,
+				38070AC122E7F197002C344F /* WGCollectionViewLayout.m */,
 				33B011B0227DD2A300410EB7 /* PersonCell.h */,
 				33B011B1227DD2A300410EB7 /* PersonCell.m */,
 				33B011B2227DD2A300410EB7 /* PersonCell.xib */,
 				3802363D22BCBE8100CC8363 /* TableViewCell.h */,
 				3802363E22BCBE8100CC8363 /* TableViewCell.m */,
 				3802363F22BCBE8100CC8363 /* TableViewCell.xib */,
+				38DA5A8222EE9DED001001D9 /* LocalCell.h */,
+				38DA5A8322EE9DED001001D9 /* LocalCell.m */,
+				38DA5A8722EEB6A7001001D9 /* LocalCell.xib */,
+				38070AC322E7F2E3002C344F /* ReviewCell.h */,
+				38070AC422E7F2E3002C344F /* ReviewCell.m */,
+				38070AC522E7F2E3002C344F /* ReviewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1144,6 +1192,7 @@
 			children = (
 				3801430222C1B34B007A2F68 /* Categories */,
 				3801431122C1B34B007A2F68 /* Base */,
+				38EAA5C522F1330800CCB4A4 /* CommonHeader.h */,
 			);
 			name = common;
 			path = ../../common;
@@ -1173,20 +1222,10 @@
 		3801431122C1B34B007A2F68 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				3806F66322C4677500562C5C /* resource */,
-				3801431222C1B34B007A2F68 /* BaseButton.h */,
-				3801431622C1B34B007A2F68 /* BaseButton.m */,
-				3801431822C1B34B007A2F68 /* BaseLabel.m */,
-				3801431522C1B34B007A2F68 /* BaseLabel.h */,
-				3801431322C1B34B007A2F68 /* BaseViewController.m */,
-				3801431722C1B34B007A2F68 /* BaseViewController.h */,
-				3801431922C1B34B007A2F68 /* PicTextButton.h */,
-				3801431422C1B34B007A2F68 /* PicTextButton.m */,
-				3806F64522C459CD00562C5C /* DynamicInputView.h */,
-				3806F64622C459CD00562C5C /* DynamicInputView.m */,
-				3806F66422C4870F00562C5C /* LoginViewController.h */,
-				3806F66522C4870F00562C5C /* LoginViewController.m */,
-				3806F66622C4870F00562C5C /* LoginViewController.xib */,
+				38EAA5D122F137D200CCB4A4 /* Controller */,
+				38EAA5C622F1362400CCB4A4 /* Views */,
+				38EAA5C122F1319200CCB4A4 /* NavigationBar */,
+				3806F66322C4677500562C5C /* Resource */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1200,6 +1239,27 @@
 			path = GestureRecognize;
 			sourceTree = "<group>";
 		};
+		3803BF3C22FAD6C800281357 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3803BF3D22FAD6DB00281357 /* Views */,
+				3803BF3E22FAD70D00281357 /* XibViewController.h */,
+				3803BF3F22FAD70D00281357 /* XibViewController.m */,
+				3803BF4022FAD70D00281357 /* XibViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3803BF3D22FAD6DB00281357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3803BF4322FAD78200281357 /* MZHQuantityView.h */,
+				3803BF4422FAD78200281357 /* MZHQuantityView.m */,
+				3803BF4622FAD79100281357 /* MZHQunatityView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3804F4AD228D09FA005B29FE /* NavigationItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -1210,7 +1270,7 @@
 			path = NavigationItem;
 			sourceTree = "<group>";
 		};
-		3806F66322C4677500562C5C /* resource */ = {
+		3806F66322C4677500562C5C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				3806F65022C4675200562C5C /* eye_close@2x.png */,
@@ -1218,7 +1278,7 @@
 				3806F65122C4675200562C5C /* eye_open@2x.png */,
 				3806F65222C4675200562C5C /* eye_open@3x.png */,
 			);
-			path = resource;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		381EF72B22B9CE2D00947159 /* CustomizedKeyBoard */ = {
@@ -1290,6 +1350,80 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		387F6F7A22EED79B00CF22F4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				387F6F7B22EED7A600CF22F4 /* Views */,
+				387F6F7C22EED7BD00CF22F4 /* CollectionViewController.h */,
+				387F6F7D22EED7BD00CF22F4 /* CollectionViewController.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		387F6F7B22EED7A600CF22F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		388A909D22F03E5900244BBB /* Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				388A909E22F03E7C00244BBB /* BuglyViewController.h */,
+				388A909F22F03E7C00244BBB /* BuglyViewController.m */,
+				388A90A022F03E7C00244BBB /* BuglyViewController.xib */,
+			);
+			path = Bugly;
+			sourceTree = "<group>";
+		};
+		38EAA5C122F1319200CCB4A4 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				38EAA5C222F131B200CCB4A4 /* MZHNavigationBar.h */,
+				38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		38EAA5C622F1362400CCB4A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3801431922C1B34B007A2F68 /* PicTextButton.h */,
+				3801431422C1B34B007A2F68 /* PicTextButton.m */,
+				3806F64522C459CD00562C5C /* DynamicInputView.h */,
+				3806F64622C459CD00562C5C /* DynamicInputView.m */,
+				3801431222C1B34B007A2F68 /* BaseButton.h */,
+				3801431622C1B34B007A2F68 /* BaseButton.m */,
+				3801431822C1B34B007A2F68 /* BaseLabel.m */,
+				3801431522C1B34B007A2F68 /* BaseLabel.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		38EAA5D122F137D200CCB4A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38EAA5CF22F137C000CCB4A4 /* MZHViewController.h */,
+				38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */,
+				3806F66422C4870F00562C5C /* LoginViewController.h */,
+				3806F66522C4870F00562C5C /* LoginViewController.m */,
+				3806F66622C4870F00562C5C /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		38EAA5D322F15A6F00CCB4A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				330196E22266399D00EA9903 /* ViewController.h */,
+				330196E32266399D00EA9903 /* ViewController.m */,
+				38EAA5DA22F171E100CCB4A4 /* MZHSearchResultController.h */,
+				38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		8AA88266CF47F5C2AD1441B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1324,6 +1458,7 @@
 				330196DA2266399D00EA9903 /* Resources */,
 				BEDC2FF6715763A21FE5B245 /* [CP] Copy Pods Resources */,
 				5ED0E26F1DADF697CBC3E7AA /* [CP] Embed Pods Frameworks */,
+				388A90A322F048D600244BBB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1360,7 +1495,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = mozihen;
 				TargetAttributes = {
 					330196DB2266399D00EA9903 = {
@@ -1434,12 +1569,14 @@
 				3301984D2266419700EA9903 /* xiaozhao1_17.png in Resources */,
 				330198472266419700EA9903 /* xiaozhao1_6.png in Resources */,
 				330198252266419700EA9903 /* install_b_5.png in Resources */,
+				3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */,
 				330198342266419700EA9903 /* install_b_12.png in Resources */,
 				330198A32266419700EA9903 /* dazhao_81.png in Resources */,
 				330198192266419700EA9903 /* install_b_22.png in Resources */,
 				330198F22266419700EA9903 /* dazhao_9.png in Resources */,
 				330198CD2266419700EA9903 /* dazhao_19.png in Resources */,
 				3806F65722C4675200562C5C /* eye_close@3x.png in Resources */,
+				38070AC722E7F2E3002C344F /* ReviewCell.xib in Resources */,
 				330198F72266419700EA9903 /* run_1.png in Resources */,
 				330198B02266419700EA9903 /* dazhao_79.png in Resources */,
 				330198DA2266419700EA9903 /* dazhao_12.png in Resources */,
@@ -1561,6 +1698,7 @@
 				330198122266419700EA9903 /* dead_7.png in Resources */,
 				3301985B2266419700EA9903 /* xiaozhao3_23.png in Resources */,
 				330198702266419700EA9903 /* xiaozhao3_16.png in Resources */,
+				3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */,
 				330198452266419700EA9903 /* xiaozhao1_11.png in Resources */,
 				330198C22266419700EA9903 /* dazhao_34.png in Resources */,
 				330198352266419700EA9903 /* stand_9.png in Resources */,
@@ -1590,6 +1728,7 @@
 				3301983E2266419700EA9903 /* stand_1.png in Resources */,
 				330198172266419700EA9903 /* dead_1.png in Resources */,
 				330198162266419700EA9903 /* dead_2.png in Resources */,
+				388A90A222F03E7C00244BBB /* BuglyViewController.xib in Resources */,
 				330198622266419700EA9903 /* xiaozhao3_24.png in Resources */,
 				330198182266419700EA9903 /* install_b_23.png in Resources */,
 				3301982C2266419700EA9903 /* install_b_17.png in Resources */,
@@ -1606,6 +1745,7 @@
 				330198812266419700EA9903 /* xiaozhao2_9.png in Resources */,
 				330198D52266419700EA9903 /* dazhao_28.png in Resources */,
 				330198332266419700EA9903 /* install_b_13.png in Resources */,
+				38DA5A8822EEB6A7001001D9 /* LocalCell.xib in Resources */,
 				330198132266419700EA9903 /* dead_3.png in Resources */,
 				330198152266419700EA9903 /* dead_19.png in Resources */,
 				330198902266419700EA9903 /* xiaozhao2_4.png in Resources */,
@@ -1681,6 +1821,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		388A90A322F048D600244BBB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"dde5d68d17\"\n# #\nBUGLY_APP_KEY=\"f48f3854-782b-44cf-ac48-e5796801edd3\"\n# #\nBUNDLE_IDENTIFIER=\"com.mzh.ui\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n# UPLOAD_DEBUG_SYMBOLS=0\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\necho \"--------------------------------\"\necho \"${1}\"\necho \"--------------------------------\"\nexit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\nP_APP_ID=\"$1\"\nP_APP_KEY=\"$2\"\nP_APP_BUNDLE_ID=\"$3\"\nP_APP_VERSION=\"$4\"\nP_BSYMBOL_ZIP_FILE=\"$5\"\n\n#\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\nP_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\nDSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\necho \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\necho \"-----------------------------\"\nSTATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\necho \"-----------------------------\"\n\nUPLOAD_RESULT=\"FAILTURE\"\necho \"Bugly server response: ${STATUS}\"\nif [ ! \"${STATUS}\" ]; then\necho \"Error: Failed to upload the zip archive file.\"\nelif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\necho \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\nUPLOAD_RESULT=\"SUCCESS\"\nelse\necho \"Error: Failed to upload the zip archive file to Bugly.\"\nfi\n\n#Remove temp dSYM archive\n#echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n#/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\nif [ \"$?\" -ne 0 ]; then\nexitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\nfi\n\necho \"--------------------------------\"\necho \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\nif [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\necho \"--------------------------------\"\necho \"Failed to upload the dSYM\"\necho \"Please check the script and try it again.\"\nfi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\nDSYM_FILE=\"$1\"\nDSYM_SYMBOL_FILE=\"$2\"\n\necho \"--------------------------------\"\necho \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n(/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\necho \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\nCONFIG_BUGLY_APP_ID=\"$1\"\nCONFIG_BUGLY_APP_KEY=\"$2\"\n\nCONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\nCONFIG_BUGLY_APP_VERSION=\"$4\"\nCONFIG_DSYM_SOURCE_DIR=\"$5\"\nCONFIG_DSYM_DEST_DIR=\"$6\"\nCONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n# 检查必须参数是否设置\nif [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\nexitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\nfi\n\nif [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\nexitWithMessage \"Error: Bugly App ID not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\nexitWithMessage \"Error: Bugly App Key not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\nexitWithMessage \"Error: Bundle Identifier not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\nexitWithMessage \"Error: App Version not defined.\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\nfi\n\nif [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nmkdir ${CONFIG_DSYM_DEST_DIR}\nfi\n\nDSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\nIFS=$'\\n'\n\necho \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\nRET=\"F\"\n\n#\nfor dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\nRET=\"T\"\necho \"Found dSYM file: $dsymFile\"\n\nDSYM_FILE_NAME=${dsymFile##*/}\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\nDSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\nif [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\nif [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\nrm -f $DSYM_SYMBOL_ZIP_FILE\nfi\n# 如果只上传dSYM，直接压缩dSYM目录\nzip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\nelse\n# 使用符号表工具来生成Symbol文件\ndSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\nfi\n\n# 上传\ndSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\ndone\n\nif [ $RET = \"F\" ]; then\nexitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\nfi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\necho \"Uploading dSYM to Bugly in Xcode ...\"\n\necho \"Info.Plist : ${INFOPLIST_FILE}\"\n\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n# 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\nif [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\nBUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\nelse\nBUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\nfi\n\necho \"--------------------------------\"\necho \"Prepare application information.\"\necho \"--------------------------------\"\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\n\necho \"Bugly App ID: ${BUGLY_APP_ID}\"\necho \"Bugly App key: ${BUGLY_APP_KEY}\"\necho \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\necho \"--------------------------------\"\necho \"Check the arguments ...\"\n\n##检查模拟器编译是否允许上传符号\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否是Release模式编译\nif [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\nif [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否Archive操作\nif [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\nif [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\necho \"Archive the package\"\nelse\nexitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\nfi\nfi\n\n#\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\nBuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\nrunInXcode\nelse\necho \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n# 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\nBUGLY_APP_ID=\"$1\"\nBUGLY_APP_KEY=\"$2\"\nBUNDLE_IDENTIFIER=\"$3\"\nBUGLY_APP_VERSION=\"$4\"\nDWARF_DSYM_FOLDER_PATH=\"$5\"\nSYMBOL_OUTPUT_PATH=\"$6\"\nUPLOAD_DSYM_ONLY=$7\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n";
+		};
 		5ED0E26F1DADF697CBC3E7AA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1796,25 +1953,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EAA5C422F131B200CCB4A4 /* MZHNavigationBar.m in Sources */,
 				3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */,
+				3803BF4122FAD70E00281357 /* XibViewController.m in Sources */,
 				3806F66722C4870F00562C5C /* LoginViewController.m in Sources */,
 				33019927226647B400EA9903 /* ImageViewController.m in Sources */,
-				3801432122C1B34C007A2F68 /* BaseViewController.m in Sources */,
 				3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */,
 				3801432422C1B34C007A2F68 /* BaseLabel.m in Sources */,
 				381EF73422B9CFAB00947159 /* KeyBoardView.m in Sources */,
 				3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */,
+				387F6F7E22EED7BD00CF22F4 /* CollectionViewController.m in Sources */,
 				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
 				3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
 				3828D40222DF2446004687F4 /* Monkey.swift in Sources */,
 				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
+				38070AC622E7F2E3002C344F /* ReviewCell.m in Sources */,
+				38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */,
 				3801431D22C1B34C007A2F68 /* NSArray+Tool.m in Sources */,
 				330196EF2266399E00EA9903 /* main.m in Sources */,
+				38EAA5DC22F171E100CCB4A4 /* MZHSearchResultController.m in Sources */,
 				3801432322C1B34C007A2F68 /* BaseButton.m in Sources */,
+				3803BF4522FAD78200281357 /* MZHQuantityView.m in Sources */,
 				3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */,
 				3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
+				38070AC222E7F197002C344F /* WGCollectionViewLayout.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
 				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,
 				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,
@@ -1826,6 +1990,8 @@
 				3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */,
 				3801431A22C1B34C007A2F68 /* UIViewController+Tools.m in Sources */,
 				381EF72F22B9CE5D00947159 /* CustomizedKeyBoardController.m in Sources */,
+				38DA5A8522EE9DED001001D9 /* LocalCell.m in Sources */,
+				388A90A122F03E7C00244BBB /* BuglyViewController.m in Sources */,
 				33B011B3227DD2A300410EB7 /* PersonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1978,6 +2144,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1997,6 +2164,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UI/UI.h";
 				INFOPLIST_FILE = UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2053,7 +2221,7 @@
 					"-framework",
 					"\"UTDID\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.UI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UI/UI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2077,6 +2245,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/UI/UI.h";
 				INFOPLIST_FILE = UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2133,7 +2302,7 @@
 					"-framework",
 					"\"UTDID\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bonuston.UI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzh.ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UI/UI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

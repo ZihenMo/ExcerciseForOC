@@ -89,7 +89,8 @@ target 'UI' do
   # 上下拉刷新
   pod 'KafkaRefresh'
   # Monkey压测
-  pod "SwiftMonkeyPaws", '~> 2.1.0'
+  pod 'SwiftMonkeyPaws', '~> 2.1.0'
+  pod 'Bugly'
 end
 
 target 'UIUITests' do

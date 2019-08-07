@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) IBOutlet UIImageView *photo;
 
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,11 +6,11 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "MZHViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CustomizedKeyBoardController : BaseViewController
+@interface CustomizedKeyBoardController : MZHViewController
 
 @end
 
