@@ -18,7 +18,7 @@
 		381646B822A65FD2004491F7 /* NSDictionary+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646B322A65FD2004491F7 /* NSDictionary+Tool.m */; };
 		381646B922A65FD2004491F7 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646B422A65FD2004491F7 /* UIView+Tools.m */; };
 		381646BA22A65FD2004491F7 /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646B522A65FD2004491F7 /* UIColor+Tools.m */; };
-		381646C222A65FEE004491F7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646BD22A65FEE004491F7 /* BaseViewController.m */; };
+		381646C222A65FEE004491F7 /* MZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646BD22A65FEE004491F7 /* MZHViewController.m */; };
 		381646C322A65FEE004491F7 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646BF22A65FEE004491F7 /* BaseButton.m */; };
 		381646C422A65FEE004491F7 /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 381646C122A65FEE004491F7 /* BaseLabel.m */; };
 		38346BD62252F768005DB04A /* Caculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38346BD52252F768005DB04A /* Caculator.xib */; };
@@ -37,6 +37,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 380CAECB22A7943700321AF4;
 			remoteInfo = Grammer;
+		};
+		38EAA5CA22F137AC00CCB4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 380CAED522A7943700321AF4 /* Grammer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3828D42C22DF3929004687F4;
+			remoteInfo = UI;
+		};
+		38EAA5CC22F137AC00CCB4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 380CAED522A7943700321AF4 /* Grammer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3828D43822DF3939004687F4;
+			remoteInfo = Test;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,10 +78,10 @@
 		381646B422A65FD2004491F7 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		381646B522A65FD2004491F7 /* UIColor+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
 		381646BC22A65FEE004491F7 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
-		381646BD22A65FEE004491F7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		381646BD22A65FEE004491F7 /* MZHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZHViewController.m; sourceTree = "<group>"; };
 		381646BE22A65FEE004491F7 /* BaseLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
 		381646BF22A65FEE004491F7 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
-		381646C022A65FEE004491F7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		381646C022A65FEE004491F7 /* MZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZHViewController.h; sourceTree = "<group>"; };
 		381646C122A65FEE004491F7 /* BaseLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
 		38346BD52252F768005DB04A /* Caculator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Caculator.xib; sourceTree = "<group>"; };
 		38346BDC2252F831005DB04A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -143,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				380CAEDA22A7943900321AF4 /* Grammer */,
+				38EAA5CB22F137AC00CCB4A4 /* UI.xctest */,
+				38EAA5CD22F137AC00CCB4A4 /* Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,10 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				381646BC22A65FEE004491F7 /* BaseButton.h */,
-				381646BD22A65FEE004491F7 /* BaseViewController.m */,
+				381646BD22A65FEE004491F7 /* MZHViewController.m */,
 				381646BE22A65FEE004491F7 /* BaseLabel.h */,
 				381646BF22A65FEE004491F7 /* BaseButton.m */,
-				381646C022A65FEE004491F7 /* BaseViewController.h */,
+				381646C022A65FEE004491F7 /* MZHViewController.h */,
 				381646C122A65FEE004491F7 /* BaseLabel.m */,
 			);
 			name = Base;
@@ -288,6 +304,20 @@
 			remoteRef = 380CAED922A7943900321AF4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		38EAA5CB22F137AC00CCB4A4 /* UI.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UI.xctest;
+			remoteRef = 38EAA5CA22F137AC00CCB4A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38EAA5CD22F137AC00CCB4A4 /* Test.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Test.xctest;
+			remoteRef = 38EAA5CC22F137AC00CCB4A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -358,7 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A947312252728A00CE796D /* ViewController.m in Sources */,
-				381646C222A65FEE004491F7 /* BaseViewController.m in Sources */,
+				381646C222A65FEE004491F7 /* MZHViewController.m in Sources */,
 				33A9473C2252728B00CE796D /* main.m in Sources */,
 				381646B622A65FD2004491F7 /* UIViewController+Tools.m in Sources */,
 				389B9962225364C2005EDF4D /* LocalizedViewController.m in Sources */,

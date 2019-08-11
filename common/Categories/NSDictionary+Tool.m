@@ -42,14 +42,17 @@
     return result;
 }
 
-- (id)processDictionaryIsNSNull{
+- (instancetype)replaceNullValueWithObject: (id _Nullable) obj{
+    if (!obj) {
+        obj = @"";
+    }
     NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] init];
-    for (NSString *keyStr in self.allKeys) {
-        if ([[self objectForKey:keyStr] isEqual:[NSNull null]]) {
-            [mutableDic setObject:@"" forKey:keyStr];
+    for (NSString *key in self.allKeys) {
+        if ([[self objectForKey:key] isEqual:[NSNull null]]) {
+            [mutableDic setObject:obj forKey:key];
         }
         else{
-            [mutableDic setObject:[self objectForKey:keyStr] forKey:keyStr];
+            [mutableDic setObject:[self objectForKey:key] forKey:key];
         }
     }
     return mutableDic;
@@ -78,11 +81,11 @@
         id obj = [self objectForKey:key];
         
         if ([obj isKindOfClass:[NSString class]]) {
-            [desc appendFormat:@"%@\t%@ = \"%@\",\n", tab, key, obj];
+            [desc appendFormat:@"%@\t%@ : \"%@\",\n", tab, key, obj];
         } else if ([obj isKindOfClass:[NSArray class]]
                    || [obj isKindOfClass:[NSDictionary class]]
                    || [obj isKindOfClass:[NSSet class]]) {
-            [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, [obj descriptionWithLocale:locale indent:level + 1]];
+            [desc appendFormat:@"%@\t%@ : %@,\n", tab, key, [obj descriptionWithLocale:locale indent:level + 1]];
         } else if ([obj isKindOfClass:[NSData class]]) {
             // 如果是NSData类型，尝试去解析结果，以打印出可阅读的数据
             NSError *error = nil;
@@ -95,25 +98,25 @@
                     || [result isKindOfClass:[NSArray class]]
                     || [result isKindOfClass:[NSSet class]]) {
                     NSString *str = [((NSDictionary *)result) descriptionWithLocale:locale indent:level + 1];
-                    [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, str];
+                    [desc appendFormat:@"%@\t%@ : %@,\n", tab, key, str];
                 } else if ([obj isKindOfClass:[NSString class]]) {
-                    [desc appendFormat:@"%@\t%@ = \"%@\",\n", tab, key, result];
+                    [desc appendFormat:@"%@\t%@ : \"%@\",\n", tab, key, result];
                 }
             } else {
                 @try {
                     NSString *str = [[NSString alloc] initWithData:obj encoding:NSUTF8StringEncoding];
                     if (str != nil) {
-                        [desc appendFormat:@"%@\t%@ = \"%@\",\n", tab, key, str];
+                        [desc appendFormat:@"%@\t%@ : \"%@\",\n", tab, key, str];
                     } else {
-                        [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, obj];
+                        [desc appendFormat:@"%@\t%@ : %@,\n", tab, key, obj];
                     }
                 }
                 @catch (NSException *exception) {
-                    [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, obj];
+                    [desc appendFormat:@"%@\t%@ : %@,\n", tab, key, obj];
                 }
             }
         } else {
-            [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, obj];
+            [desc appendFormat:@"%@\t%@ : %@,\n", tab, key, obj];
         }
     }
     
