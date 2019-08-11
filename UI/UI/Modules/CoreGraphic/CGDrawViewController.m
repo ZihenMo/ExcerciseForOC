@@ -36,12 +36,15 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ShapeType type = [self.shapeList[indexPath.row][@"type"] integerValue];
-    [self showCanvasWithShapeType:type];
+    NSDictionary *rowDict = self.shapeList[indexPath.row];
+    ShapeType shapeType = [rowDict[@"shapeType"] integerValue];
+    DrawType drawType = [rowDict[@"drawType"] integerValue];
+    [self showCanvasWithShapeType:shapeType drawType:drawType];
 }
 # pragma mark - Acitons
-- (void)showCanvasWithShapeType: (ShapeType)type {
-    self.canvas.type = type;
+- (void)showCanvasWithShapeType: (ShapeType)shapeType drawType: (DrawType)drawType {
+    self.canvas.shapeType = shapeType;
+    self.canvas.drawType = drawType;
     [self.canvas setNeedsDisplay];
     self.canvas.hidden = NO;
 }
@@ -56,12 +59,15 @@
 
 - (NSArray *)shapeList {
     if (_shapeList == nil) {
-        _shapeList = @[@{@"name": @"三角形", @"type": @(ShapeTypeTriangle)},
-                       @{@"name": @"圆形", @"type": @(ShapeTypeCircle)},
-                       @{@"name": @"饼图", @"type": @(ShapeTypePie)},
-                       @{@"name": @"字符", @"type": @(ShapeTypeString)},
-                       @{@"name": @"图片", @"type": @(ShapeTypeImage)},
-                       @{@"name": @"梯度和阴影", @"type": @(ShapeTypeGradient)}];
+        _shapeList = @[@{@"name": @"三角形", @"shapeType":@(ShapeTypeTriangle),                      @"drawType": @(DrawTypeCoreGraphic)},
+                       @{@"name": @"三角形", @"shapeType":@(ShapeTypeTriangle),                      @"drawType": @(DrawTypeUIKit)},
+                       @{@"name": @"圆形", @"shapeType": @(ShapeTypeCircle), @"drawType": @(DrawTypeCoreGraphic)},
+                       @{@"name": @"圆形", @"shapeType": @(ShapeTypeCircle), @"drawType": @(DrawTypeUIKit)},
+                       @{@"name": @"饼图", @"shapeType": @(ShapeTypePie), @"drawType": @(DrawTypeCoreGraphic)},
+                       @{@"name": @"字符", @"shapeType": @(ShapeTypeString), @"drawType": @(DrawTypeCoreGraphic)},
+                       @{@"name": @"图片", @"shapeType": @(ShapeTypeImage), @"drawType": @(DrawTypeCoreGraphic)},
+                       @{@"name": @"图片", @"shapeType": @(ShapeTypeImage), @"drawType": @(DrawTypeUIKit)},
+                       @{@"name": @"梯度和阴影", @"shapeType": @(ShapeTypeGradient), @"drawType": @(DrawTypeCoreGraphic)}];
     }
     return _shapeList;
 }
