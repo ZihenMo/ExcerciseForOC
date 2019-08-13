@@ -269,6 +269,7 @@
 		330198FE2266419700EA9903 /* dazhao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 330198002266419700EA9903 /* dazhao.mp3 */; };
 		33019927226647B400EA9903 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33019912226647B300EA9903 /* ImageViewController.m */; };
 		33019928226647B400EA9903 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33019913226647B300EA9903 /* ImageViewController.xib */; };
+		33116795230074460016DB9E /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33116793230074460016DB9E /* CanvasView.m */; };
 		337F3360226CCD22009EA22F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337F335E226CCD22009EA22F /* TableViewController.m */; };
 		337F3361226CCD22009EA22F /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337F335F226CCD22009EA22F /* TableViewController.xib */; };
 		33B011A8227DA82D00410EB7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B011A7227DA82D00410EB7 /* Person.m */; };
@@ -290,7 +291,9 @@
 		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
 		3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */; };
 		3803BF4122FAD70E00281357 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF3F22FAD70D00281357 /* XibViewController.m */; };
+		3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4022FAD70D00281357 /* XibViewController.xib */; };
 		3803BF4522FAD78200281357 /* MZHQuantityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF4422FAD78200281357 /* MZHQuantityView.m */; };
+		3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4622FAD79100281357 /* MZHQunatityView.xib */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
 		3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F64622C459CD00562C5C /* DynamicInputView.m */; };
@@ -310,12 +313,12 @@
 		3828D44F22DF3971004687F4 /* UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828D44E22DF3971004687F4 /* UIUITests.swift */; };
 		382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */; };
 		382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */; };
-		383B3EA62301846600337A8F /* MZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383B3EA52301846600337A8F /* MZHMenuView.m */; };
-		383B3EA82301847200337A8F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383B3EA72301847200337A8F /* MenuView.xib */; };
 		3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */; };
 		3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */; };
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
 		3876D5E9228AA0BF00A6A3B3 /* CGDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */; };
+<<<<<<< HEAD
+=======
 		3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */; };
 		387F6F7E22EED7BD00CF22F4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F6F7D22EED7BD00CF22F4 /* CollectionViewController.m */; };
 		388A90A122F03E7C00244BBB /* BuglyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388A909F22F03E7C00244BBB /* BuglyViewController.m */; };
@@ -325,8 +328,8 @@
 		38EAA5C422F131B200CCB4A4 /* MZHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */; };
 		38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */; };
 		38EAA5DC22F171E100CCB4A4 /* MZHSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */; };
-		38F935B022FD781A0019145C /* MZHQuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F935AF22FD781A0019145C /* MZHQuantityView.xib */; };
 		8AB48154975C42C6DFB70639 /* libPods-UIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */; };
+>>>>>>> c5320bf1ab39a5587e42c10af0f2fb4ae19c3028
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
 
@@ -610,6 +613,8 @@
 		33019912226647B300EA9903 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		33019913226647B300EA9903 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		33019914226647B300EA9903 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		33116793230074460016DB9E /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		33116794230074460016DB9E /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		337F335D226CCD22009EA22F /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		337F335E226CCD22009EA22F /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		337F335F226CCD22009EA22F /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -620,7 +625,6 @@
 		33B011B2227DD2A300410EB7 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		33BFB294227DA29B00B998BC /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		33BFB295227DA29B00B998BC /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
-		33DB7FA622DB975700F634C4 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		3801383822C5E82A00F0C33B /* ASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASDK.framework; path = ../../ASDK/Products/ASDK.framework; sourceTree = "<group>"; };
 		3801430322C1B34B007A2F68 /* UIViewController+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tools.m"; sourceTree = "<group>"; };
 		3801430422C1B34B007A2F68 /* NSArray+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Tool.h"; sourceTree = "<group>"; };
@@ -649,8 +653,10 @@
 		3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizeViewController.m; sourceTree = "<group>"; };
 		3803BF3E22FAD70D00281357 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		3803BF3F22FAD70D00281357 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		3803BF4022FAD70D00281357 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
 		3803BF4322FAD78200281357 /* MZHQuantityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHQuantityView.h; sourceTree = "<group>"; };
 		3803BF4422FAD78200281357 /* MZHQuantityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHQuantityView.m; sourceTree = "<group>"; };
+		3803BF4622FAD79100281357 /* MZHQunatityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHQunatityView.xib; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
@@ -681,15 +687,14 @@
 		382F2C3D228BF9D100CEC190 /* LocalDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataTableViewController.h; sourceTree = "<group>"; };
 		382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataTableViewController.m; sourceTree = "<group>"; };
 		382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalDataTableViewController.xib; sourceTree = "<group>"; };
-		383B3EA42301846600337A8F /* MZHMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHMenuView.h; sourceTree = "<group>"; };
-		383B3EA52301846600337A8F /* MZHMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHMenuView.m; sourceTree = "<group>"; };
-		383B3EA72301847200337A8F /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		3876D59F228A8FA700A6A3B3 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
 		3876D5E5228AA0BF00A6A3B3 /* CGDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDrawViewController.h; sourceTree = "<group>"; };
 		3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDrawViewController.m; sourceTree = "<group>"; };
 		3876D5E7228AA0BF00A6A3B3 /* CGDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGDrawViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
 		3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = " CanvasView.m"; sourceTree = "<group>"; };
 		387F6F7C22EED7BD00CF22F4 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		387F6F7D22EED7BD00CF22F4 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
@@ -706,7 +711,7 @@
 		38EAA5CF22F137C000CCB4A4 /* MZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZHViewController.h; sourceTree = "<group>"; };
 		38EAA5DA22F171E100CCB4A4 /* MZHSearchResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHSearchResultController.h; sourceTree = "<group>"; };
 		38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHSearchResultController.m; sourceTree = "<group>"; };
-		38F935AF22FD781A0019145C /* MZHQuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHQuantityView.xib; sourceTree = "<group>"; };
+>>>>>>> c5320bf1ab39a5587e42c10af0f2fb4ae19c3028
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E0947C16D712AA1B2083E9 /* Pods-UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIUITests/Pods-UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1248,6 +1253,7 @@
 				3803BF3D22FAD6DB00281357 /* Views */,
 				3803BF3E22FAD70D00281357 /* XibViewController.h */,
 				3803BF3F22FAD70D00281357 /* XibViewController.m */,
+				3803BF4022FAD70D00281357 /* XibViewController.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -1257,10 +1263,7 @@
 			children = (
 				3803BF4322FAD78200281357 /* MZHQuantityView.h */,
 				3803BF4422FAD78200281357 /* MZHQuantityView.m */,
-				38F935AF22FD781A0019145C /* MZHQuantityView.xib */,
-				383B3EA42301846600337A8F /* MZHMenuView.h */,
-				383B3EA52301846600337A8F /* MZHMenuView.m */,
-				383B3EA72301847200337A8F /* MenuView.xib */,
+				3803BF4622FAD79100281357 /* MZHQunatityView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1349,8 +1352,8 @@
 		3876D5EA228AA40C00A6A3B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				33DB7FA622DB975700F634C4 /* CanvasView.h */,
-				3876D5EC228AA43B00A6A3B3 /*  CanvasView.m */,
+				33116793230074460016DB9E /* CanvasView.m */,
+				33116794230074460016DB9E /* CanvasView.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1574,6 +1577,7 @@
 				3301984D2266419700EA9903 /* xiaozhao1_17.png in Resources */,
 				330198472266419700EA9903 /* xiaozhao1_6.png in Resources */,
 				330198252266419700EA9903 /* install_b_5.png in Resources */,
+				3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */,
 				330198342266419700EA9903 /* install_b_12.png in Resources */,
 				330198A32266419700EA9903 /* dazhao_81.png in Resources */,
 				330198192266419700EA9903 /* install_b_22.png in Resources */,
@@ -1642,7 +1646,6 @@
 				330198692266419700EA9903 /* xiaozhao3_28.png in Resources */,
 				330198BD2266419700EA9903 /* dazhao_1.png in Resources */,
 				330198A12266419700EA9903 /* dazhao_4.png in Resources */,
-				383B3EA82301847200337A8F /* MenuView.xib in Resources */,
 				3301980F2266419700EA9903 /* dead_6.png in Resources */,
 				330198E92266419700EA9903 /* dazhao_58.png in Resources */,
 				3301982E2266419700EA9903 /* install_b_29.png in Resources */,
@@ -1679,7 +1682,6 @@
 				3301981F2266419700EA9903 /* install_b_18.png in Resources */,
 				330198F92266419700EA9903 /* run_5.png in Resources */,
 				330198EE2266419700EA9903 /* dazhao_59.png in Resources */,
-				38F935B022FD781A0019145C /* MZHQuantityView.xib in Resources */,
 				330198B52266419700EA9903 /* dazhao_3.png in Resources */,
 				3301986A2266419700EA9903 /* xiaozhao3_14.png in Resources */,
 				3301980E2266419700EA9903 /* dead_4.png in Resources */,
@@ -1704,6 +1706,7 @@
 				330198122266419700EA9903 /* dead_7.png in Resources */,
 				3301985B2266419700EA9903 /* xiaozhao3_23.png in Resources */,
 				330198702266419700EA9903 /* xiaozhao3_16.png in Resources */,
+				3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */,
 				330198452266419700EA9903 /* xiaozhao1_11.png in Resources */,
 				330198C22266419700EA9903 /* dazhao_34.png in Resources */,
 				330198352266419700EA9903 /* stand_9.png in Resources */,
@@ -1971,7 +1974,11 @@
 				33B011A8227DA82D00410EB7 /* Person.m in Sources */,
 				3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
+<<<<<<< HEAD
+				33116795230074460016DB9E /* CanvasView.m in Sources */,
+=======
 				3828D40222DF2446004687F4 /* Monkey.swift in Sources */,
+>>>>>>> c5320bf1ab39a5587e42c10af0f2fb4ae19c3028
 				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
 				38070AC622E7F2E3002C344F /* ReviewCell.m in Sources */,
 				38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */,
@@ -1981,11 +1988,9 @@
 				3801432322C1B34C007A2F68 /* BaseButton.m in Sources */,
 				3803BF4522FAD78200281357 /* MZHQuantityView.m in Sources */,
 				3802364022BCBE8100CC8363 /* TableViewCell.m in Sources */,
-				3876D5ED228AA43B00A6A3B3 /*  CanvasView.m in Sources */,
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				38070AC222E7F197002C344F /* WGCollectionViewLayout.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
-				383B3EA62301846600337A8F /* MZHMenuView.m in Sources */,
 				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,
 				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,
 				3801431C22C1B34C007A2F68 /* UITableViewCell+Tools.m in Sources */,

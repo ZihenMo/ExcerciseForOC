@@ -9,17 +9,24 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef enum : NSUInteger {
+
+typedef NS_ENUM(NSUInteger, ShapeType) {
     ShapeTypeTriangle,
     ShapeTypeCircle,
     ShapeTypePie,
     ShapeTypeString,
     ShapeTypeImage,
     ShapeTypeGradient
-} ShapeType;
+};
+typedef NS_ENUM(NSUInteger, DrawType) {
+    DrawTypeUIKit,
+    DrawTypeCoreGraphic
+};
+
 
 @interface CanvasView : UIView
-@property (nonatomic, assign) ShapeType type;
+@property (nonatomic, assign) ShapeType shapeType;
+@property (nonatomic, assign) DrawType drawType;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,7 +7,7 @@
 //
 
 #import "CanvasView.h"
-
+#pragma mark -
 @implementation CanvasView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -24,12 +24,23 @@
 
 // 自定义绘制View
 - (void)drawRect:(CGRect)rect {
-    switch (self.type) {
+    switch (self.shapeType) {
         case ShapeTypeTriangle:
             [self drawTriangle];
             break;
+        case ShapeTypeCircle:
+            [self drawCircle];
             
-        default:
+        case ShapeTypePie:
+            break;
+        case ShapeTypeString:
+            
+            break;
+        case ShapeTypeImage:
+            
+            break;
+        case ShapeTypeGradient:
+            
             break;
     }
     
@@ -40,22 +51,75 @@
 //    [self cg_drawConcentricCircle];
 //    [self cg_drawImageAndShadow:[UIImage imageNamed:@"timg"]];
 //    [self cg_drawGradientColor];
-    [self cg_drawGradientPath];
+//    [self cg_drawGradientPath];
 }
+- (void)drawTriangle {
+    switch (self.drawType) {
+        case DrawTypeCoreGraphic:
+            [self drawTriangleWithCoreGraphic];
+            break;
+        case DrawTypeUIKit:
+            [self drawTriangleWithUIKit];
+            break;
+    }
+}
+
+- (void)drawCircle {
+    switch (self.drawType) {
+        case DrawTypeCoreGraphic:
+            [self drawConcentricCircleWithCoreGraphic];
+            break;
+        case DrawTypeUIKit:
+            [self drawConcentricCircleWithUIKit];
+            break;
+    }
+}
+/**
+ Core Graphic 绘制三角形
+ */
+- (void)drawTriangleWithCoreGraphic {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 颜色空间，采用设备RGB（Quartz2D会转换成通用RGB）
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    // 创建颜色（其实用UIColor是最方便的）
+    CGFloat colorComponents[4] = {1, 0, 0, 1};  // C语言数组 RGBA
+    CGColorRef color = CGColorCreate(colorSpace, colorComponents);
+    CGContextSetStrokeColorWithColor(context, color);
+    // 线型设置
+    CGContextSetLineCap(context, kCGLineCapSquare);
+    // 线宽
+    CGContextSetLineWidth(context, 50.f);
+    // 开始绘线
+    CGPoint center = self.center;
+    CGPoint point1 = CGPointMake(center.x, center.y - 100);
+    CGPoint point2 = CGPointMake(center.x - 100, center.y + 100);
+    CGPoint point3 = CGPointMake(center.x + 100, center.y + 100);
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, point1.x, point1.y);
+    CGPathAddLineToPoint(path, NULL, point2.x, point2.y);
+    CGPathAddLineToPoint(path, NULL, point3.x, point3.y);
+    CGPathCloseSubpath(path);
+    CGContextAddPath(context, path);
+    CGContextStrokePath(context);
+    CGPathRelease(path);
+}
+
+
 /**
  绘制三角形
  */
-- (void)drawTriangle {
+- (void)drawTriangleWithUIKit {
     UIBezierPath *bp = [UIBezierPath bezierPath];
     CGPoint center = self.center;
     CGPoint point1 = CGPointMake(center.x, center.y - 150);
     CGPoint point2 = CGPointMake(center.x - 150, center.y + 150);
     CGPoint point3 = CGPointMake(center.x + 150, center.y + 150);
     [[UIColor orangeColor] setStroke];
+    [bp setLineWidth:2.f];
+    [bp setLineCapStyle:kCGLineCapRound];
     [bp moveToPoint:point1];
     [bp addLineToPoint:point2]; // 线的终点是下次绘制的起点
     [bp addLineToPoint:point3];
-    //    [bp addLineToPoint:point1];
     [bp closePath];
     [bp stroke];
 }
@@ -64,7 +128,7 @@
 /**
  绘制同心圆
  */
-- (void)drawConcentricCircle {
+- (void)drawConcentricCircleWithUIKit {
     UIBezierPath *bp = [UIBezierPath bezierPath];
     CGFloat radius = self.bounds.size.height / 2.0;
     CGPoint center = self.center;
@@ -88,7 +152,7 @@
 /**
  Core Graphic方式绘制同心圆
  */
-- (void)cg_drawConcentricCircle {
+- (void)drawConcentricCircleWithCoreGraphic {
     // 获取当前上下文  最奇葩的获取方式
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBStrokeColor(context, 1, 0, 0, 1);
@@ -108,7 +172,7 @@
 
 
 /**
- 绘制图片 OC方式
+ 绘制图片 UIKit方式
  */
 - (void)drawImage: (UIImage *)image {
     CGPoint center = self.center;
