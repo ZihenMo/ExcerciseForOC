@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MZHQuantityView : UIView
 
+@property (nonatomic, assign) NSInteger value;
+@property (nonatomic, assign) NSInteger min;
+@property (nonatomic, assign) NSInteger max;
+@property (nonatomic, assign) NSInteger step;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -290,9 +290,7 @@
 		3802364122BCBE8100CC8363 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3802363F22BCBE8100CC8363 /* TableViewCell.xib */; };
 		3803BE8522DC0E18005080A5 /* GestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */; };
 		3803BF4122FAD70E00281357 /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF3F22FAD70D00281357 /* XibViewController.m */; };
-		3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4022FAD70D00281357 /* XibViewController.xib */; };
 		3803BF4522FAD78200281357 /* MZHQuantityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3803BF4422FAD78200281357 /* MZHQuantityView.m */; };
-		3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3803BF4622FAD79100281357 /* MZHQunatityView.xib */; };
 		3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804F4AF228D0A1A005B29FE /* NavigationItemController.m */; };
 		3804F4B2228D0A1A005B29FE /* NavigationItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */; };
 		3806F64722C459CD00562C5C /* DynamicInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806F64622C459CD00562C5C /* DynamicInputView.m */; };
@@ -312,6 +310,8 @@
 		3828D44F22DF3971004687F4 /* UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828D44E22DF3971004687F4 /* UIUITests.swift */; };
 		382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */; };
 		382F2C41228BF9D100CEC190 /* LocalDataTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */; };
+		383B3EA62301846600337A8F /* MZHMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383B3EA52301846600337A8F /* MZHMenuView.m */; };
+		383B3EA82301847200337A8F /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 383B3EA72301847200337A8F /* MenuView.xib */; };
 		3876D5A2228A8FA700A6A3B3 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */; };
 		3876D5A3228A8FA700A6A3B3 /* ButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */; };
 		3876D5E8228AA0BF00A6A3B3 /* CGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876D5E6228AA0BF00A6A3B3 /* CGDrawViewController.m */; };
@@ -325,6 +325,7 @@
 		38EAA5C422F131B200CCB4A4 /* MZHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */; };
 		38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */; };
 		38EAA5DC22F171E100CCB4A4 /* MZHSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */; };
+		38F935B022FD781A0019145C /* MZHQuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F935AF22FD781A0019145C /* MZHQuantityView.xib */; };
 		8AB48154975C42C6DFB70639 /* libPods-UIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
@@ -648,10 +649,8 @@
 		3803BE8422DC0E18005080A5 /* GestureRecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizeViewController.m; sourceTree = "<group>"; };
 		3803BF3E22FAD70D00281357 /* XibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		3803BF3F22FAD70D00281357 /* XibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
-		3803BF4022FAD70D00281357 /* XibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibViewController.xib; sourceTree = "<group>"; };
 		3803BF4322FAD78200281357 /* MZHQuantityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHQuantityView.h; sourceTree = "<group>"; };
 		3803BF4422FAD78200281357 /* MZHQuantityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHQuantityView.m; sourceTree = "<group>"; };
-		3803BF4622FAD79100281357 /* MZHQunatityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHQunatityView.xib; sourceTree = "<group>"; };
 		3804F4AE228D0A1A005B29FE /* NavigationItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemController.h; sourceTree = "<group>"; };
 		3804F4AF228D0A1A005B29FE /* NavigationItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemController.m; sourceTree = "<group>"; };
 		3804F4B0228D0A1A005B29FE /* NavigationItemController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemController.xib; sourceTree = "<group>"; };
@@ -682,6 +681,9 @@
 		382F2C3D228BF9D100CEC190 /* LocalDataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataTableViewController.h; sourceTree = "<group>"; };
 		382F2C3E228BF9D100CEC190 /* LocalDataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataTableViewController.m; sourceTree = "<group>"; };
 		382F2C3F228BF9D100CEC190 /* LocalDataTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalDataTableViewController.xib; sourceTree = "<group>"; };
+		383B3EA42301846600337A8F /* MZHMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHMenuView.h; sourceTree = "<group>"; };
+		383B3EA52301846600337A8F /* MZHMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHMenuView.m; sourceTree = "<group>"; };
+		383B3EA72301847200337A8F /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
 		3876D59F228A8FA700A6A3B3 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		3876D5A0228A8FA700A6A3B3 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		3876D5A1228A8FA700A6A3B3 /* ButtonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewController.xib; sourceTree = "<group>"; };
@@ -704,6 +706,7 @@
 		38EAA5CF22F137C000CCB4A4 /* MZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZHViewController.h; sourceTree = "<group>"; };
 		38EAA5DA22F171E100CCB4A4 /* MZHSearchResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHSearchResultController.h; sourceTree = "<group>"; };
 		38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHSearchResultController.m; sourceTree = "<group>"; };
+		38F935AF22FD781A0019145C /* MZHQuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHQuantityView.xib; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E0947C16D712AA1B2083E9 /* Pods-UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIUITests/Pods-UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1245,7 +1248,6 @@
 				3803BF3D22FAD6DB00281357 /* Views */,
 				3803BF3E22FAD70D00281357 /* XibViewController.h */,
 				3803BF3F22FAD70D00281357 /* XibViewController.m */,
-				3803BF4022FAD70D00281357 /* XibViewController.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -1255,7 +1257,10 @@
 			children = (
 				3803BF4322FAD78200281357 /* MZHQuantityView.h */,
 				3803BF4422FAD78200281357 /* MZHQuantityView.m */,
-				3803BF4622FAD79100281357 /* MZHQunatityView.xib */,
+				38F935AF22FD781A0019145C /* MZHQuantityView.xib */,
+				383B3EA42301846600337A8F /* MZHMenuView.h */,
+				383B3EA52301846600337A8F /* MZHMenuView.m */,
+				383B3EA72301847200337A8F /* MenuView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1569,7 +1574,6 @@
 				3301984D2266419700EA9903 /* xiaozhao1_17.png in Resources */,
 				330198472266419700EA9903 /* xiaozhao1_6.png in Resources */,
 				330198252266419700EA9903 /* install_b_5.png in Resources */,
-				3803BF4722FAD79100281357 /* MZHQunatityView.xib in Resources */,
 				330198342266419700EA9903 /* install_b_12.png in Resources */,
 				330198A32266419700EA9903 /* dazhao_81.png in Resources */,
 				330198192266419700EA9903 /* install_b_22.png in Resources */,
@@ -1638,6 +1642,7 @@
 				330198692266419700EA9903 /* xiaozhao3_28.png in Resources */,
 				330198BD2266419700EA9903 /* dazhao_1.png in Resources */,
 				330198A12266419700EA9903 /* dazhao_4.png in Resources */,
+				383B3EA82301847200337A8F /* MenuView.xib in Resources */,
 				3301980F2266419700EA9903 /* dead_6.png in Resources */,
 				330198E92266419700EA9903 /* dazhao_58.png in Resources */,
 				3301982E2266419700EA9903 /* install_b_29.png in Resources */,
@@ -1674,6 +1679,7 @@
 				3301981F2266419700EA9903 /* install_b_18.png in Resources */,
 				330198F92266419700EA9903 /* run_5.png in Resources */,
 				330198EE2266419700EA9903 /* dazhao_59.png in Resources */,
+				38F935B022FD781A0019145C /* MZHQuantityView.xib in Resources */,
 				330198B52266419700EA9903 /* dazhao_3.png in Resources */,
 				3301986A2266419700EA9903 /* xiaozhao3_14.png in Resources */,
 				3301980E2266419700EA9903 /* dead_4.png in Resources */,
@@ -1698,7 +1704,6 @@
 				330198122266419700EA9903 /* dead_7.png in Resources */,
 				3301985B2266419700EA9903 /* xiaozhao3_23.png in Resources */,
 				330198702266419700EA9903 /* xiaozhao3_16.png in Resources */,
-				3803BF4222FAD70E00281357 /* XibViewController.xib in Resources */,
 				330198452266419700EA9903 /* xiaozhao1_11.png in Resources */,
 				330198C22266419700EA9903 /* dazhao_34.png in Resources */,
 				330198352266419700EA9903 /* stand_9.png in Resources */,
@@ -1980,6 +1985,7 @@
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				38070AC222E7F197002C344F /* WGCollectionViewLayout.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
+				383B3EA62301846600337A8F /* MZHMenuView.m in Sources */,
 				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,
 				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,
 				3801431C22C1B34C007A2F68 /* UITableViewCell+Tools.m in Sources */,

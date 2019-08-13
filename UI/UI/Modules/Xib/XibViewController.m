@@ -7,6 +7,8 @@
 //
 
 #import "XibViewController.h"
+#import "MZHQuantityView.h"
+#import "MZHMenuView.h"
 
 @interface XibViewController ()
 
@@ -16,17 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setupUI];
+}
+- (void)setupUI {
+//    self.view.backgroundColor = UIColor.redColor;
+//    MZHQuantityView *customizedView = [[[UINib nibWithNibName:NSStringFromClass(MZHQuantityView.class) bundle:[NSBundle mainBundle]] instantiateWithOwner:nil options:nil] firstObject];
+    self.view.backgroundColor = [UIColor whiteColor];
+    MZHQuantityView *customizedView = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(MZHQuantityView.class) owner:nil options:nil]lastObject];
+    
+    customizedView.frame = CGRectMake(100, 200, 120, 50);
+    customizedView.backgroundColor = UIColor.cyanColor;
+    [self.view addSubview:customizedView];
+    
+    MZHMenuView *menuView = [[MZHMenuView alloc] initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 50)];
+    DDLogDebug(@"menuFrame: %@", NSStringFromCGRect(menuView.frame));
+    DDLogDebug(@"viewFrmae: %@", NSStringFromCGRect(self.view.frame));
+    menuView.menus = @[@"所有", @"普通标题", @"特别长长长的标题出现了"];
+    [self.view addSubview:menuView];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

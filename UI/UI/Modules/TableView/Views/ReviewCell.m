@@ -8,6 +8,10 @@
 
 #import "ReviewCell.h"
 
+@interface ReviewCell ()
+
+@end
+
 @implementation ReviewCell
 
 - (void)awakeFromNib {

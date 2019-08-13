@@ -19,8 +19,9 @@
 #import "CollectionViewController.h"
 #import "BuglyViewController.h"
 #import "MZHSearchResultController.h"
+#import "XibViewController.h"
 #import <objc/runtime.h>
-
+#import "MZHQuantityView.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -47,16 +48,25 @@
     self.tableView.allowsSelection = YES;
     UIBarButtonItem *loginButton = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(pushToLogin:)];
     self.navigationItem.leftBarButtonItem = loginButton;
+    MZHQuantityView *customizedView = [[[UINib nibWithNibName:NSStringFromClass(MZHQuantityView.class) bundle:[NSBundle mainBundle]] instantiateWithOwner:nil options:nil] firstObject];
+    customizedView.frame = CGRectMake(100, 200, 120, 50);
+    customizedView.backgroundColor = UIColor.cyanColor;
+    [self.view addSubview:customizedView];
 }
+
+/**
+ 
+ 设置SearchBar后，通过push的二级页面多一层视图覆盖。（UINavigationControllerPaletteClippingView）
+ */
 - (void)setupSearch {
     self.definesPresentationContext = YES;
-    if (@available(iOS 11.0, *)) {
-        self.navigationItem.searchController = self.searchController;
-        // 默认展示搜索栏
-        self.navigationItem.hidesSearchBarWhenScrolling = NO;
-    } else {
+//    if (@available(iOS 11.0, *)) {
+//        self.navigationItem.searchController = self.searchController;
+//        // 默认展示搜索栏
+//        self.navigationItem.hidesSearchBarWhenScrolling = NO;
+//    } else {
         self.navigationItem.titleView = self.searchController.searchBar;
-    }
+//    }
     UITextField *searchFeild = [self.searchController.searchBar valueForKeyPath:@"_searchField"];
     searchFeild.placeholder = @"搜索";
     searchFeild.textColor = UIColor.orangeColor;
@@ -130,7 +140,7 @@
                        @{@"name": @"自定义键盘", @"target": CustomizedKeyBoardController.class},
                        @{@"name": @"手势", @"target": GestureRecognizeViewController.class},
                        @{@"name": @"Bugly", @"target": BuglyViewController.class},
-                       @{@"name": @"Xib嵌套", @"target": BuglyViewController.class}
+                       @{@"name": @"Xib嵌套", @"target": XibViewController.class}
                      ];
     }
     return  _dataArray;
