@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import <SendBirdSDK/SendBirdSDK.h>
+
 NSString *APP_ID = @"429CACE9-6D11-4072-9047-001135BD005D";
+
 
 @interface AppDelegate ()
 
@@ -24,9 +26,9 @@ NSString *APP_ID = @"429CACE9-6D11-4072-9047-001135BD005D";
 //    self.window.rootViewController = rootVC;
 //    [self.window makeKeyAndVisible];
     
-    
     [SBDMain initWithApplicationId:APP_ID];
     [self apperance];
+
     return YES;
 }
 
@@ -34,32 +36,51 @@ NSString *APP_ID = @"429CACE9-6D11-4072-9047-001135BD005D";
     UITableViewCell.appearance.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [[GIDSignIn sharedInstance] handleURL:url];
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[GIDSignIn sharedInstance] handleURL:url];
 }
 
+#pragma mark - Google Delegate
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+/**
+登录Google
+ */
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    if (error != nil) {
+        if (error.code == kGIDSignInErrorCodeHasNoAuthInKeychain) {
+            NSLog(@"The user has not signed in before or they have since signed out.");
+        } else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+        return;
+    }
+    // Perform any operations on signed in user here.
+    NSString *userId = user.userID;                  // For client-side use only!
+    NSString *idToken = user.authentication.idToken; // Safe to send to the server
+    NSString *fullName = user.profile.name;
+    NSString *givenName = user.profile.givenName;
+    NSString *familyName = user.profile.familyName;
+    NSString *email = user.profile.email;
+    // ...
+    NSLog(@"Google User: %@", user);
 }
 
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+/**
+ Google断开连接
+ */
+- (void)signIn:(GIDSignIn *)signIn
+didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    NSLog(@"Google disconnect user: %@", user);
 }
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 
 @end

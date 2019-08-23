@@ -91,6 +91,10 @@ target 'UI' do
   # Monkey压测
   pod 'SwiftMonkeyPaws', '~> 2.1.0'
   pod 'Bugly'
+  #第三方登录
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
+
 end
 
 target 'UIUITests' do

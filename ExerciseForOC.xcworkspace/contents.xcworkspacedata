@@ -14,13 +14,13 @@
       location = "group:NetAndThread/NetAndThread.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UI/UI.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AutoLayout.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:RAC/RAC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UI/UI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

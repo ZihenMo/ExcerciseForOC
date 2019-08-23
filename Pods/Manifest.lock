@@ -18,6 +18,27 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
+  - FBSDKCoreKit (5.2.1):
+    - FBSDKCoreKit/Basics (= 5.2.1)
+    - FBSDKCoreKit/Core (= 5.2.1)
+  - FBSDKCoreKit/Basics (5.2.1)
+  - FBSDKCoreKit/Core (5.2.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.2.1):
+    - FBSDKCoreKit (~> 5.0)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.1):
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.1)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.1)
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.1)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.1)"
+  - GTMSessionFetcher/Core (1.2.2)
   - IQKeyboardManager (6.3.0)
   - KafkaRefresh (1.4.0):
     - KafkaRefresh/Category (= 1.4.0)
@@ -75,6 +96,8 @@ DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
   - Bugly
   - CocoaLumberjack
+  - FBSDKLoginKit
+  - GoogleSignIn
   - IQKeyboardManager
   - KafkaRefresh
   - LTMorphingLabel
@@ -96,6 +119,11 @@ SPEC REPOS:
     - AFNetworking
     - Bugly
     - CocoaLumberjack
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
     - IQKeyboardManager
     - KafkaRefresh
     - LTMorphingLabel
@@ -116,6 +144,11 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  FBSDKCoreKit: e1ab8d86f5eea2d7aa6ab12acca3e1d2dcb11983
+  FBSDKLoginKit: 6e20e44775ddf4b159a8ca676834325e13d12221
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   KafkaRefresh: 7e40fce9a5fb180da8b9382ab1b5a129f1f8d48d
   LTMorphingLabel: 22147fb1ec2b0306537ccc348b36ea8617179b03
@@ -132,6 +165,6 @@ SPEC CHECKSUMS:
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: d4af657e27279f29c5e2b8b78c4e8dba766a92d1
+PODFILE CHECKSUM: 844be53f8fe6d79f1df01b0e63c69063e4326cdb
 
 COCOAPODS: 1.6.1

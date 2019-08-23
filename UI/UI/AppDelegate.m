@@ -10,11 +10,14 @@
 #import "ViewController.h"
 #import <UI-Swift.h>
 #import <Bugly/Bugly.h>
-
+#import <GoogleSignIn/GoogleSignIn.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 static NSString * const kBuglyAppID = @"dde5d68d17";
 static NSString * const kBuglyAppKey = @"f48f3854-782b-44cf-ac48-e5796801edd3";
+static NSString * const GOOGLE_APP_ID = @"774548467734-rg8t8otbqv19ok84b8e1o9g1514m50eb.apps.googleusercontent.com";
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UIApplicationDelegate>
 @property (strong, nonatomic) id paws;
 
 @end
@@ -23,7 +26,10 @@ static NSString * const kBuglyAppKey = @"f48f3854-782b-44cf-ac48-e5796801edd3";
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [GIDSignIn sharedInstance].clientID = GOOGLE_APP_ID;
+
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
     [Bugly startWithAppId:kBuglyAppID];
     NSProcessInfo *processInfo = [NSProcessInfo processInfo];
     NSString *value = processInfo.environment[@"gesturePaws"];
@@ -33,6 +39,10 @@ static NSString * const kBuglyAppKey = @"f48f3854-782b-44cf-ac48-e5796801edd3";
 
     [self configureDDLog];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [[FBSDKApplicationDelegate sharedInstance] application:app openURL:url options:options];
 }
 
 #pragma mark - Configuration
@@ -53,5 +63,6 @@ static NSString * const kBuglyAppKey = @"f48f3854-782b-44cf-ac48-e5796801edd3";
 //    DDLogWarn(@"Warn");         // 警告日志
 //    DDLogError(@"Error");       // 错误日志
 }
+
 
 @end

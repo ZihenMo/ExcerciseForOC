@@ -49,14 +49,48 @@
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="bTA-qf-j15"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gvk-kf-uSD">
+                    <rect key="frame" x="129" y="464" width="156" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTg-Fe-wtn" userLabel="FaceBook">
+                            <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+                            <state key="normal" title="FaceBook"/>
+                            <connections>
+                                <action selector="loginWithFaceBook:" destination="-1" eventType="touchUpInside" id="VaA-QS-55j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egf-3h-6Ga" userLabel="FaceBook">
+                            <rect key="frame" x="88" y="0.0" width="68" height="30"/>
+                            <state key="normal" title="Google"/>
+                            <connections>
+                                <action selector="loginWithGoogle:" destination="-1" eventType="touchUpInside" id="PNs-fm-oGq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jph-5i-pgW">
+                    <rect key="frame" x="40" y="534" width="334" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dl6-FJ-dph"/>
+                    </constraints>
+                    <state key="normal" title="Log Out"/>
+                    <connections>
+                        <action selector="logOutAction:" destination="-1" eventType="touchUpInside" id="gQh-xv-wDt"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="otV-4M-8Zh" secondAttribute="trailing" id="1Sr-c0-1bg"/>
+                <constraint firstItem="Gvk-kf-uSD" firstAttribute="top" secondItem="UYx-th-ka3" secondAttribute="bottom" constant="40" id="3js-6o-QN3"/>
                 <constraint firstItem="otV-4M-8Zh" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" multiplier="0.618" id="GuM-7m-6Zc"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UYx-th-ka3" secondAttribute="trailing" constant="15" id="Osm-5U-Bh6"/>
                 <constraint firstItem="UYx-th-ka3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="kIT-9L-5u2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Jph-5i-pgW" secondAttribute="trailing" constant="40" id="ld8-D4-b3I"/>
                 <constraint firstItem="otV-4M-8Zh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="r2G-ha-7y5"/>
+                <constraint firstItem="Jph-5i-pgW" firstAttribute="top" secondItem="Gvk-kf-uSD" secondAttribute="bottom" constant="40" id="tz2-TB-Nwx"/>
+                <constraint firstItem="Gvk-kf-uSD" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="vF0-6y-cco"/>
+                <constraint firstItem="Jph-5i-pgW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="vop-Mn-QcX"/>
                 <constraint firstItem="UYx-th-ka3" firstAttribute="top" secondItem="otV-4M-8Zh" secondAttribute="bottom" constant="40" id="wgJ-Ms-xPq"/>
                 <constraint firstItem="otV-4M-8Zh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="xR7-Ct-C6B"/>
             </constraints>
