@@ -325,6 +325,9 @@
 		38EAA5C422F131B200CCB4A4 /* MZHNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5C322F131B200CCB4A4 /* MZHNavigationBar.m */; };
 		38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5CE22F137C000CCB4A4 /* MZHViewController.m */; };
 		38EAA5DC22F171E100CCB4A4 /* MZHSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */; };
+		38FD160C230FE59800A21C6A /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD1609230FE59800A21C6A /* PopoverAction.m */; };
+		38FD160D230FE59800A21C6A /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD160A230FE59800A21C6A /* PopoverView.m */; };
+		38FD160E230FE59800A21C6A /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD160B230FE59800A21C6A /* PopoverViewCell.m */; };
 		8AB48154975C42C6DFB70639 /* libPods-UIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */; };
 		A5688D94B721E93581A19390 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461757DCDE3924451FA6157F /* Pods_UI.framework */; };
 /* End PBXBuildFile section */
@@ -705,6 +708,12 @@
 		38EAA5CF22F137C000CCB4A4 /* MZHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZHViewController.h; sourceTree = "<group>"; };
 		38EAA5DA22F171E100CCB4A4 /* MZHSearchResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZHSearchResultController.h; sourceTree = "<group>"; };
 		38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZHSearchResultController.m; sourceTree = "<group>"; };
+		38FD1606230FE59800A21C6A /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		38FD1607230FE59800A21C6A /* PopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCell.h; sourceTree = "<group>"; };
+		38FD1608230FE59800A21C6A /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
+		38FD1609230FE59800A21C6A /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
+		38FD160A230FE59800A21C6A /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		38FD160B230FE59800A21C6A /* PopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewCell.m; sourceTree = "<group>"; };
 		461757DCDE3924451FA6157F /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E0947C16D712AA1B2083E9 /* Pods-UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIUITests/Pods-UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6726443CF4F0F2A9693BA18 /* libPods-UIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1191,6 +1200,7 @@
 		3801430122C1B34B007A2F68 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				38FD1604230FE58100A21C6A /* Components */,
 				3801430222C1B34B007A2F68 /* Categories */,
 				3801431122C1B34B007A2F68 /* Base */,
 				38EAA5C522F1330800CCB4A4 /* CommonHeader.h */,
@@ -1424,6 +1434,27 @@
 				38EAA5DB22F171E100CCB4A4 /* MZHSearchResultController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		38FD1604230FE58100A21C6A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				38FD1605230FE59800A21C6A /* PopoverView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		38FD1605230FE59800A21C6A /* PopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				38FD1606230FE59800A21C6A /* PopoverView.h */,
+				38FD1607230FE59800A21C6A /* PopoverViewCell.h */,
+				38FD1608230FE59800A21C6A /* PopoverAction.h */,
+				38FD1609230FE59800A21C6A /* PopoverAction.m */,
+				38FD160A230FE59800A21C6A /* PopoverView.m */,
+				38FD160B230FE59800A21C6A /* PopoverViewCell.m */,
+			);
+			path = PopoverView;
 			sourceTree = "<group>";
 		};
 		8AA88266CF47F5C2AD1441B9 /* Pods */ = {
@@ -1978,7 +2009,9 @@
 				3801432022C1B34C007A2F68 /* UIColor+Tools.m in Sources */,
 				330196E42266399D00EA9903 /* ViewController.m in Sources */,
 				33116795230074460016DB9E /* CanvasView.m in Sources */,
+				38FD160E230FE59800A21C6A /* PopoverViewCell.m in Sources */,
 				3828D40222DF2446004687F4 /* Monkey.swift in Sources */,
+				38FD160C230FE59800A21C6A /* PopoverAction.m in Sources */,
 				3804F4B1228D0A1A005B29FE /* NavigationItemController.m in Sources */,
 				38070AC622E7F2E3002C344F /* ReviewCell.m in Sources */,
 				38EAA5D022F137C000CCB4A4 /* MZHViewController.m in Sources */,
@@ -1991,6 +2024,7 @@
 				330196E12266399D00EA9903 /* AppDelegate.m in Sources */,
 				38070AC222E7F197002C344F /* WGCollectionViewLayout.m in Sources */,
 				337F3360226CCD22009EA22F /* TableViewController.m in Sources */,
+				38FD160D230FE59800A21C6A /* PopoverView.m in Sources */,
 				38066F2A230AA2B8006ABA1D /* MZHMenuView.m in Sources */,
 				3801432222C1B34C007A2F68 /* PicTextButton.m in Sources */,
 				382F2C40228BF9D100CEC190 /* LocalDataTableViewController.m in Sources */,

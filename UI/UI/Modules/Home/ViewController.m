@@ -22,6 +22,8 @@
 #import "XibViewController.h"
 #import <objc/runtime.h>
 #import "MZHQuantityView.h"
+#import "PopoverView.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
@@ -48,10 +50,8 @@
     self.tableView.allowsSelection = YES;
     UIBarButtonItem *loginButton = [[UIBarButtonItem alloc] initWithTitle:@"登录" style:UIBarButtonItemStylePlain target:self action:@selector(pushToLogin:)];
     self.navigationItem.leftBarButtonItem = loginButton;
-    MZHQuantityView *customizedView = [[[UINib nibWithNibName:NSStringFromClass(MZHQuantityView.class) bundle:[NSBundle mainBundle]] instantiateWithOwner:nil options:nil] firstObject];
-    customizedView.frame = CGRectMake(100, 200, 120, 50);
-    customizedView.backgroundColor = UIColor.cyanColor;
-    [self.view addSubview:customizedView];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"more"] style:UIBarButtonItemStyleDone target:self action:@selector(showMenuAction:)];
+    self.navigationItem.rightBarButtonItem = menuButton;
 }
 
 /**
@@ -60,30 +60,46 @@
  */
 - (void)setupSearch {
     self.definesPresentationContext = YES;
-//    if (@available(iOS 11.0, *)) {
-//        self.navigationItem.searchController = self.searchController;
-//        // 默认展示搜索栏
-//        self.navigationItem.hidesSearchBarWhenScrolling = NO;
-//    } else {
+    if (@available(iOS 11.0, *)) {
+        self.navigationItem.searchController = self.searchController;
+        // 默认展示搜索栏
+        self.navigationItem.hidesSearchBarWhenScrolling = NO;
+    } else {
         self.navigationItem.titleView = self.searchController.searchBar;
-//    }
+    }
     UITextField *searchFeild = [self.searchController.searchBar valueForKeyPath:@"_searchField"];
     searchFeild.placeholder = @"搜索";
     searchFeild.textColor = UIColor.orangeColor;
+    // 默认cancelButton为nil
     self.searchController.searchBar.showsCancelButton = YES;
     searchFeild.contentMode = UIViewContentModeCenter;
     UIButton *cancelButton = [self.searchController.searchBar valueForKeyPath:@"_cancelButton"];
     [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-//    UILabel *placeholderLabel = [searchFeild valueForKey:@"_placeholderLabel"];
 }
 
 - (void)loadData {
     [self dataArray];
     [self.tableView reloadData];
 }
+
 #pragma mark - Actions
 - (void)pushToLogin: (UIBarButtonItem *)sender {
     [self presentViewController:[[LoginViewController alloc] init] animated:YES completion:nil];
+}
+
+- (void)showMenuAction: (UIBarButtonItem *)sender {
+    PopoverView *pop = [PopoverView popoverView];
+    PopoverAction *qrCodeAction = [PopoverAction actionWithTitle:@"扫描二维码" handler:^(PopoverAction *action) {
+        
+    }];
+    PopoverAction *moneyPacketAction = [PopoverAction actionWithTitle:@"钱包" handler:^(PopoverAction *action) {
+        
+    }];
+    PopoverAction *payAction = [PopoverAction actionWithTitle:@"收付款" handler:^(PopoverAction *action) {
+        
+    }];
+    NSArray *actions = @[qrCodeAction, moneyPacketAction, payAction];
+    [pop showToPoint:CGPointMake(UIScreen.mainScreen.bounds.size.width - 30, UIApplication.sharedApplication.statusBarFrame.size.height + 44) withActions:actions];
 }
 
 #pragma mark - TableView Delegate & DataSource
@@ -107,6 +123,7 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSString *searchText = searchController.searchBar.text;
     DDLogDebug(@"--- Search Text: %@ ---", searchText);
+    
     if (searchText) {
         NSArray *searchResults = [self.dataArray filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
             NSString *name = [evaluatedObject[@"name"] lowercaseString];
