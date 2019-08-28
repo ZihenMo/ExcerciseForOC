@@ -6,8 +6,12 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
+
 #import <ASDK/ASDK.h>
+#import <fishhook/fishhook.h>
+#import <objc/runtime.h>
+
 #import "ImageViewController.h"
 #import "TableViewController.h"
 #import "ButtonViewController.h"
@@ -20,25 +24,77 @@
 #import "BuglyViewController.h"
 #import "MZHSearchResultController.h"
 #import "XibViewController.h"
-#import <objc/runtime.h>
+#import "XibNestingViewController.h"
+
 #import "MZHQuantityView.h"
 #import "PopoverView.h"
+#import "UIDevice+Tools.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating>
+@interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic, strong) MZHSearchResultController *resultController;
 @property (nonatomic, strong) NSArray *dataArray;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
+//函数指针，用来保存原始的函数地址
+static void (*origin_nslog)(NSString *format, ...);
+void mzh_log(NSString *format, ...) {
+    origin_nslog(@"---来了老弟!---");
+    va_list args;
+    va_start(args, format);
+    NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
+    origin_nslog(message);
+    va_end(args);
+    
+}
 
+/**
+ 方法交换测试1
+ */
+- (void)fishihookTest {
+    NSLog(@"调用一次，保存到懒加载表");
+    
+    //定义rebinding结构体
+    struct rebinding nslogBind;
+    //函数的名称
+    nslogBind.name = "NSLog";
+    //新的函数地址
+    nslogBind.replacement = mzh_log;
+    //保存原始函数地址变量的指针
+    nslogBind.replaced = (void *)&origin_nslog;
+    
+    //定义数组
+    struct rebinding rebs[] = {nslogBind};
+    
+    /**
+     arg1: 存放rebinding结构体的数组
+     arg2: 数组的长度
+     */
+    rebind_symbols(rebs, 1);
+}
 
+- (void)checkDevice {
+    if ([UIDevice isJailbreak]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"为了您的信息安全，暂不支持越狱设备使用" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAciton = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:okAciton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else {
+        DDLogDebug(@"正常设备，放心食用");
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
     [self loadData];
+    [self checkDevice];
 }
+
+
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
@@ -67,14 +123,13 @@
     } else {
         self.navigationItem.titleView = self.searchController.searchBar;
     }
-    UITextField *searchFeild = [self.searchController.searchBar valueForKeyPath:@"_searchField"];
+    // iOS 13已经禁该方式，提供了新的属性
+    //    UITextField *searchFeild = [self.searchController.searchBar valueForKeyPath:@"_searchField"];
+    UITextField *searchFeild = self.searchController.searchBar.searchTextField;
     searchFeild.placeholder = @"搜索";
     searchFeild.textColor = UIColor.orangeColor;
-    // 默认cancelButton为nil
     self.searchController.searchBar.showsCancelButton = YES;
     searchFeild.contentMode = UIViewContentModeCenter;
-    UIButton *cancelButton = [self.searchController.searchBar valueForKeyPath:@"_cancelButton"];
-    [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
 }
 
 - (void)loadData {
@@ -157,7 +212,7 @@
                        @{@"name": @"自定义键盘", @"target": CustomizedKeyBoardController.class},
                        @{@"name": @"手势", @"target": GestureRecognizeViewController.class},
                        @{@"name": @"Bugly", @"target": BuglyViewController.class},
-                       @{@"name": @"Xib嵌套", @"target": XibViewController.class}
+                       @{@"name": @"Xib嵌套", @"target": XibNestingViewController.class}
                      ];
     }
     return  _dataArray;
@@ -166,7 +221,6 @@
 - (UISearchController *)searchController {
     if (_searchController == nil) {
         _searchController = [[UISearchController alloc] initWithSearchResultsController:self.resultController];
-//        _searchController.searchResultsUpdater = _resultController;
         _searchController.searchResultsUpdater = self;
     }
     return _searchController;

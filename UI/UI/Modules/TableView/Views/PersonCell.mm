@@ -7,14 +7,26 @@
 //
 
 #import "PersonCell.h"
-#import "Person.h"
+#import "GRPerson.h"
+#import "MZShadowRadiusView.h"
 
-
+class CPPClass {
+public:
+    void cppFunc(const char *);
+};
+void CPPClass::cppFunc(const char *arg) {
+    NSLog(@"cpp func: %s", arg);
+}
+extern "C" void shortCFunc(const char *arg) {
+    CPPClass cpp;
+    cpp.cppFunc(arg);
+}
 @interface PersonCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nickNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *emailLbl;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLbl;
+@property (weak, nonatomic) IBOutlet MZShadowRadiusView *wrapView;
 
 @end
 
@@ -23,13 +35,19 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    CPPClass cpp;
+    cpp.cppFunc("This is a cpp function!");
+}
+- (void)prepareForReuse {
+    [super prepareForReuse];
+//    [self.wrapView setNeedsDisplay];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }
 
-- (void)bindSource:(Person *)person {
+- (void)bindSource:(GRPerson *)person {
     [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString: person.avatar]];
     self.nickNameLbl.text = person.nickName;
     self.descriptionLbl.text = person.desc;
@@ -38,3 +56,4 @@
 }
 
 @end
+

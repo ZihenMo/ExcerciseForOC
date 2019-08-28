@@ -6,7 +6,7 @@
 //  Copyright © 2019 mzh. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <Masonry/Masonry.h>
 #import "BaseButton.h"
 
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, SubjectType) {
     SubjectTypeAutoresizing
 };
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @property (nonatomic, strong) UIStackView *stackView;
 @property (nonatomic, strong) NSArray *subjects;
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, SubjectType) {
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

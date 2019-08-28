@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		380CAECF22A7943700321AF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 380CAECE22A7943700321AF4 /* main.m */; };
-		3814586422CAEDD700AD0D3F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586322CAEDD700AD0D3F /* Person.m */; };
-		3814586722CAEE6F00AD0D3F /* Person+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586622CAEE6F00AD0D3F /* Person+Tool.m */; };
+		3814586422CAEDD700AD0D3F /* GRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586322CAEDD700AD0D3F /* GRPerson.m */; };
+		3814586722CAEE6F00AD0D3F /* GRPerson+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3814586622CAEE6F00AD0D3F /* GRPerson+Tool.m */; };
+		3815FF3423628C310048540C /* GRPerson+Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 3815FF3323628C310048540C /* GRPerson+Food.m */; };
+		3815FF372362E7560048540C /* GRStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3815FF362362E7560048540C /* GRStudent.m */; };
+		3815FF3A2362FD7D0048540C /* GRObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3815FF392362FD7D0048540C /* GRObserver.m */; };
 		3828D42F22DF3929004687F4 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828D42E22DF3929004687F4 /* UI.swift */; };
 		3828D43B22DF3939004687F4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828D43A22DF3939004687F4 /* Test.swift */; };
 /* End PBXBuildFile section */
@@ -29,10 +32,16 @@
 /* Begin PBXFileReference section */
 		380CAECB22A7943700321AF4 /* Grammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Grammer; sourceTree = BUILT_PRODUCTS_DIR; };
 		380CAECE22A7943700321AF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3814586222CAEDD700AD0D3F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		3814586322CAEDD700AD0D3F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		3814586522CAEE6F00AD0D3F /* Person+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Tool.h"; sourceTree = "<group>"; };
-		3814586622CAEE6F00AD0D3F /* Person+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Tool.m"; sourceTree = "<group>"; };
+		3814586222CAEDD700AD0D3F /* GRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRPerson.h; sourceTree = "<group>"; };
+		3814586322CAEDD700AD0D3F /* GRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRPerson.m; sourceTree = "<group>"; };
+		3814586522CAEE6F00AD0D3F /* GRPerson+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRPerson+Tool.h"; sourceTree = "<group>"; };
+		3814586622CAEE6F00AD0D3F /* GRPerson+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GRPerson+Tool.m"; sourceTree = "<group>"; };
+		3815FF3223628C310048540C /* GRPerson+Food.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRPerson+Food.h"; sourceTree = "<group>"; };
+		3815FF3323628C310048540C /* GRPerson+Food.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GRPerson+Food.m"; sourceTree = "<group>"; };
+		3815FF352362E7560048540C /* GRStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRStudent.h; sourceTree = "<group>"; };
+		3815FF362362E7560048540C /* GRStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRStudent.m; sourceTree = "<group>"; };
+		3815FF382362FD7D0048540C /* GRObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRObserver.h; sourceTree = "<group>"; };
+		3815FF392362FD7D0048540C /* GRObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRObserver.m; sourceTree = "<group>"; };
 		3828D42C22DF3929004687F4 /* UI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3828D42E22DF3929004687F4 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		3828D43022DF3929004687F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,10 +99,16 @@
 			isa = PBXGroup;
 			children = (
 				380CAECE22A7943700321AF4 /* main.m */,
-				3814586222CAEDD700AD0D3F /* Person.h */,
-				3814586522CAEE6F00AD0D3F /* Person+Tool.h */,
-				3814586622CAEE6F00AD0D3F /* Person+Tool.m */,
-				3814586322CAEDD700AD0D3F /* Person.m */,
+				3814586222CAEDD700AD0D3F /* GRPerson.h */,
+				3814586322CAEDD700AD0D3F /* GRPerson.m */,
+				3815FF352362E7560048540C /* GRStudent.h */,
+				3815FF362362E7560048540C /* GRStudent.m */,
+				3814586522CAEE6F00AD0D3F /* GRPerson+Tool.h */,
+				3814586622CAEE6F00AD0D3F /* GRPerson+Tool.m */,
+				3815FF3223628C310048540C /* GRPerson+Food.h */,
+				3815FF3323628C310048540C /* GRPerson+Food.m */,
+				3815FF382362FD7D0048540C /* GRObserver.h */,
+				3815FF392362FD7D0048540C /* GRObserver.m */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
@@ -232,8 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3814586722CAEE6F00AD0D3F /* Person+Tool.m in Sources */,
-				3814586422CAEDD700AD0D3F /* Person.m in Sources */,
+				3815FF3423628C310048540C /* GRPerson+Food.m in Sources */,
+				3814586722CAEE6F00AD0D3F /* GRPerson+Tool.m in Sources */,
+				3815FF3A2362FD7D0048540C /* GRObserver.m in Sources */,
+				3814586422CAEDD700AD0D3F /* GRPerson.m in Sources */,
+				3815FF372362E7560048540C /* GRStudent.m in Sources */,
 				380CAECF22A7943700321AF4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

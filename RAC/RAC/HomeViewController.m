@@ -6,17 +6,17 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "CaculatorController.h"
 #import "LocalizedViewController.h"
 #import "PartViewController.h"
 #import "ChannelController.h"
-@interface ViewController ()
+@interface HomeViewController ()
 @property (nonatomic, strong) UIStackView *stackView;
 @property (nonatomic, assign) NSTimeInterval lastTimeStamp;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 - (IBAction)switchLanguageAction:(UIButton *)sender {
 }
 - (IBAction)ssss:(id)sender {

@@ -6,17 +6,17 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <SendBirdSDK/SendBirdSDK.h>
 #import "ChannelController.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nickNameTF;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 #pragma mark - LiftCycle
 - (void)viewDidLoad {
     [super viewDidLoad];

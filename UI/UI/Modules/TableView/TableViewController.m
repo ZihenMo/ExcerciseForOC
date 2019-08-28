@@ -8,9 +8,10 @@
 
 #import "TableViewController.h"
 #import <AFNetworking/AFNetworking.h>
-#import "Person.h"
+#import "GRPerson.h"
 #import "PersonCell.h"
 #import "LocalDataTableViewController.h"
+#import "PersonDetailController.h"
 
 @interface TableViewController ()
 
@@ -134,11 +135,12 @@
     return 0;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PersonCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    Person *person = self.personList[indexPath.section][@"personList"][indexPath.row];
+    GRPerson *person = self.personList[indexPath.section][@"personList"][indexPath.row];
     [cell bindSource:person];
+    [cell setNeedsDisplay];
+    [cell setNeedsLayout];
     return cell;
 }
 
@@ -179,7 +181,7 @@
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSMutableArray *actions = [NSMutableArray array];
     UITableViewRowAction *addAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"添加" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        Person *pData = self.personList[indexPath.section][@"personList"][indexPath.row];
+        GRPerson *pData = self.personList[indexPath.section][@"personList"][indexPath.row];
         [self.personList[indexPath.section][@"personList"] addObject:pData];
         [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }];
@@ -188,8 +190,6 @@
 }
 
 /// -- 多行编辑 --
-
-
 
 /*
  // Override to support rearranging the table view.
@@ -212,13 +212,25 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.needDeleteIndexPaths containsObject:indexPath]) {
-        [self.needDeleteIndexPaths removeObject:indexPath];
+    if (self.tableView.editing) {
+        if ([self.needDeleteIndexPaths containsObject:indexPath]) {
+            [self.needDeleteIndexPaths removeObject:indexPath];
+        }
+        else {
+            [self.needDeleteIndexPaths addObject:indexPath];
+        }
     }
     else {
-        [self.needDeleteIndexPaths addObject:indexPath];
+        GRPerson *person = self.personList[indexPath.section][@"personList"][indexPath.row];
+        PersonDetailController *detailController = [[PersonDetailController alloc] init];
+        detailController.refreshBlock = ^{
+            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        };
+        detailController.person = person;
+        [self.navigationController pushViewController:detailController animated:YES];
     }
 }
+
 #pragma mark - Request
 
 /**
@@ -264,7 +276,7 @@
 }
 
 - (void)requestAllData {
-    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/login"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/user"];
     //    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.timeoutInterval = 15.f;
@@ -278,12 +290,12 @@
             NSLog(@"💖Response:-------------E--------------💖");
             // 字典数组转模型数组
             // 设置特殊映射键
-            [Person mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+            [GRPerson mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
                 return @{
                          @"desc": @"description"
                          };
             }];
-            NSArray *personList = [Person mj_objectArrayWithKeyValuesArray:data];
+            NSArray *personList = [GRPerson mj_objectArrayWithKeyValuesArray:data];
             //             按姓分组处理 @[@{@"sectionIndex:" @"张",
             //                                        @"personList":@[]}]
             [self disposePersonList:personList];

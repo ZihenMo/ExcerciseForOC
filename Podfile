@@ -94,6 +94,8 @@ target 'UI' do
   #第三方登录
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  # C层次的函数交换绑定
+  pod 'fishhook'
 
 end
 

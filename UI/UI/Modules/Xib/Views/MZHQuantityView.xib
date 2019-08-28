@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZHQuantityView">
+            <connections>
+                <outlet property="increaseButton" destination="L7G-xY-Wkm" id="PIw-Za-PQU"/>
+                <outlet property="reductButton" destination="52P-BI-xrH" id="90W-0a-3sI"/>
+                <outlet property="textField" destination="Csv-tH-ayy" id="W6y-rw-xjJ"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MZHQuantityView">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -29,7 +33,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="fWh-rx-B2Y"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -54,11 +57,6 @@
                 <constraint firstItem="L7G-xY-Wkm" firstAttribute="leading" secondItem="Csv-tH-ayy" secondAttribute="trailing" constant="5" id="hxI-zy-oEP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="increaseButton" destination="L7G-xY-Wkm" id="0XK-oB-Ddv"/>
-                <outlet property="reductButton" destination="52P-BI-xrH" id="kPh-hT-MLC"/>
-                <outlet property="textField" destination="Csv-tH-ayy" id="L4u-ZN-a0Z"/>
-            </connections>
             <point key="canvasLocation" x="-92.753623188405811" y="-177.12053571428569"/>
         </view>
     </objects>

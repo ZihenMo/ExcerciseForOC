@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Person;
+@class GRPerson;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonCell : UITableViewCell
 
-- (void)bindSource: (Person *)person;
+- (void)bindSource: (GRPerson *)person;
+
 
 @end
+
+
 
 NS_ASSUME_NONNULL_END

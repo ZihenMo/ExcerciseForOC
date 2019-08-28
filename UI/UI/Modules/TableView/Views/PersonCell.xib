@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,9 +14,13 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="202"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="avatar">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="201.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="202"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="TEt-eQ-P1l" customClass="MZShadowRadiusView">
+                        <rect key="frame" x="8" y="8" width="377" height="186"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nWF-gu-YdV">
                         <rect key="frame" x="20" y="20" width="100" height="100"/>
                         <constraints>
@@ -33,7 +35,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U2-hV-uKB" userLabel="description">
-                        <rect key="frame" x="20" y="140" width="353" height="41.5"/>
+                        <rect key="frame" x="20" y="140" width="353" height="42"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -45,25 +47,32 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.81427242992267335" green="0.8086056165423916" blue="0.74665579259872972" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="xFq-LM-n4s" firstAttribute="leading" secondItem="2im-Xn-KUS" secondAttribute="leading" id="3l3-3g-kke"/>
+                    <constraint firstAttribute="bottom" secondItem="TEt-eQ-P1l" secondAttribute="bottom" constant="8" id="7Y2-0l-UId"/>
                     <constraint firstItem="nWF-gu-YdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="aZO-2A-eNn"/>
                     <constraint firstAttribute="bottom" secondItem="0U2-hV-uKB" secondAttribute="bottom" constant="20" id="b3u-Q9-B7u"/>
                     <constraint firstItem="2im-Xn-KUS" firstAttribute="top" secondItem="nWF-gu-YdV" secondAttribute="top" id="b5E-nP-bjf"/>
+                    <constraint firstItem="TEt-eQ-P1l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eZo-ff-uNH"/>
                     <constraint firstAttribute="trailing" secondItem="0U2-hV-uKB" secondAttribute="trailing" constant="20" id="ga4-xS-m55"/>
                     <constraint firstItem="nWF-gu-YdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gjM-vf-ZsR"/>
                     <constraint firstItem="2im-Xn-KUS" firstAttribute="leading" secondItem="nWF-gu-YdV" secondAttribute="trailing" constant="25" id="m1T-6i-3yV"/>
                     <constraint firstItem="xFq-LM-n4s" firstAttribute="top" secondItem="2im-Xn-KUS" secondAttribute="bottom" constant="20" id="mPD-XT-Yy1"/>
                     <constraint firstItem="0U2-hV-uKB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pdk-B1-Qsf"/>
+                    <constraint firstAttribute="trailing" secondItem="TEt-eQ-P1l" secondAttribute="trailing" constant="8" id="qyX-e4-k5y"/>
+                    <constraint firstItem="TEt-eQ-P1l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vXV-Q1-L6r"/>
                     <constraint firstItem="0U2-hV-uKB" firstAttribute="top" secondItem="nWF-gu-YdV" secondAttribute="bottom" constant="20" id="vcB-EY-kVR"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="avatarImageView" destination="nWF-gu-YdV" id="FUz-Os-6eX"/>
                 <outlet property="descriptionLbl" destination="0U2-hV-uKB" id="ONc-OE-O9J"/>
                 <outlet property="emailLbl" destination="xFq-LM-n4s" id="bkB-1b-HLH"/>
                 <outlet property="nickNameLbl" destination="2im-Xn-KUS" id="fFM-o0-oCP"/>
+                <outlet property="wrapView" destination="TEt-eQ-P1l" id="Zcu-2J-u4w"/>
             </connections>
             <point key="canvasLocation" x="184.78260869565219" y="175.44642857142856"/>
         </tableViewCell>

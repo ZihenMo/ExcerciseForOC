@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <UI-Swift.h>
 #import <Bugly/Bugly.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#import "UIDevice+Tools.h"
+
 static NSString * const kBuglyAppID = @"dde5d68d17";
 static NSString * const kBuglyAppKey = @"f48f3854-782b-44cf-ac48-e5796801edd3";
 static NSString * const GOOGLE_APP_ID = @"774548467734-rg8t8otbqv19ok84b8e1o9g1514m50eb.apps.googleusercontent.com";
@@ -26,18 +29,11 @@ static NSString * const GOOGLE_APP_ID = @"774548467734-rg8t8otbqv19ok84b8e1o9g15
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [GIDSignIn sharedInstance].clientID = GOOGLE_APP_ID;
-
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
-    [Bugly startWithAppId:kBuglyAppID];
-    NSProcessInfo *processInfo = [NSProcessInfo processInfo];
-    NSString *value = processInfo.environment[@"gesturePaws"];
-    if ([value isEqualToString:@"1"]) {
-        self.paws = [Monkey getPaws:self.window];
-    }
-
+    [self configBugly];
+    [self configMonkey];
+    [self configGoogle];
     [self configureDDLog];
+    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -46,6 +42,25 @@ static NSString * const GOOGLE_APP_ID = @"774548467734-rg8t8otbqv19ok84b8e1o9g15
 }
 
 #pragma mark - Configuration
+- (void)configBugly {
+    [Bugly startWithAppId:kBuglyAppID];
+}
+
+/**
+ 手势指示器，仅在Monkey测试时有该环境变量
+ */
+- (void)configMonkey {
+    NSProcessInfo *processInfo = [NSProcessInfo processInfo];
+    NSString *value = processInfo.environment[@"gesturePaws"];
+    if ([value isEqualToString:@"1"]) {
+        self.paws = [Monkey getPaws:self.window];
+    }
+}
+
+- (void)configGoogle {
+    [GIDSignIn sharedInstance].clientID = GOOGLE_APP_ID;
+}
+
 - (void)configureDDLog {
     [DDLog addLogger: [DDTTYLogger sharedInstance]];  // 控制台
 //    [DDLog addLogger: [DDOSLogger sharedInstance]];   // 系统日志器
@@ -63,6 +78,5 @@ static NSString * const GOOGLE_APP_ID = @"774548467734-rg8t8otbqv19ok84b8e1o9g15
 //    DDLogWarn(@"Warn");         // 警告日志
 //    DDLogError(@"Error");       // 错误日志
 }
-
 
 @end

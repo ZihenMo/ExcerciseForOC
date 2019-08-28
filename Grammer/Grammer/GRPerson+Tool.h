@@ -6,12 +6,12 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "Person.h"
+#import "GRPerson.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person (Tool)
-- (void)makeFood;
+@interface GRPerson (Tool)
+- (void)doCategoryMethod;
 @end
 
 NS_ASSUME_NONNULL_END

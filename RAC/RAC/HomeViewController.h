@@ -10,7 +10,7 @@
 
 
 
-@interface ViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 
 @end

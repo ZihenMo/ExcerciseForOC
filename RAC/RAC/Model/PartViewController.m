@@ -9,7 +9,7 @@
 #import "PartViewController.h"
 #import "BaseLabel.h"
 
-@interface Person : NSObject
+@interface GRPerson : NSObject
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic,assign) NSInteger age;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation Person
+@implementation GRPerson
 
 @end
 
@@ -150,7 +150,7 @@
  */
 - (void) obserLocalValue {
     // --- RAC监听局部变量
-    Person *p = [Person new];
+    GRPerson *p = [GRPerson new];
     p.name = @"name1";
     p.age = 1;
     p.body = CGSizeMake(1, 1);

@@ -6,9 +6,9 @@
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
-#import "Person.h"
+#import "GRPerson.h"
 
-@implementation Person
+@implementation GRPerson
 
 
 

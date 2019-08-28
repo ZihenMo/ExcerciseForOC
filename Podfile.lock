@@ -26,6 +26,7 @@ PODS:
     - FBSDKCoreKit/Basics
   - FBSDKLoginKit (5.2.1):
     - FBSDKCoreKit (~> 5.0)
+  - fishhook (0.2)
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -97,6 +98,7 @@ DEPENDENCIES:
   - Bugly
   - CocoaLumberjack
   - FBSDKLoginKit
+  - fishhook
   - GoogleSignIn
   - IQKeyboardManager
   - KafkaRefresh
@@ -121,6 +123,7 @@ SPEC REPOS:
     - CocoaLumberjack
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - fishhook
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
@@ -146,6 +149,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   FBSDKCoreKit: e1ab8d86f5eea2d7aa6ab12acca3e1d2dcb11983
   FBSDKLoginKit: 6e20e44775ddf4b159a8ca676834325e13d12221
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
@@ -165,6 +169,6 @@ SPEC CHECKSUMS:
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 844be53f8fe6d79f1df01b0e63c69063e4326cdb
+PODFILE CHECKSUM: bb57b64a0d901a0dce3cb96304d0ca43bb003de4
 
 COCOAPODS: 1.6.1

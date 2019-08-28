@@ -1,14 +1,15 @@
 //
 //  ViewController.h
-//  SendbirdChat
+//  UI
 //
-//  Created by gshopper on 2019/5/23.
+//  Created by mozihen on 2019/4/17.
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HomeViewController : UIViewController
+
 
 
 @end

@@ -21,8 +21,6 @@
     [self setupUI];
 }
 - (void)setupUI {
-//    self.view.backgroundColor = UIColor.redColor;
-//    MZHQuantityView *customizedView = [[[UINib nibWithNibName:NSStringFromClass(MZHQuantityView.class) bundle:[NSBundle mainBundle]] instantiateWithOwner:nil options:nil] firstObject];
     self.view.backgroundColor = [UIColor whiteColor];
     MZHQuantityView *customizedView = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(MZHQuantityView.class) owner:nil options:nil]lastObject];
     
@@ -33,7 +31,7 @@
     MZHMenuView *menuView = [[MZHMenuView alloc] initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 50)];
     DDLogDebug(@"menuFrame: %@", NSStringFromCGRect(menuView.frame));
     DDLogDebug(@"viewFrmae: %@", NSStringFromCGRect(self.view.frame));
-    menuView.menus = @[@"所有", @"普通标题", @"特别长长长的标题出现了"];
+    menuView.menus = @[@"所有", @"普通标题", @"特别长长长长长长长长的标题出现了"];
     [self.view addSubview:menuView];
 }
 

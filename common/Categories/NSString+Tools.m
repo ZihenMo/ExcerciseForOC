@@ -11,7 +11,7 @@
 @implementation NSString (Tools)
 
 - (BOOL)isEmpty {
-    return self == nil || self.length == 0;
+    return self.length == 0;
 }
 
 @end

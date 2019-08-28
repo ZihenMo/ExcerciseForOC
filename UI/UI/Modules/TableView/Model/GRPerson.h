@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSObject
+@interface GRPerson : NSObject
 
 @property (nonatomic, copy) NSString *nickName;
 // 避免与description重名
@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *sectionIndex;
 @property (nonatomic, copy) NSString *avatar;
 @property (nonatomic, copy) NSString *email;
+@property (nonatomic, assign) NSInteger uid;
 
 
 

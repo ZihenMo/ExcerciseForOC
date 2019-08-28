@@ -16,14 +16,21 @@
 @end
 @implementation MZHQuantityView
 
-//- (instancetype)initWithCoder:(NSCoder *)coder
-//{
-//    self = [super initWithCoder:coder];
-//    if (self) {
-//        [self initilized];
-//    }
-//    return self;
-//}
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        // 任一加载方式加载自定义xib
+        UIView *quantityView = [[UINib nibWithNibName:NSStringFromClass(MZHQuantityView.class) bundle:nil]instantiateWithOwner:self options:nil].lastObject;
+//        UIView *quantityView = [[NSBundle mainBundle]loadNibNamed:@"MZHQuantityView" owner:self options:nil].lastObject;
+        // 设置frame为bounds，该bounds会由所在父视图(xib）的约束提前计算好
+        quantityView.frame = self.bounds;
+        NSLog(@"%s:bounds %@", __func__, NSStringFromCGRect(self.bounds));
+        [self addSubview:quantityView];
+        self.backgroundColor = UIColor.cyanColor;
+    }
+    return self;
+}
 //- (instancetype)initWithFrame:(CGRect)frame
 //{
 //    self = [super initWithFrame:frame];
@@ -32,7 +39,7 @@
 //    }
 //    return self;
 //}
-
+//
 - (void)initilized {
     self.value = 1;
     self.step = 1;

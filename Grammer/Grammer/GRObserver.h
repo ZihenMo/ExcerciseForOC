@@ -1,8 +1,8 @@
 //
-//  Person.h
+//  GRObserver.h
 //  Grammer
 //
-//  Created by gshopper on 2019/7/2.
+//  Created by gshopper on 2019/10/25.
 //  Copyright © 2019 mozihen. All rights reserved.
 //
 
@@ -10,13 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSObject
+@interface GRObserver : NSObject
 
 @end
 
+@interface GRNameObserver : GRObserver
 
-@interface Person (Food)
-- (void)makeFood;
 @end
-
 NS_ASSUME_NONNULL_END
